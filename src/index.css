@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Royal Indian Restaurant Theme - Maharaja Palette */
+    --background: 48 24% 94%; /* Ivory #FAF3E0 */
+    --foreground: 6 5% 14%; /* Dark text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 6 5% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 6 5% 14%;
+
+    /* Maharaja Maroon 1 - Primary Brand Color #6A0524 */
+    --primary: 347 91% 21%;
+    --primary-foreground: 48 24% 94%;
+
+    /* Royal Gold #CD953A */
+    --gold: 39 59% 52%;
+    --gold-foreground: 0 0% 0%;
+
+    /* Additional Brand Colors */
+    --maroon-dark: 348 98% 20%; /* #64021E Maharaja Maroon 2 */
+    --accent-clay: 17 42% 37%; /* #9B5D48 Spiced Clay */
+    --accent-sandal: 17 54% 30%; /* #7F3C23 Sandalwood */
+    --ivory: 48 24% 94%;
+    --onyx: 0 0% 0%;
+
+    /* Cream - Secondary */
+    --secondary: 48 24% 94%;
+    --secondary-foreground: 6 5% 14%;
+
+    --muted: 45 50% 85%;
+    --muted-foreground: 2 40% 40%;
+
+    --accent: 39 59% 52%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 48 24% 94%;
+
+    --border: 45 40% 80%;
+    --input: 45 40% 80%;
+    --ring: 39 59% 52%;
+
+    --radius: 0.75rem;
+
+    /* Custom Gradients */
+    --gradient-royal: linear-gradient(135deg, #6A0524 0%, #64021E 100%);
+    --gradient-gold: linear-gradient(135deg, #E7C875 0%, #CD953A 40%, #9C6B2D 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%);
+    --gradient-gold-text: linear-gradient(135deg, #E7C875 0%, #CD953A 40%, #9C6B2D 100%);
+    
+    /* Shadows */
+    --shadow-gold: 0 0 20px rgba(205, 149, 58, 0.45);
+    --shadow-glow: 0 0 40px rgba(205, 149, 58, 0.4);
+    --shadow-elegant: 0 10px 40px -10px rgba(0, 0, 0, 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 2 83% 8%;
+    --foreground: 45 71% 93%;
+
+    --card: 2 70% 12%;
+    --card-foreground: 45 71% 93%;
+
+    --popover: 2 70% 12%;
+    --popover-foreground: 45 71% 93%;
+
+    --primary: 45 65% 53%;
+    --primary-foreground: 2 83% 10%;
+
+    --gold: 45 65% 53%;
+    --gold-foreground: 2 83% 10%;
+
+    --secondary: 2 50% 20%;
+    --secondary-foreground: 45 71% 93%;
+
+    --muted: 2 40% 25%;
+    --muted-foreground: 45 50% 70%;
+
+    --accent: 45 65% 53%;
+    --accent-foreground: 2 83% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 45 71% 93%;
+
+    --border: 2 40% 25%;
+    --input: 2 40% 25%;
+    --ring: 45 65% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Custom animations */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes glow {
+    0%, 100% { opacity: 0.5; filter: blur(20px); }
+    50% { opacity: 0.8; filter: blur(30px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(205, 149, 58, 0.4); }
+    50% { box-shadow: 0 0 40px rgba(205, 149, 58, 0.6); }
+  }
+
+  .animate-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animate-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    animation: shimmer 2.5s infinite;
+    pointer-events: none;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+    background: radial-gradient(circle, hsl(var(--gold) / 0.3) 0%, transparent 70%);
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .curtain-gradient {
+    background: #6E0E0A; /* Exact maroon from JALSA logo */
+  }
+
+  .gold-shimmer {
+    background: var(--gradient-gold);
+  }
+}
