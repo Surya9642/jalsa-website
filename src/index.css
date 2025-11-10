@@ -53,10 +53,10 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom Gradients */
-    --gradient-royal: linear-gradient(135deg, #6A0524 0%, #64021E 100%);
-    --gradient-gold: linear-gradient(135deg, #E7C875 0%, #CD953A 40%, #9C6B2D 100%);
+    --gradient-royal: linear-gradient(135deg, #60081b 0%, #60081b 100%);
+    --gradient-gold: linear-gradient(135deg, #E7C875 0%, #cc932a  40%, #9C6B2D 100%);
     --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%);
-    --gradient-gold-text: linear-gradient(135deg, #E7C875 0%, #CD953A 40%, #9C6B2D 100%);
+    --gradient-gold-text: linear-gradient(135deg, #E7C875 0%, #cc932a  40%, #9C6B2D 100%);
     
     /* Shadows */
     --shadow-gold: 0 0 20px rgba(205, 149, 58, 0.45);
@@ -163,10 +163,109 @@ All colors MUST be HSL.
   }
 
   .curtain-gradient {
-    background: #6E0E0A; /* Exact maroon from JALSA logo */
+    background: #60081b; /* Exact maroon from JALSA logo */
   }
 
   .gold-shimmer {
     background: var(--gradient-gold);
   }
+  /* 🔄 Rotate the logo slowly in a loop */
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 🌀 Combine floating + rotation for extra life */
+@keyframes float-rotate {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+  }
+}
+
+/* Tailwind-compatible class names */
+.animate-rotate-logo {
+  animation: rotate-logo 8s linear infinite;
+}
+
+.animate-float-rotate {
+  animation: float-rotate 6s ease-in-out infinite;
+}
+/* ---- SPLIT ANIMATIONS ---- */
+@keyframes split-top-left {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-150%, -150%) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes split-top-right {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(150%, -150%) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes split-bottom-left {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-150%, 150%) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes split-bottom-right {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(150%, 150%) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+.animate-split-top-left {
+  animation: split-top-left 1.5s ease-in-out forwards;
+}
+.animate-split-top-right {
+  animation: split-top-right 1.5s ease-in-out forwards;
+}
+.animate-split-bottom-left {
+  animation: split-bottom-left 1.5s ease-in-out forwards;
+}
+.animate-split-bottom-right {
+  animation: split-bottom-right 1.5s ease-in-out forwards;
+}
+
+/* Optional: existing glow & float-rotate from earlier */
+@keyframes float-rotate {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+  }
+}
+.animate-float-rotate {
+  animation: float-rotate 6s ease-in-out infinite;
+}
+
 }

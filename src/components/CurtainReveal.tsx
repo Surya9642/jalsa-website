@@ -8,22 +8,28 @@ interface CurtainRevealProps {
 
 const CurtainReveal = ({ onEnter }: CurtainRevealProps) => {
   const [isOpening, setIsOpening] = useState(false);
+  const [splitLogo, setSplitLogo] = useState(false);
 
   const handleEnter = () => {
-    setIsOpening(true);
+    // trigger split effect
+    setSplitLogo(true);
+    setTimeout(() => {
+      setIsOpening(true);
+    }, 2000);
     setTimeout(() => {
       onEnter();
-    }, 2000);
+    }, 3000);
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden">
+    <div className="fixed inset-0 z-50 overflow-hidden bg-black">
       {/* Left Curtain */}
       <div
         className={`absolute inset-y-0 left-0 w-1/2 curtain-gradient ${
           isOpening ? "animate-curtain-left" : ""
         }`}
         style={{
+          background: "#60081b",
           boxShadow: "inset -40px 0 60px -20px rgba(0, 0, 0, 0.5)",
         }}
       />
@@ -34,6 +40,7 @@ const CurtainReveal = ({ onEnter }: CurtainRevealProps) => {
           isOpening ? "animate-curtain-right" : ""
         }`}
         style={{
+          background: "#60081b",
           boxShadow: "inset 40px 0 60px -20px rgba(0, 0, 0, 0.5)",
         }}
       />
@@ -45,18 +52,43 @@ const CurtainReveal = ({ onEnter }: CurtainRevealProps) => {
             isOpening ? "animate-fade-out" : "animate-fade-in"
           }`}
         >
-          {/* Logo */}
-          <div className="relative">
-            <img
-              src={jalsaLogo}
-              alt="JALSA"
-              className="w-64 h-64 md:w-80 md:h-80 object-contain animate-float"
-            />
-            <div className="absolute inset-0 animate-glow rounded-full" />
-          </div>
+          {/* Logo or Split Logo */}
+          {!splitLogo ? (
+            <div className="relative">
+              <img
+                src={jalsaLogo}
+                alt="JALSA"
+                className="w-64 h-64 md:w-80 md:h-80 object-contain rounded-full animate-float-rotate"
+              />
+              <div className="absolute inset-0 animate-glow rounded-full" />
+            </div>
+          ) : (
+            <div className="relative w-64 h-64 md:w-80 md:h-80">
+              <img
+                src={jalsaLogo}
+                alt="JALSA top-left"
+                className="absolute top-0 left-0 w-1/2 h-1/2 object-cover animate-split-top-left"
+              />
+              <img
+                src={jalsaLogo}
+                alt="JALSA top-right"
+                className="absolute top-0 right-0 w-1/2 h-1/2 object-cover animate-split-top-right"
+              />
+              <img
+                src={jalsaLogo}
+                alt="JALSA bottom-left"
+                className="absolute bottom-0 left-0 w-1/2 h-1/2 object-cover animate-split-bottom-left"
+              />
+              <img
+                src={jalsaLogo}
+                alt="JALSA bottom-right"
+                className="absolute bottom-0 right-0 w-1/2 h-1/2 object-cover animate-split-bottom-right"
+              />
+            </div>
+          )}
 
           {/* Enter Button */}
-          {!isOpening && (
+          {!isOpening && !splitLogo && (
             <Button
               variant="hero"
               size="xl"

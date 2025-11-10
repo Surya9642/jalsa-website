@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 shadow-md transition-all duration-300"
-      style={{ backgroundColor: "#fee49d", color: "#61041a" }}
+      style={{ backgroundColor: "#cc932a ", color: "#60081b" }}
     >
       <div className="container mx-auto px-4 py-3 sm:py-4 flex items-center justify-between">
         {/* ✅ Logo */}
@@ -34,7 +34,7 @@ const Header = () => {
           <img
             src={logo}
             alt="JALSA Logo"
-            className="h-10 sm:h-12 md:h-14 w-auto object-contain hover:scale-105 transition-transform duration-300"
+            className="h-10 sm:h-12 md:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
             style={{ maxWidth: "200px" }}
           />
         </Link>
