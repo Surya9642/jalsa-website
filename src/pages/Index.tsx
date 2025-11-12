@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import CurtainReveal from "@/components/CurtainReveal";
 import Header from "@/components/Header";
@@ -20,11 +20,27 @@ const fadeUp = {
 };
 
 const Index = () => {
-  const [showCurtain, setShowCurtain] = useState(true);
+  const [showCurtain, setShowCurtain] = useState(false);
+
+  useEffect(() => {
+    // Check sessionStorage to see if curtain was already shown
+    const hasSeenCurtain = sessionStorage.getItem("jalsaIntroSeen");
+
+    if (!hasSeenCurtain) {
+      // Show the curtain only once per session
+      setShowCurtain(true);
+    }
+  }, []);
+
+  const handleEnter = () => {
+    // Mark curtain as seen so it won’t replay this session
+    sessionStorage.setItem("jalsaIntroSeen", "true");
+    setShowCurtain(false);
+  };
 
   return (
     <>
-      {showCurtain && <CurtainReveal onEnter={() => setShowCurtain(false)} />}
+      {showCurtain && <CurtainReveal onEnter={handleEnter} />}
 
       {!showCurtain && (
         <motion.div
@@ -75,7 +91,8 @@ const Index = () => {
           >
             <Gallery />
           </motion.section>
-            <br />
+
+          <br />
           <Footer />
           <WhatsAppButton />
         </motion.div>

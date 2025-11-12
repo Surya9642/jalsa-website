@@ -48,7 +48,7 @@ const MenuPage = () => {
     description:
       "Crispy fries tossed with creamy butter masala sauce and Indian spices.",
     image:
-      "https://images.unsplash.com/photo-1606756790138-19509e26c5d0?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: "$9.99",
     category: "Small Plates",
     badges: ["GF", "NF"],
@@ -58,7 +58,7 @@ const MenuPage = () => {
     description:
       "Mini burgers with flavorful chicken tikka filling and fresh salad.",
     image:
-      "https://images.unsplash.com/photo-1605478371698-2e1bcbfb4a9a?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=1250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: "$10.99",
     category: "Small Plates",
     badges: ["NF"],
@@ -68,7 +68,7 @@ const MenuPage = () => {
     description:
       "Juicy wings marinated in yogurt and spices, roasted in a clay oven.",
     image:
-      "https://images.unsplash.com/photo-1605478031299-421a8b0d52a5?w=600&h=600&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1669742927923-32d9ee86887c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: "$11.99",
     category: "Small Plates",
     badges: ["GF", "NF"],
@@ -78,7 +78,7 @@ const MenuPage = () => {
     description:
       "Crispy nachos smothered with tikka sauce, cheese, jalapeños and raita.",
     image:
-      "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=600&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1572680443530-225d4e0d9894?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: "$10.99",
     category: "Small Plates",
     badges: ["GF", "NF"],
@@ -108,7 +108,7 @@ const MenuPage = () => {
     description:
       "Crispy pastry stuffed with spiced potatoes and peas.",
     image:
-      "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=600&fit=crop",
+      "https://plus.unsplash.com/premium_photo-1695297516676-04a259917c03?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     price: "$6.99",
     category: "Appetizers",
     badges: ["NF", "V"],
