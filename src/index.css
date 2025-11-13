@@ -170,3 +170,67 @@ All colors MUST be HSL.
     background: var(--gradient-gold);
   }
 }
+/* --- Pieces Fly In from Outside --- */
+@keyframes from-top-left {
+  0% { transform: translate(-250%, -250%) scale(1.1); opacity: 0; }
+  100% { transform: translate(0, 0) scale(1); opacity: 1; }
+}
+@keyframes from-top-right {
+  0% { transform: translate(250%, -250%) scale(1.1); opacity: 0; }
+  100% { transform: translate(0, 0) scale(1); opacity: 1; }
+}
+@keyframes from-bottom-left {
+  0% { transform: translate(-250%, 250%) scale(1.1); opacity: 0; }
+  100% { transform: translate(0, 0) scale(1); opacity: 1; }
+}
+@keyframes from-bottom-right {
+  0% { transform: translate(250%, 250%) scale(1.1); opacity: 0; }
+  100% { transform: translate(0, 0) scale(1); opacity: 1; }
+}
+
+.animate-from-top-left { animation: from-top-left 1.5s ease-out forwards; }
+.animate-from-top-right { animation: from-top-right 1.5s ease-out forwards; }
+.animate-from-bottom-left { animation: from-bottom-left 1.5s ease-out forwards; }
+.animate-from-bottom-right { animation: from-bottom-right 1.5s ease-out forwards; }
+
+/* --- Merge to Perfect Center --- */
+@keyframes merge-top-left {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(3%, 3%); }
+}
+@keyframes merge-top-right {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-3%, 3%); }
+}
+@keyframes merge-bottom-left {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(3%, -3%); }
+}
+@keyframes merge-bottom-right {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-3%, -3%); }
+}
+
+.animate-merge-top-left { animation: merge-top-left 1s ease-in-out forwards; }
+.animate-merge-top-right { animation: merge-top-right 1s ease-in-out forwards; }
+.animate-merge-bottom-left { animation: merge-bottom-left 1s ease-in-out forwards; }
+.animate-merge-bottom-right { animation: merge-bottom-right 1s ease-in-out forwards; }
+
+/* --- Fade-in for Full Logo --- */
+@keyframes fade-in {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-fade-in { animation: fade-in 0.8s ease-in-out forwards; }
+
+/* --- Curtain Opening --- */
+@keyframes curtain-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+@keyframes curtain-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
+}
+.animate-curtain-left { animation: curtain-left 1.5s ease-in-out forwards; }
+.animate-curtain-right { animation: curtain-right 1.5s ease-in-out forwards; }
