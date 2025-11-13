@@ -48,7 +48,7 @@ const MenuPage = () => {
     description:
       "Crispy fries tossed with creamy butter masala sauce and Indian spices.",
     image:
-      "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/menu/item1.jpg",
     price: "$9.99",
     category: "Small Plates",
     badges: ["GF", "NF"],
@@ -58,7 +58,7 @@ const MenuPage = () => {
     description:
       "Mini burgers with flavorful chicken tikka filling and fresh salad.",
     image:
-      "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=1250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/menu/item5.jpg",
     price: "$10.99",
     category: "Small Plates",
     badges: ["NF"],
@@ -68,7 +68,7 @@ const MenuPage = () => {
     description:
       "Juicy wings marinated in yogurt and spices, roasted in a clay oven.",
     image:
-      "https://plus.unsplash.com/premium_photo-1669742927923-32d9ee86887c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/menu/item2.jpg",
     price: "$11.99",
     category: "Small Plates",
     badges: ["GF", "NF"],
@@ -78,7 +78,7 @@ const MenuPage = () => {
     description:
       "Crispy nachos smothered with tikka sauce, cheese, jalapeños and raita.",
     image:
-      "https://images.unsplash.com/photo-1572680443530-225d4e0d9894?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/menu/item3.jpg",
     price: "$10.99",
     category: "Small Plates",
     badges: ["GF", "NF"],
@@ -88,7 +88,7 @@ const MenuPage = () => {
     description:
       "Creamy mac and cheese fused with rich tikka masala sauce.",
     image:
-      "https://images.unsplash.com/photo-1606851092707-7f1f3e0e7b4f?w=600&h=600&fit=crop",
+      "/menu/item4.jpg",
     price: "$10.99",
     category: "Small Plates",
     badges: ["GF", "NF"],
@@ -108,7 +108,7 @@ const MenuPage = () => {
     description:
       "Crispy pastry stuffed with spiced potatoes and peas.",
     image:
-      "https://plus.unsplash.com/premium_photo-1695297516676-04a259917c03?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "/menu/item6.jpg",
     price: "$6.99",
     category: "Appetizers",
     badges: ["NF", "V"],
@@ -118,7 +118,7 @@ const MenuPage = () => {
     description:
       "Fried green chili fritters topped with onions, peanuts, mint and tamarind chutneys.",
     image:
-      "https://images.unsplash.com/photo-1620137973907-9e7403817f24?w=600&h=600&fit=crop",
+      "/menu/item7.jpg",
     price: "$9.99",
     category: "Appetizers",
     badges: ["GF", "Spicy"],
@@ -128,7 +128,7 @@ const MenuPage = () => {
     description:
       "Crispy roasted lentil wafers served with house chutneys.",
     image:
-      "https://images.unsplash.com/photo-1632059404780-d62abf2e5f03?w=600&h=600&fit=crop",
+      "/menu/item8.jpg",
     price: "$4.99",
     category: "Appetizers",
     badges: ["GF", "NF"],
@@ -138,7 +138,7 @@ const MenuPage = () => {
     description:
       "Fried corn tossed with spices, herbs, onions, and lime.",
     image:
-      "https://images.unsplash.com/photo-1621593888988-0e014192a5b7?w=600&h=600&fit=crop",
+      "/menu/item9.jpg",
     price: "$9.99",
     category: "Appetizers",
     badges: ["GF", "V"],
@@ -148,7 +148,7 @@ const MenuPage = () => {
     description:
       "Savory fritters made with onion, spinach, and chickpea flour.",
     image:
-      "https://images.unsplash.com/photo-1631823150509-e4ac7dbbccb3?w=600&h=600&fit=crop",
+      "/menu/item10.jpg",
     price: "$8.99",
     category: "Appetizers",
     badges: ["GF", "NF", "V"],
@@ -158,7 +158,7 @@ const MenuPage = () => {
     description:
       "Paneer dipped in chickpea batter and fried, served with chutneys.",
     image:
-      "https://images.unsplash.com/photo-1642272943722-4a8d59d5a1d4?w=600&h=600&fit=crop",
+      "/menu/item11.jpg",
     price: "$9.99",
     category: "Appetizers",
     badges: ["GF", "NF"],
@@ -168,7 +168,7 @@ const MenuPage = () => {
     description:
       "Fried cauliflower tossed in Indo-Chinese manchurian sauce.",
     image:
-      "https://images.unsplash.com/photo-1628595351029-c2c20c9b0e7d?w=600&h=600&fit=crop",
+      "/menu/item12.jpg",
     price: "$9.99",
     category: "Appetizers",
     badges: ["NF", "V"],
@@ -188,7 +188,7 @@ const MenuPage = () => {
     description:
       "Paneer stir-fried with onions, bell peppers, and spicy chili sauce.",
     image:
-      "https://images.unsplash.com/photo-1600628422019-3e74a8d4349b?w=600&h=600&fit=crop",
+      "/menu/item14.jpg",
     price: "$11.99",
     category: "Appetizers",
     badges: ["NF", "Spicy"],
@@ -198,7 +198,7 @@ const MenuPage = () => {
     description:
       "Fried chicken tossed with spicy Indo-Chinese chili sauce.",
     image:
-      "https://images.unsplash.com/photo-1605478031299-421a8b0d52a5?w=600&h=600&fit=crop",
+     "/menu/item15.jpg",
     price: "$11.99",
     category: "Appetizers",
     badges: ["DF", "NF", "Spicy"],
@@ -208,7 +208,7 @@ const MenuPage = () => {
     description:
       "Crispy samosas crushed and topped with masala chickpeas, yogurt and chutneys.",
     image:
-      "https://images.unsplash.com/photo-1605628298170-55c2c1e8a770?w=600&h=600&fit=crop",
+      "/menu/item16.jpg",
     price: "$11.99",
     category: "Appetizers",
     badges: ["NF", "V"],
@@ -218,7 +218,7 @@ const MenuPage = () => {
     description:
       "Chickpea curry served with fluffy fried bhatura bread.",
     image:
-      "https://images.unsplash.com/photo-1626080143430-7c4cf08e4a7a?w=600&h=600&fit=crop",
+     "/menu/item17.jpg",
     price: "$14.99",
     category: "Appetizers",
     badges: ["NF"],
@@ -228,7 +228,7 @@ const MenuPage = () => {
     description:
       "Deep-fried spicy chicken bites with curry leaves and chili.",
     image:
-      "https://images.unsplash.com/photo-1621939093638-6d96ad933f8c?w=600&h=600&fit=crop",
+      "/menu/item18.jpg",
     price: "$10.99",
     category: "Appetizers",
     badges: ["DF", "NF", "Spicy"],
@@ -238,7 +238,7 @@ const MenuPage = () => {
     description:
       "Boneless chicken marinated in yogurt and spices, skewered and roasted in the tandoor. Served with salad and mint chutney.",
     image:
-      "https://images.unsplash.com/photo-1627328715728-7bcc1b5db87d?w=600&h=600&fit=crop",
+      "/menu/item19.jpg",
     price: "$14.99",
     category: "Tandoori",
     badges: ["GF", "NF"],
@@ -248,7 +248,7 @@ const MenuPage = () => {
     description:
       "Cottage cheese cubes marinated in spices and grilled in the tandoor, served with mint chutney.",
     image:
-      "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600&h=600&fit=crop",
+      "/menu/item20.jpg",
     price: "$14.99",
     category: "Tandoori",
     badges: ["GF", "NF", "V"],
@@ -258,7 +258,7 @@ const MenuPage = () => {
     description:
       "Fresh salmon fillet marinated in spiced yogurt and slow-roasted in a clay oven.",
     image:
-      "https://images.unsplash.com/photo-1606755962773-90e1e057b8b9?w=600&h=600&fit=crop",
+      "/menu/item21.jpg",
     price: "$17.99",
     category: "Tandoori",
     badges: ["GF", "NF"],
@@ -268,7 +268,7 @@ const MenuPage = () => {
     description:
       "Yellow lentils tempered with mustard seeds, cumin, garlic and herbs. Comforting and flavorful.",
     image:
-      "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=600&h=600&fit=crop",
+     "/menu/item22.jpg",
     price: "$12.99",
     category: "Curries",
     badges: ["GF", "V"],
@@ -278,7 +278,7 @@ const MenuPage = () => {
     description:
       "Cauliflower and potatoes simmered in a tomato-onion gravy with spices and herbs.",
     image:
-      "https://images.unsplash.com/photo-1631452180519-bcd746f53242?w=600&h=600&fit=crop",
+      "/menu/item23.jpg",
     price: "$13.99",
     category: "Curries",
     badges: ["GF", "NF", "V"],
@@ -288,7 +288,7 @@ const MenuPage = () => {
     description:
       "Chickpeas in rich tomato-onion gravy with ginger, garlic and garam masala.",
     image:
-      "https://images.unsplash.com/photo-1628764252233-94b6b2cb03a8?w=600&h=600&fit=crop",
+      "/menu/item24.jpg",
     price: "$13.99",
     category: "Curries",
     badges: ["GF", "NF", "V"],
@@ -298,7 +298,7 @@ const MenuPage = () => {
     description:
       "Paneer-potato dumplings in creamy cashew onion gravy with a hint of cardamom.",
     image:
-      "https://images.unsplash.com/photo-1621982852831-974fbfd05dc4?w=600&h=600&fit=crop",
+      "/menu/item25.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF"],
@@ -308,7 +308,7 @@ const MenuPage = () => {
     description:
       "Grilled paneer in a rich onion-tomato-fenugreek cream sauce.",
     image:
-      "https://images.unsplash.com/photo-1626074353765-527c46f00865?w=600&h=600&fit=crop",
+     "/menu/item26.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF", "NF", "V"],
@@ -328,7 +328,7 @@ const MenuPage = () => {
     description:
       "Paneer cubes simmered in a buttery tomato-based sauce.",
     image:
-      "https://images.unsplash.com/photo-1631515243349-d1b1e4c09c82?w=600&h=600&fit=crop",
+     "/menu/item28.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF", "NF"],
@@ -348,7 +348,7 @@ const MenuPage = () => {
     description:
       "Fried okra tossed in a tomato-onion masala with roasted cumin.",
     image:
-      "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=600&h=600&fit=crop",
+      "/menu/item30.jpg",
     price: "$13.99",
     category: "Curries",
     badges: ["GF", "NF", "V"],
@@ -358,7 +358,7 @@ const MenuPage = () => {
     description:
       "Baby eggplants stuffed with spiced coconut-peanut masala and braised in tamarind-sesame gravy.",
     image:
-      "https://images.unsplash.com/photo-1601050690597-733c0b8e8c3d?w=600&h=600&fit=crop",
+     "/menu/item31.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF", "V"],
@@ -368,7 +368,7 @@ const MenuPage = () => {
     description:
       "Tandoori chicken cooked in a rich buttery tomato sauce with aromatic spices.",
     image:
-      "https://images.unsplash.com/photo-1631515243349-d1b1e4c09c82?w=600&h=600&fit=crop",
+      "/menu/item32.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF", "NF"],
@@ -378,7 +378,7 @@ const MenuPage = () => {
     description:
       "Slow-cooked lamb simmered in a buttery tomato cream gravy with Indian spices.",
     image:
-      "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&h=600&fit=crop",
+     "/menu/item33.jpg",
     price: "$18.99",
     category: "Curries",
     badges: ["GF", "NF"],
@@ -388,7 +388,7 @@ const MenuPage = () => {
     description:
       "Bone-in goat cooked in a tomato-onion tamarind gravy with spices.",
     image:
-      "https://images.unsplash.com/photo-1645117480817-7cf45190d958?w=600&h=600&fit=crop",
+     "/menu/item34.jpg",
     price: "$19.99",
     category: "Curries",
     badges: ["GF", "NF"],
@@ -398,7 +398,7 @@ const MenuPage = () => {
     description:
       "Fish fillets cooked in tamarind-coconut gravy with curry leaves and spices.",
     image:
-      "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=600&h=600&fit=crop",
+      "/menu/item35.jpg",
     price: "$16.99",
     category: "Curries",
     badges: ["GF", "NF", "DF"],
@@ -408,7 +408,7 @@ const MenuPage = () => {
     description:
       "Shrimp simmered in onion-tomato sauce with spices and a touch of coconut.",
     image:
-      "https://images.unsplash.com/photo-1613145993481-0e0b2a9d8c5e?w=600&h=600&fit=crop",
+      "/menu/item36.jpg",
     price: "$16.99",
     category: "Curries",
     badges: ["GF", "NF", "DF"],
@@ -418,7 +418,7 @@ const MenuPage = () => {
     description:
       "Tangy spicy curry with potatoes, chilies and vinegar. Fiery and flavorful.",
     image:
-      "https://images.unsplash.com/photo-1617196034644-9c20b0c7c9ab?w=600&h=600&fit=crop",
+      "/menu/item37.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF", "DF", "NF", "Spicy"],
@@ -428,7 +428,7 @@ const MenuPage = () => {
     description:
       "Creamed spinach cooked with paneer and mild spices in a classic North Indian style.",
     image:
-      "https://images.unsplash.com/photo-1621982852831-974fbfd05dc4?w=600&h=600&fit=crop",
+      "/menu/item38.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF", "NF"],
@@ -438,7 +438,7 @@ const MenuPage = () => {
     description:
       "Creamy nut-free curry with coconut and mild aromatic spices.",
     image:
-      "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=600&h=600&fit=crop",
+      "/menu/item39.jpg",
     price: "$15.99",
     category: "Curries",
     badges: ["GF", "NF", "DF"],
@@ -458,7 +458,7 @@ const MenuPage = () => {
     description:
       "Crispy dosa filled with melted cheese and served with chutneys.",
     image:
-      "https://images.unsplash.com/photo-1660024336863-17ed8c0b4b40?w=600&h=600&fit=crop",
+      "/menu/item44.jpg",
     price: "$12.99",
     category: "Dosa",
     badges: ["GF", "NF"],
@@ -468,7 +468,7 @@ const MenuPage = () => {
     description:
       "Cheesy dosa infused with green chilies and spices for an extra kick.",
     image:
-      "https://images.unsplash.com/photo-1614799211198-11f5efb8b57d?w=600&h=600&fit=crop",
+      "/menu/item42.jpg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "Spicy"],
@@ -478,7 +478,7 @@ const MenuPage = () => {
     description:
       "Classic dosa filled with spiced potato masala, served with sambar and chutneys.",
     image:
-      "https://images.unsplash.com/photo-1617196034796-73c2c1a6c58f?w=600&h=600&fit=crop",
+      "/menu/item43.jpg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "V"],
@@ -488,7 +488,7 @@ const MenuPage = () => {
     description:
       "Crisp dosa coated with spicy red chutney and filled with potato masala.",
     image:
-      "https://images.unsplash.com/photo-1622550853856-7fda7c73db3b?w=600&h=600&fit=crop",
+      "/menu/item41.jpg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "Spicy"],
@@ -498,7 +498,7 @@ const MenuPage = () => {
     description:
       "Stuffed with spiced paneer filling and served with chutneys and sambar.",
     image:
-      "https://images.unsplash.com/photo-1651084063691-9f44d6fefb7f?w=600&h=600&fit=crop",
+      "/menu/item45.jpeg",
     price: "$15.99",
     category: "Dosa",
     badges: ["GF", "NF"],
@@ -508,7 +508,7 @@ const MenuPage = () => {
     description:
       "Crispy dosa layered with beaten egg and a touch of spice.",
     image:
-      "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&h=600&fit=crop",
+      "/menu/item46.jpeg",
     price: "$15.99",
     category: "Dosa",
     badges: ["GF", "NF"],
@@ -518,7 +518,7 @@ const MenuPage = () => {
     description:
       "Unique fusion dosa filled with spiced chicken tikka.",
     image:
-      "https://images.unsplash.com/photo-1605478031299-421a8b0d52a5?w=600&h=600&fit=crop",
+      "/menu/item47.jpeg",
     price: "$16.99",
     category: "Dosa",
     badges: ["GF", "NF"],
@@ -528,7 +528,7 @@ const MenuPage = () => {
     description:
       "Soft, thick rice and lentil pancake served with chutneys and sambar.",
     image:
-      "https://images.unsplash.com/photo-1642902676482-d9a2a28c7b8c?w=600&h=600&fit=crop",
+     "/menu/item48.jpeg",
     price: "$11.99",
     category: "Uttapam",
     badges: ["GF", "NF", "V"],
@@ -538,7 +538,7 @@ const MenuPage = () => {
     description:
       "Uttapam topped with onions and herbs, served with chutneys.",
     image:
-      "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=600&h=600&fit=crop",
+      "/menu/item49.jpg",
     price: "$12.99",
     category: "Uttapam",
     badges: ["GF", "NF", "V"],
@@ -548,7 +548,7 @@ const MenuPage = () => {
     description:
       "Loaded with assorted vegetables and fresh herbs.",
     image:
-      "https://images.unsplash.com/photo-1612392061796-ff19f279bcf4?w=600&h=600&fit=crop",
+     "/menu/item50.jpg",
     price: "$12.99",
     category: "Uttapam",
     badges: ["GF", "NF", "V"],
@@ -558,7 +558,7 @@ const MenuPage = () => {
     description:
       "Topped with spiced onion mixture for bold flavor.",
     image:
-      "https://images.unsplash.com/photo-1642902676482-d9a2a28c7b8c?w=600&h=600&fit=crop",
+      "/menu/item51.jpg",
     price: "$14.99",
     category: "Uttapam",
     badges: ["GF", "NF", "V"],
@@ -568,7 +568,7 @@ const MenuPage = () => {
     description:
       "Indo-Chinese stir-fry of rice with vegetables, soy sauce, and garlic.",
     image:
-      "https://images.unsplash.com/photo-1625943553857-04c703d2a5b3?w=600&h=600&fit=crop",
+      "/menu/item52.jpg",
     price: "$13.99",
     category: "Fried Rice",
     badges: ["DF", "NF", "V"],
@@ -578,7 +578,7 @@ const MenuPage = () => {
     description:
       "Classic Indo-Chinese fried rice tossed with egg, soy sauce and veggies.",
     image:
-      "https://images.unsplash.com/photo-1628595351029-c2c20c9b0e7d?w=600&h=600&fit=crop",
+      "/menu/item53.jpg",
     price: "$14.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -588,7 +588,7 @@ const MenuPage = () => {
     description:
       "Fried rice with paneer, soy sauce, garlic, and Indo-Chinese spices.",
     image:
-      "https://images.unsplash.com/photo-1628795731402-104e274c09f2?w=600&h=600&fit=crop",
+      "/menu/item54.jpg",
     price: "$15.99",
     category: "Fried Rice",
     badges: ["NF"],
@@ -608,7 +608,7 @@ const MenuPage = () => {
     description:
       "Chicken and eggs tossed with rice, soy, and garlic for hearty Indo-Chinese flavor.",
     image:
-      "https://images.unsplash.com/photo-1617196034644-9c20b0c7c9ab?w=600&h=600&fit=crop",
+      "/menu/item56.jpg",
     price: "$16.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -618,7 +618,7 @@ const MenuPage = () => {
     description:
       "Spicy chili-garlic rice with Indo-Chinese Schezwan sauce.",
     image:
-      "https://images.unsplash.com/photo-1621593888988-0e014192a5b7?w=600&h=600&fit=crop",
+      "/menu/item57.jpg",
     price: "$13.99",
     category: "Fried Rice",
     badges: ["DF", "NF", "Spicy"],
@@ -628,7 +628,7 @@ const MenuPage = () => {
     description:
       "Basmati rice cooked with tikka masala sauce for extra flavor.",
     image:
-      "https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=600&h=600&fit=crop",
+      "/menu/item58.jpeg",
     price: "$13.99",
     category: "Fried Rice",
     badges: ["GF", "NF"],
@@ -638,7 +638,7 @@ const MenuPage = () => {
     description:
       "Wok-tossed noodles with vegetables, soy, and garlic in Indo-Chinese style.",
     image:
-      "https://images.unsplash.com/photo-1599974579688-8dbdd91d3b0f?w=600&h=600&fit=crop",
+      "/menu/item59.jpg",
     price: "$14.99",
     category: "Noodles",
     badges: ["DF", "NF", "V"],
@@ -648,7 +648,7 @@ const MenuPage = () => {
     description:
       "Stir-fried noodles tossed with egg, vegetables and sauces.",
     image:
-      "https://images.unsplash.com/photo-1620321814804-4b0eece1d9aa?w=600&h=600&fit=crop",
+      "/menu/item60.jpg",
     price: "$15.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -658,7 +658,7 @@ const MenuPage = () => {
     description:
       "Noodles tossed with chicken, egg and veggies in Indo-Chinese sauce.",
     image:
-      "https://images.unsplash.com/photo-1605478031299-421a8b0d52a5?w=600&h=600&fit=crop",
+      "/menu/item61.jpg",
     price: "$17.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -668,7 +668,7 @@ const MenuPage = () => {
     description:
       "Spicy noodles with chili-garlic Schezwan sauce, vegetables, and soy.",
     image:
-      "https://images.unsplash.com/photo-1621791886542-bf3aeb3d00f8?w=600&h=600&fit=crop",
+      "/menu/item62.jpg",
     price: "$14.99",
     category: "Noodles",
     badges: ["DF", "NF", "Spicy"],
@@ -678,7 +678,7 @@ const MenuPage = () => {
     description:
       "Coconut curry noodle soup topped with vegetables, onions, and lime.",
     image:
-      "https://images.unsplash.com/photo-1621791886542-bf3aeb3d00f8?w=600&h=600&fit=crop",
+      "/menu/item63.jpeg",
     price: "$16.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -688,7 +688,7 @@ const MenuPage = () => {
     description:
       "Basmati rice slow-cooked with vegetables, saffron, and aromatic spices.",
     image:
-      "https://images.unsplash.com/photo-1612392061796-ff19f279bcf4?w=600&h=600&fit=crop",
+      "/menu/item64.jpg",
     price: "$13.99",
     category: "Biryani",
     badges: ["GF", "V"],
@@ -698,7 +698,7 @@ const MenuPage = () => {
     description:
       "Fragrant basmati rice layered with spiced marinated chicken and herbs.",
     image:
-      "https://images.unsplash.com/photo-1617196034644-9c20b0c7c9ab?w=600&h=600&fit=crop",
+      "/menu/item65.jpg",
     price: "$15.99",
     category: "Biryani",
     badges: ["GF"],
@@ -708,7 +708,7 @@ const MenuPage = () => {
     description:
       "Traditional goat biryani served on weekends, cooked with aromatic rice and spices.",
     image:
-      "https://images.unsplash.com/photo-1620137973907-9e7403817f24?w=600&h=600&fit=crop",
+      "/menu/item66.jpg",
     price: "$19.99",
     category: "Biryani",
     badges: ["GF"],
@@ -718,7 +718,7 @@ const MenuPage = () => {
     description:
       "Traditional soft Indian flatbread baked in a clay tandoor oven.",
     image:
-      "https://images.unsplash.com/photo-1624000630028-6b1d72e8a1a9?w=600&h=600&fit=crop",
+      "/menu/item67.jpg",
     price: "$3.49",
     category: "Breads",
     badges: [],
@@ -728,7 +728,7 @@ const MenuPage = () => {
     description:
       "Soft tandoori-baked naan brushed with melted butter.",
     image:
-      "https://images.unsplash.com/photo-1590080875832-7b1e1aef41a8?w=600&h=600&fit=crop",
+      "/menu/item68.jpg",
     price: "$3.99",
     category: "Breads",
     badges: [],
@@ -738,7 +738,7 @@ const MenuPage = () => {
     description:
       "Naan topped with garlic and coriander, baked in the tandoor.",
     image:
-      "https://images.unsplash.com/photo-1615485737457-6d15e358f3b3?w=600&h=600&fit=crop",
+      "/menu/item69.jpg",
     price: "$4.49",
     category: "Breads",
     badges: [],
@@ -748,7 +748,7 @@ const MenuPage = () => {
     description:
       "Naan stuffed with cheese and cooked until golden brown.",
     image:
-      "https://images.unsplash.com/photo-1624000630028-6b1d72e8a1a9?w=600&h=600&fit=crop",
+      "/menu/item70.jpg",
     price: "$5.99",
     category: "Breads",
     badges: [],
@@ -758,7 +758,7 @@ const MenuPage = () => {
     description:
       "Whole-wheat flatbread cooked on a griddle.",
     image:
-      "https://images.unsplash.com/photo-1615485737457-6d15e358f3b3?w=600&h=600&fit=crop",
+      "/menu/item71.jpg",
     price: "$3.49",
     category: "Breads",
     badges: ["V"],
@@ -768,7 +768,7 @@ const MenuPage = () => {
     description:
       "Soft whole-wheat roti brushed with butter.",
     image:
-      "https://images.unsplash.com/photo-1615485737457-6d15e358f3b3?w=600&h=600&fit=crop",
+      "/menu/item72.jpg",
     price: "$3.99",
     category: "Breads",
     badges: [],
@@ -778,7 +778,7 @@ const MenuPage = () => {
     description:
       "Fluffy deep-fried bread served hot and puffed.",
     image:
-      "https://images.unsplash.com/photo-1626080143430-7c4cf08e4a7a?w=600&h=600&fit=crop",
+      "/menu/item73.jpg",
     price: "$4.99",
     category: "Breads",
     badges: [],
@@ -788,7 +788,7 @@ const MenuPage = () => {
     description:
       "Soft paneer patties soaked in sweet, aromatic milk with pistachios.",
     image:
-      "https://images.unsplash.com/photo-1661414428030-75b3c0e6252f?w=600&h=600&fit=crop",
+      "/menu/item74.jpg",
     price: "$4.99",
     category: "Desserts",
     badges: ["GF"],
@@ -798,7 +798,7 @@ const MenuPage = () => {
     description:
       "Fried milk dumplings soaked in rose-scented syrup.",
     image:
-      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&h=600&fit=crop",
+      "/menu/item75.jpg",
     price: "$4.99",
     category: "Desserts",
     badges: ["V"],
@@ -808,7 +808,7 @@ const MenuPage = () => {
     description:
       "Rice pudding finished with a caramelized brûlée crust and a scoop of vanilla ice cream.",
     image:
-      "https://images.unsplash.com/photo-1613145993481-0e0b2a9d8c5e?w=600&h=600&fit=crop",
+      "/menu/item76.jpg",
     price: "$9.99",
     category: "Desserts",
     badges: [],
@@ -818,7 +818,7 @@ const MenuPage = () => {
     description:
       "Eggless cake soaked in chai and layered with rich cream.",
     image:
-      "https://images.unsplash.com/photo-1622771939973-ec8efb8b88dc?w=600&h=600&fit=crop",
+      "/menu/item77.jpg",
     price: "$9.99",
     category: "Desserts",
     badges: [],
@@ -828,7 +828,7 @@ const MenuPage = () => {
     description:
       "Eggless sponge cake soaked in rasmalai milk, topped with rasmalai-flavored whipped cream.",
     image:
-      "https://images.unsplash.com/photo-1657069234959-1c3cbfa9f764?w=600&h=600&fit=crop",
+      "/menu/item78.jpg",
     price: "$9.99",
     category: "Desserts",
     badges: [],
@@ -838,7 +838,7 @@ const MenuPage = () => {
     description:
       "Refreshing yogurt-based mango drink.",
     image:
-      "https://images.unsplash.com/photo-1626178808461-5bcb8d1aee32?w=600&h=600&fit=crop",
+      "/menu/item79.jpg",
     price: "$5.49",
     category: "Drinks",
     badges: [],
@@ -848,7 +848,7 @@ const MenuPage = () => {
     description:
       "Smooth blend of mango, coconut, and yogurt.",
     image:
-      "https://images.unsplash.com/photo-1626178808461-5bcb8d1aee32?w=600&h=600&fit=crop",
+      "/menu/item80.jpg",
     price: "$5.49",
     category: "Drinks",
     badges: ["V"],
@@ -858,7 +858,7 @@ const MenuPage = () => {
     description:
       "Fresh lemonade infused with mint leaves.",
     image:
-      "https://images.unsplash.com/photo-1629401587984-6b6b6b7a37a5?w=600&h=600&fit=crop",
+       "/menu/item81.jpg",
     price: "$5.49",
     category: "Drinks",
     badges: ["V"],
@@ -868,7 +868,7 @@ const MenuPage = () => {
     description:
       "Traditional Indian tea brewed with milk and aromatic spices.",
     image:
-      "https://images.unsplash.com/photo-1615485737457-6d15e358f3b3?w=600&h=600&fit=crop",
+       "/menu/item82.jpg",
     price: "$4.49",
     category: "Drinks",
     badges: [],
@@ -878,7 +878,7 @@ const MenuPage = () => {
     description:
       "Strong, frothy South-Indian filter coffee served hot.",
     image:
-      "https://images.unsplash.com/photo-1613145993481-0e0b2a9d8c5e?w=600&h=600&fit=crop",
+       "/menu/item83.jpeg",
     price: "$4.49",
     category: "Drinks",
     badges: [],
@@ -888,7 +888,7 @@ const MenuPage = () => {
     description:
       "Assorted carbonated beverages.",
     image:
-      "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&h=600&fit=crop",
+      "/menu/item84.jpg",
     price: "$2.99",
     category: "Drinks",
     badges: [],
@@ -908,7 +908,7 @@ const MenuPage = () => {
     description:
       "Cucumber-yogurt dip with mild spices.",
     image:
-      "https://images.unsplash.com/photo-1595273673362-84f5d6f4b035?w=600&h=600&fit=crop",
+       "/menu/item86.jpg",
     price: "$3.99",
     category: "Sides",
     badges: ["GF"],
@@ -918,7 +918,7 @@ const MenuPage = () => {
     description:
       "Fresh greens served with a light vinaigrette dressing.",
     image:
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&h=600&fit=crop",
+       "/menu/item87.jpg",
     price: "$3.99",
     category: "Sides",
     badges: ["V", "GF"],
@@ -928,7 +928,7 @@ const MenuPage = () => {
     description:
       "Trio of mint-cilantro, tamarind, and coconut chutneys.",
     image:
-      "https://images.unsplash.com/photo-1624267631805-ccda8db3b0e5?w=600&h=600&fit=crop",
+       "/menu/item88.jpg",
     price: "$3.99",
     category: "Sides",
     badges: ["V", "GF"],
@@ -938,7 +938,7 @@ const MenuPage = () => {
     description:
       "Steamed aromatic basmati rice.",
     image:
-      "https://images.unsplash.com/photo-1612392061796-ff19f279bcf4?w=600&h=600&fit=crop",
+      "/menu/item89.jpg",
     price: "$3.99",
     category: "Sides",
     badges: ["GF", "V"],
@@ -948,7 +948,7 @@ const MenuPage = () => {
     description:
       "Traditional South-Indian lentil soup with vegetables and spices.",
     image:
-      "https://images.unsplash.com/photo-1632059404780-d62abf2e5f03?w=600&h=600&fit=crop",
+      "/menu/item90.jpg",
     price: "$5.99",
     category: "Sides",
     badges: ["GF", "NF", "V"],

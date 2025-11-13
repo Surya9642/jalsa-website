@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
-                <span className="text-primary-foreground/80">123 Royal Street, Downtown</span>
+                <span className="text-primary-foreground/80">180 E Main St Ste 105, Hillsboro, OR 97123</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" />
@@ -39,13 +39,17 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-gold flex-shrink-0" />
                 <div>
-                  <p className="font-semibold">Mon - Fri</p>
-                  <p className="text-sm">11:00 AM - 10:00 PM</p>
+                  <p className="font-semibold">Monday - Thursday</p>
+                  <p className="text-sm">11.00 am to 11.00 pm</p>
                 </div>
               </div>
               <div className="ml-8">
-                <p className="font-semibold">Sat - Sun</p>
-                <p className="text-sm">12:00 PM - 11:00 PM</p>
+                <p className="font-semibold">Friday - Saturday</p>
+                <p className="text-sm">11.00 am to 12.00 am</p>
+              </div>
+              <div className="ml-8">
+                <p className="font-semibold">Sunday</p>
+                <p className="text-sm">11.00 am to 10.00 pm</p>
               </div>
             </div>
           </div>

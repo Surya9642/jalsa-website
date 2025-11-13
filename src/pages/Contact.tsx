@@ -91,9 +91,8 @@ const Contact = () => {
                         title: "Address",
                         content: (
                           <>
-                            123 Royal Street, Downtown
-                            <br />
-                            New York, NY 10001
+                            180 E Main St Ste 105, <br />
+                            Hillsboro, OR 97123
                           </>
                         ),
                       },
@@ -128,9 +127,9 @@ const Contact = () => {
                           <>
                             Mon-Thu: 11:00 AM - 10:00 PM
                             <br />
-                            Fri-Sat: 11:00 AM - 11:00 PM
+                            Fri-Sat: 11:00 AM - 12:00 AM
                             <br />
-                            Sunday: 12:00 PM - 9:00 PM
+                            Sunday: 11:00 PM - 10:00 PM
                           </>
                         ),
                       },

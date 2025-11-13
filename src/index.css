@@ -234,3 +234,187 @@ All colors MUST be HSL.
 }
 .animate-curtain-left { animation: curtain-left 1.5s ease-in-out forwards; }
 .animate-curtain-right { animation: curtain-right 1.5s ease-in-out forwards; }
+
+/* ⭐ Gold sparkle particles */
+.sparkle {
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #e7c875 0%, #60081b 90%);
+  border-radius: 50%;
+  opacity: 0;
+  animation-name: sparkle-float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sparkle-float {
+  0% { transform: scale(0.4); opacity: 0; }
+  40% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.4); opacity: 0; }
+}
+
+
+/* ============================================
+   GOLD CONFETTI FALL
+===============================================*/
+.confetti-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.confetti-layer::before,
+.confetti-layer::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background: #60081b;
+  animation: confetti-fall 1.8s linear infinite;
+  left: calc(10% + 80% * var(--x));
+  top: -10%;
+  opacity: 0.9;
+  transform: rotate(20deg);
+}
+
+/* gold + maroon mix */
+.confetti-layer::before {
+  --x: 0.1;
+  box-shadow:
+    20vw -10vh #60081b,
+    40vw -15vh #e7c875,
+    60vw -5vh #60081b,
+    80vw -20vh #e7c875,
+    10vw -12vh #60081b,
+    30vw -8vh #e7c875,
+    50vw -15vh #60081b,
+    70vw -18vh #e7c875,
+    90vw -6vh #60081b;
+}
+
+.confetti-layer::after {
+  --x: 0.2;
+  box-shadow:
+    25vw -12vh #60081b,
+    45vw -18vh #e7c875,
+    65vw -10vh #60081b,
+    85vw -25vh #e7c875,
+    15vw -14vh #60081b,
+    35vw -16vh #e7c875,
+    55vw -20vh #60081b,
+    75vw -22vh #e7c875,
+    95vw -8vh #60081b;
+}
+
+@keyframes confetti-fall {
+  to {
+    transform: translateY(120vh) rotate(360deg);
+  }
+}
+
+
+/* ============================================
+   GOLD MERGE BURST (Circle Flash)
+===============================================*/
+.merge-burst {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(96, 8, 27, 0.5) 0%, rgba(96, 8, 27, 0) 70%);
+  animation: burst-glow 0.5s ease-out forwards;
+  pointer-events: none;
+  z-index: 20;
+}
+
+@keyframes burst-glow {
+  0% {
+    transform: scale(0.2);
+    opacity: 1;
+    box-shadow: 0 0 40px 10px #60081b;
+  }
+  60% {
+    transform: scale(1.4);
+    opacity: 1;
+    box-shadow: 0 0 70px 25px #e7c875;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+.fireworks-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.firework {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background: #60081b;
+  border-radius: 50%;
+  animation: firework-launch 2s infinite ease-out;
+}
+
+.firework:nth-child(1) { left: 20%; animation-delay: 0.2s; }
+.firework:nth-child(2) { left: 50%; animation-delay: 0.6s; }
+.firework:nth-child(3) { left: 80%; animation-delay: 1s; }
+
+@keyframes firework-launch {
+  0% { transform: translateY(0); opacity: 0; }
+  20% { transform: translateY(-120px); opacity: 1; background: #60081b; }
+  40% { transform: translateY(-180px); opacity: 1; background: #b31634; }
+  60% { opacity: 1; }
+  100% {
+    opacity: 0;
+    box-shadow:
+      0 -10px 0 3px #e7c875,
+      10px -10px 0 3px #ffd98a,
+      -10px -10px 0 3px #e7c875,
+      15px 0 0 3px #ffd98a,
+      -15px 0 0 3px #e7c875,
+      10px 10px 0 3px #ffd98a,
+      -10px 10px 0 3px #ffd98a;
+  }
+}
+
+.glitter-trails {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.glitter {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #60081b;
+  border-radius: 50%;
+  opacity: 0;
+  animation: glitter-move 1.5s infinite ease-out;
+}
+
+@keyframes glitter-move {
+  0% {
+    opacity: 1;
+    transform: translate(calc(50vw - 20px), calc(50vh - 20px)) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(
+      calc(50vw - 20px + (Math.random() * 200 - 100)),
+      calc(50vh - 20px + (Math.random() * 200 - 100))
+    ) scale(0.3);
+  }
+}
+
+.glitter:nth-child(odd) { animation-delay: .25s; }
+.glitter:nth-child(even) { animation-delay: .4s; }

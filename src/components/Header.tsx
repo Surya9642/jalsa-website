@@ -20,72 +20,37 @@ const Header = () => {
   ];
 
   return (
-    <header
-      className="fixed top-0 left-0 right-0 z-50 shadow-md transition-all duration-300"
-      style={{ backgroundColor: "#cc932a ", color: "#60081b" }}
-    >
-      <div className="container mx-auto px-4 py-3 sm:py-4 flex items-center justify-between">
-        {/* ✅ Logo */}
-        <Link
-          to="/"
-          onClick={closeMobileMenu}
-          className="flex items-center gap-2 cursor-pointer"
-        >
-          <img
-    src={logo}
-    alt="JALSA Logo"
-    className="h-20 sm:h-24 md:h-28 w-auto object-contain hover:scale-105 transition-transform duration-300 -mt-4"
-    style={{ maxWidth: "420px" }}
-  />
-        </Link>
+    <>
+      {/* FIX 1 — STATIC HEADER HEIGHT FOR PERFECT RESPONSIVENESS */}
+      <header
+        className="fixed top-0 left-0 right-0 z-50 shadow-md"
+        style={{
+          backgroundColor: "#cc932a",
+          color: "#60081b",
+          height: "80px",                 // ← Locked height
+        }}
+      >
+        <div className="container mx-auto px-4 h-full flex items-center justify-between">
 
-        {/* 🖥️ Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-          {navLinks.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className="font-medium transition-colors duration-200"
+          {/* LOGO */}
+          <Link to="/" onClick={closeMobileMenu} className="flex items-center">
+            <img
+              src={logo}
+              alt="JALSA Logo"
+              className="h-14 sm:h-16 md:h-20 w-auto object-contain transition-all duration-300"
               style={{
-                color: "#61041a",
+                maxWidth: "260px",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#f8ba27")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#61041a")}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+            />
+          </Link>
 
-        {/* 📱 Mobile Menu Button */}
-        <button
-          className="md:hidden transition-colors"
-          style={{ color: "#61041a" }}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          onMouseEnter={(e) => (e.currentTarget.style.color = "#f8ba27")}
-          onMouseLeave={(e) => (e.currentTarget.style.color = "#61041a")}
-        >
-          {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
-        </button>
-      </div>
-
-      {/* 📱 Mobile Dropdown Menu */}
-      {isMobileMenuOpen && (
-        <div
-          className="md:hidden border-t shadow-inner"
-          style={{
-            backgroundColor: "#fee49d",
-            borderColor: "#f8ba27",
-            color: "#61041a",
-          }}
-        >
-          <nav className="container mx-auto px-4 py-6 flex flex-col gap-3">
+          {/* DESKTOP NAV */}
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
-                onClick={closeMobileMenu}
-                className="py-2 text-base font-medium rounded-lg px-3 transition-colors"
+                className="font-medium transition-colors"
                 style={{ color: "#61041a" }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#f8ba27")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#61041a")}
@@ -93,26 +58,57 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
-            <Button
-              size="default"
-              className="w-full mt-4 text-base font-semibold transition-all duration-200"
-              style={{
-                backgroundColor: "#f8ba27",
-                color: "#61041a",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#e4a516")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = "#f8ba27")
-              }
-            >
-              Reserve Table
-            </Button>
           </nav>
+
+          {/* MOBILE MENU ICON */}
+          <button
+            className="md:hidden transition-colors"
+            style={{ color: "#61041a" }}
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
-      )}
-    </header>
+
+        {/* MOBILE DROPDOWN */}
+        {isMobileMenuOpen && (
+          <div
+            className="md:hidden border-t shadow-inner"
+            style={{
+              backgroundColor: "#fee49d",
+              borderColor: "#f8ba27",
+            }}
+          >
+            <nav className="container mx-auto px-4 py-6 flex flex-col gap-3">
+              {navLinks.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  onClick={closeMobileMenu}
+                  className="py-2 text-base font-medium rounded-lg px-3 transition-colors"
+                  style={{ color: "#61041a" }}
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <Button
+                size="default"
+                className="w-full mt-4 text-base font-semibold transition-all duration-200"
+                style={{
+                  backgroundColor: "#f8ba27",
+                  color: "#61041a",
+                }}
+              >
+                Reserve Table
+              </Button>
+            </nav>
+          </div>
+        )}
+      </header>
+
+      {/* FIX 2 — PADDING BELOW HEADER SO CONTENT NEVER HIDES */}
+      <div style={{ paddingTop: "80px" }}></div>
+    </>
   );
 };
 
