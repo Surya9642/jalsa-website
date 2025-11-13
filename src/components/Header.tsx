@@ -32,11 +32,11 @@ const Header = () => {
           className="flex items-center gap-2 cursor-pointer"
         >
           <img
-            src={logo}
-            alt="JALSA Logo"
-            className="h-10 sm:h-12 md:h-20 w-auto object-contain hover:scale-105 transition-transform duration-300"
-            style={{ maxWidth: "200px" }}
-          />
+    src={logo}
+    alt="JALSA Logo"
+    className="h-20 sm:h-24 md:h-28 w-auto object-contain hover:scale-105 transition-transform duration-300 -mt-4"
+    style={{ maxWidth: "420px" }}
+  />
         </Link>
 
         {/* 🖥️ Desktop Navigation */}
