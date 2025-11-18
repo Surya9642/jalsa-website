@@ -116,7 +116,7 @@ const Contact = () => {
                             href="mailto:info@jalsa.com"
                             className="text-muted-foreground hover:text-gold transition-colors"
                           >
-                            info@jalsa.com
+                            Pradikshajalsa@gmail.com
                           </a>
                         ),
                       },
@@ -125,11 +125,13 @@ const Contact = () => {
                         title: "Hours",
                         content: (
                           <>
-                            Mon-Thu: 11:00 AM - 10:00 PM
-                            <br />
-                            Fri-Sat: 11:00 AM - 12:00 AM
-                            <br />
-                            Sunday: 11:00 PM - 10:00 PM
+                              Mon, Wed, Thu: 11:00 AM - 10:00 PM
+                              <br />
+                              Tuesday: Closed
+                              <br />
+                              Fri-Sat: 11:00 AM - 12:00 AM
+                              <br />
+                              Sunday: 11:00 AM - 9:00 PM
                           </>
                         ),
                       },

@@ -27,7 +27,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-primary-foreground/80">hello@jalsa.com</span>
+                <span className="text-primary-foreground/80">Pradikshajalsa@gmail.com</span>
               </div>
             </div>
           </div>
@@ -36,22 +36,26 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-heading font-semibold text-gold mb-4">Hours</h4>
             <div className="space-y-2 text-primary-foreground/80">
-              <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-gold flex-shrink-0" />
-                <div>
-                  <p className="font-semibold">Monday - Thursday</p>
-                  <p className="text-sm">11.00 am to 11.00 pm</p>
-                </div>
-              </div>
-              <div className="ml-8">
-                <p className="font-semibold">Friday - Saturday</p>
-                <p className="text-sm">11.00 am to 12.00 am</p>
-              </div>
-              <div className="ml-8">
-                <p className="font-semibold">Sunday</p>
-                <p className="text-sm">11.00 am to 10.00 pm</p>
-              </div>
-            </div>
+  <div className="flex items-center gap-3">
+    <Clock className="w-5 h-5 text-gold flex-shrink-0" />
+    <div>
+      <p className="font-semibold">Monday, Wednesday, Thursday</p>
+      <p className="text-sm">11.00 am to 10.00 pm</p>
+    </div>
+  </div>
+  <div className="ml-8">
+    <p className="font-semibold">Tuesday</p>
+    <p className="text-sm">Closed</p>
+  </div>
+  <div className="ml-8">
+    <p className="font-semibold">Friday - Saturday</p>
+    <p className="text-sm">11.00 am to 12.00 am</p>
+  </div>
+  <div className="ml-8">
+    <p className="font-semibold">Sunday</p>
+    <p className="text-sm">11.00 am to 9.00 pm</p>
+  </div>
+</div>
           </div>
 
           {/* Quick Links */}

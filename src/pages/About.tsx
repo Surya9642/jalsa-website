@@ -226,7 +226,7 @@ const AboutPage = () => {
           </Button>
         </motion.div>
       </section>
-
+            <br />
       <Footer />
       <WhatsAppButton />
     </div>

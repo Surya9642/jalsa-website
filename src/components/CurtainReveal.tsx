@@ -83,7 +83,7 @@ const CurtainReveal = ({ onEnter }: CurtainRevealProps) => {
         }`}
         style={{
           background: "#cc932a",
-          boxShadow: "inset -40px 0 60px -20px rgba(0,0,0,0.4)",
+          
         }}
       />
 
@@ -94,7 +94,7 @@ const CurtainReveal = ({ onEnter }: CurtainRevealProps) => {
         }`}
         style={{
           background: "#cc932a",
-          boxShadow: "inset 40px 0 60px -20px rgba(0,0,0,0.4)",
+          
         }}
       />
 
@@ -103,49 +103,53 @@ const CurtainReveal = ({ onEnter }: CurtainRevealProps) => {
 
         {/* 4 Piece Logo Animation */}
         {startPieces && (
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
+  <div
+    className={`relative w-64 h-64 md:w-80 md:h-80 ${
+      showFullLogo ? "opacity-0 transition-opacity duration-500" : ""
+    }`}
+  >
+    <img
+      src={logoTopLeft}
+      className={`absolute w-1/2 h-1/2 top-0 left-0 ${
+        mergeLogo ? "animate-merge-top-left" : "animate-from-top-left"
+      }`}
+    />
 
-            <img
-              src={logoTopLeft}
-              className={`absolute w-1/2 h-1/2 top-0 left-0 ${
-                mergeLogo ? "animate-merge-top-left" : "animate-from-top-left"
-              }`}
-            />
+    <img
+      src={logoTopRight}
+      className={`absolute w-1/2 h-1/2 top-0 right-0 ${
+        mergeLogo ? "animate-merge-top-right" : "animate-from-top-right"
+      }`}
+    />
 
-            <img
-              src={logoTopRight}
-              className={`absolute w-1/2 h-1/2 top-0 right-0 ${
-                mergeLogo ? "animate-merge-top-right" : "animate-from-top-right"
-              }`}
-            />
+    <img
+      src={logoBottomLeft}
+      className={`absolute w-1/2 h-1/2 bottom-0 left-0 ${
+        mergeLogo
+          ? "animate-merge-bottom-left"
+          : "animate-from-bottom-left"
+      }`}
+    />
 
-            <img
-              src={logoBottomLeft}
-              className={`absolute w-1/2 h-1/2 bottom-0 left-0 ${
-                mergeLogo
-                  ? "animate-merge-bottom-left"
-                  : "animate-from-bottom-left"
-              }`}
-            />
+    <img
+      src={logoBottomRight}
+      className={`absolute w-1/2 h-1/2 bottom-0 right-0 ${
+        mergeLogo
+          ? "animate-merge-bottom-right"
+          : "animate-from-bottom-right"
+      }`}
+    />
+  </div>
+)}
 
-            <img
-              src={logoBottomRight}
-              className={`absolute w-1/2 h-1/2 bottom-0 right-0 ${
-                mergeLogo
-                  ? "animate-merge-bottom-right"
-                  : "animate-from-bottom-right"
-              }`}
-            />
+{/* FINAL FULL LOGO ON TOP */}
+{showFullLogo && (
+  <img
+    src={fullLogo}
+    className="absolute inset-0 w-64 h-64 md:w-80 md:h-80 object-contain animate-fade-in z-20"
+  />
+)}
 
-            {/* Final Full Logo */}
-            {/* {showFullLogo && (
-              <img
-                src={fullLogo}
-                className="absolute inset-0 w-full h-full object-contain animate-fade-in"
-              />
-            )} */}
-          </div>
-        )}
 
         {/* Start Button */}
         {!fadeOutMainLogo && !startPieces && (
