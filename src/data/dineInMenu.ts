@@ -394,7 +394,7 @@ export const dineInMenu = [
   {
     name: "Saag - Veggies",
     description: "Rich, slow-cooked spinach blended with warm spices.",
-    image: "/menu/item50.jpg",
+    image: "/menu/item51.jpg",
     price: "$13.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "can be DF"]
@@ -402,7 +402,7 @@ export const dineInMenu = [
   {
     name: "Saag - Aloo",
     description: "Rich, slow-cooked spinach blended with warm spices.",
-    image: "/menu/item51.jpg",
+    image: "/menu/item52.jpg",
     price: "$13.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "can be DF"]
@@ -410,7 +410,7 @@ export const dineInMenu = [
   {
     name: "Saag - Paneer",
     description: "Rich, slow-cooked spinach blended with warm spices.",
-    image: "/menu/item52.jpg",
+    image: "/menu/item53.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "can be DF", "contains dairy"]
@@ -418,7 +418,7 @@ export const dineInMenu = [
   {
     name: "Saag - Tofu",
     description: "Rich, slow-cooked spinach blended with warm spices.",
-    image: "/menu/item53.jpg",
+    image: "/menu/item54.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "can be DF"]
@@ -426,7 +426,7 @@ export const dineInMenu = [
   {
     name: "Saag - Chicken",
     description: "Rich, slow-cooked spinach blended with warm spices.",
-    image: "/menu/item54.jpg",
+    image: "/menu/item55.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "can be DF"]
@@ -434,7 +434,7 @@ export const dineInMenu = [
   {
     name: "Saag - Lamb",
     description: "Rich, slow-cooked spinach blended with warm spices.",
-    image: "/menu/item55.jpg",
+    image: "/menu/item56.jpg",
     price: "$18.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "can be DF"]
@@ -442,7 +442,7 @@ export const dineInMenu = [
   {
     name: "Kurma - Veggies",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
-    image: "/menu/item56.jpg",
+    image: "/menu/item57.jpg",
     price: "$13.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"]
@@ -450,7 +450,7 @@ export const dineInMenu = [
   {
     name: "Kurma - Paneer",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
-    image: "/menu/item57.jpg",
+    image: "/menu/item58.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF", "contains dairy"]
@@ -458,7 +458,7 @@ export const dineInMenu = [
   {
     name: "Kurma - Tofu",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
-    image: "/menu/item58.jpg",
+    image: "/menu/item50.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"]
@@ -674,7 +674,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Fried Rice - Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item85.jpg",
+    image: "/menu/item85.png",
     price: "$14.99",
     category: "Fried Rice",
     badges: ["DF", "NF"]
@@ -698,7 +698,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Fried Rice - Chicken & Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item88.jpg",
+    image: "/menu/item88.png",
     price: "$16.99",
     category: "Fried Rice",
     badges: ["DF", "NF"]

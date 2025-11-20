@@ -693,7 +693,7 @@ export const takeoutMenu = [
   {
     name: "Schezwan Fried Rice - Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, egg, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item85.jpg",
+    image: "/menu/item85.png",
     price: "$14.99",
     category: "Fried Rice",
     badges: ["DF", "NF", "Spicy"]

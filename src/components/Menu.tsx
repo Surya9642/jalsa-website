@@ -10,21 +10,21 @@ const Menu = () => {
   const dishes = [
     {
       name: "Royal Biryani",
-      description: "Fragrant basmati rice with tender meat, saffron, and aromatic spices",
+      description: "Juicy boneless chicken simmered in aromatic spices, layered with fragrant basmati rice",
       image: biryaniImg,
-      price: "$24",
+      price: "$17.99",
     },
     {
       name: "Butter Chicken",
-      description: "Tender chicken in a rich, creamy tomato-based curry",
+      description: "Tandoori chicken cubes simmered in a buttery tomato-based sauce with Indian spices.",
       image: butterChickenImg,
-      price: "$22",
+      price: "$15.99",
     },
     {
-      name: "Assorted Naan",
-      description: "Freshly baked traditional Indian breads with butter and garlic",
+      name: "Butter Naan",
+      description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
       image: naanImg,
-      price: "$8",
+      price: "$3.99",
     },
   ];
 

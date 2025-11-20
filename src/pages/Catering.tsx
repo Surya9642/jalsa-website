@@ -49,43 +49,60 @@ const Catering = () => {
     setFormData((prev) => ({ ...prev, [key]: value }));
   };
 
-  // ⭐ HANDLE SUBMIT
+  // ⭐ HANDLE SUBMIT (UPDATED TO USE PHP API)
   const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    setLoading(true);
+  e.preventDefault();
+  setLoading(true);
+  setSubmitted(false);
 
+  try {
+    const res = await fetch("https://jalsaindianrestaurant.com/send-catering.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    // Check if server crashed or returned HTML instead of JSON
+    const text = await res.text();
+
+    let result;
     try {
-      const res = await fetch(
-        "https://jalsa-ulh8.onrender.com/api/form/catering",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      if (!res.ok) throw new Error("Submission failed");
-
-      setSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        date: "",
-        time: "",
-        people: "",
-        deliveryType: "",
-        deliveryAddress: "",
-        orderDetails: "",
-        dietary: "",
-        notes: "",
-      });
+      result = JSON.parse(text); // try JSON parse
     } catch (err) {
-      alert("Something went wrong. Please try again.");
+      console.error("Server returned non-JSON response:", text);
+      throw new Error("Unexpected server response");
     }
 
-    setLoading(false);
-  };
+    if (!res.ok || result.status !== "success") {
+      console.error("Server Error:", result);
+      throw new Error(result.message || "Submission failed");
+    }
+
+    setSubmitted(true);
+
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      date: "",
+      time: "",
+      people: "",
+      deliveryType: "",
+      deliveryAddress: "",
+      orderDetails: "",
+      dietary: "",
+      notes: "",
+    });
+  } catch (err: any) {
+    alert(err.message || "Something went wrong. Please try again.");
+  }
+
+  setLoading(false);
+};
 
   return (
     <>
