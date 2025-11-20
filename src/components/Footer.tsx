@@ -1,10 +1,12 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
+
           {/* Brand */}
           <div>
             <h3 className="text-3xl font-heading font-bold text-gold mb-4">JALSA</h3>
@@ -19,7 +21,9 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
-                <span className="text-primary-foreground/80">180 E Main St Ste 105, Hillsboro, OR 97123</span>
+                <span className="text-primary-foreground/80">
+                  180 E Main St Ste 105, Hillsboro, OR 97123
+                </span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" />
@@ -36,26 +40,23 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-heading font-semibold text-gold mb-4">Hours</h4>
             <div className="space-y-2 text-primary-foreground/80">
-  <div className="flex items-center gap-3">
-    <Clock className="w-5 h-5 text-gold flex-shrink-0" />
-    <div>
-      <p className="font-semibold">Monday, Wednesday, Thursday</p>
-      <p className="text-sm">11.00 am to 10.00 pm</p>
-    </div>
-  </div>
-  <div className="ml-8">
-    <p className="font-semibold">Tuesday</p>
-    <p className="text-sm">Closed</p>
-  </div>
-  <div className="ml-8">
-    <p className="font-semibold">Friday - Saturday</p>
-    <p className="text-sm">11.00 am to 12.00 am</p>
-  </div>
-  <div className="ml-8">
-    <p className="font-semibold">Sunday</p>
-    <p className="text-sm">11.00 am to 9.00 pm</p>
-  </div>
-</div>
+              <div className="flex items-center gap-3">
+                <Clock className="w-5 h-5 text-gold flex-shrink-0" />
+                <p className="font-semibold">
+                  Mon, Wed, Thu: 11:00 AM - 10:00 PM
+                </p>
+              </div>
+
+              <p className="font-semibold ml-8">Tuesday: Closed</p>
+
+              <p className="font-semibold ml-8">
+                Fri-Sat: 11:00 AM - 12:00 AM
+              </p>
+
+              <p className="font-semibold ml-8">
+                Sunday: 11:00 am – 9:00 pm
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -63,16 +64,27 @@ const Footer = () => {
             <h4 className="text-xl font-heading font-semibold text-gold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-primary-foreground/80">
               <li>
-                <a href="#about" className="hover:text-gold transition-colors">About Us</a>
+                <Link to="/about" className="hover:text-gold transition-colors">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a href="#menu" className="hover:text-gold transition-colors">Menu</a>
+                <Link to="/menu" className="hover:text-gold transition-colors">
+                  Menu
+                </Link>
               </li>
               <li>
-                <a href="#gallery" className="hover:text-gold transition-colors">Gallery</a>
+                <Link to="/gallery" className="hover:text-gold transition-colors">
+                  Gallery
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-gold transition-colors">Reservations</a>
+                <button
+                  className="hover:text-gold transition-colors"
+                  onClick={() => console.log("Open reservation popup")}
+                >
+                  Reservations
+                </button>
               </li>
             </ul>
           </div>

@@ -26,6 +26,67 @@ const Catering = () => {
     setShowCurtain(false);
   };
 
+  // ⭐ FORM STATES
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    date: "",
+    time: "",
+    people: "",
+    deliveryType: "",
+    deliveryAddress: "",
+    orderDetails: "",
+    dietary: "",
+    notes: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  // Update form fields
+  const updateField = (key: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [key]: value }));
+  };
+
+  // ⭐ HANDLE SUBMIT
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch(
+        "https://jalsa-ulh8.onrender.com/api/form/catering",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!res.ok) throw new Error("Submission failed");
+
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        date: "",
+        time: "",
+        people: "",
+        deliveryType: "",
+        deliveryAddress: "",
+        orderDetails: "",
+        dietary: "",
+        notes: "",
+      });
+    } catch (err) {
+      alert("Something went wrong. Please try again.");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <>
       {showCurtain && <CurtainReveal onEnter={handleEnter} />}
@@ -82,7 +143,14 @@ const Catering = () => {
                 Catering Request Form
               </motion.h2>
 
+              {submitted && (
+                <div className="bg-green-600/20 border border-green-600 text-green-700 p-4 rounded-xl mb-6 text-center font-semibold">
+                  Your catering request has been submitted successfully!
+                </div>
+              )}
+
               <motion.form
+                onSubmit={handleSubmit}
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="visible"
@@ -94,28 +162,46 @@ const Catering = () => {
                   <input
                     type="text"
                     placeholder="Full Name"
+                    value={formData.name}
+                    onChange={(e) => updateField("name", e.target.value)}
                     className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                    required
                   />
+
                   <input
                     type="email"
                     placeholder="Email"
+                    value={formData.email}
+                    onChange={(e) => updateField("email", e.target.value)}
                     className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                    required
                   />
+
                   <input
                     type="text"
                     placeholder="Phone Number"
+                    value={formData.phone}
+                    onChange={(e) => updateField("phone", e.target.value)}
                     className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                    required
                   />
 
                   {/* Date + Time */}
                   <div className="grid sm:grid-cols-2 gap-6">
                     <input
                       type="date"
+                      value={formData.date}
+                      onChange={(e) => updateField("date", e.target.value)}
                       className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                      required
                     />
+
                     <input
                       type="time"
+                      value={formData.time}
+                      onChange={(e) => updateField("time", e.target.value)}
                       className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                      required
                     />
                   </div>
 
@@ -126,56 +212,106 @@ const Catering = () => {
                     </label>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-primary">
-                      {["1–9","10–19","20–29","30–39","40–49","50+"].map((range) => (
-                        <label key={range} className="flex items-center gap-2">
-                          <input type="radio" name="people" />
-                          {range}
-                        </label>
-                      ))}
+                      {["1–9", "10–19", "20–29", "30–39", "40–49", "50+"].map(
+                        (range) => (
+                          <label key={range} className="flex items-center gap-2">
+                            <input
+                              type="radio"
+                              name="people"
+                              value={range}
+                              checked={formData.people === range}
+                              onChange={(e) =>
+                                updateField("people", e.target.value)
+                              }
+                              required
+                            />
+                            {range}
+                          </label>
+                        )
+                      )}
                     </div>
                   </div>
 
-                  {/* Delivery / Pickup */}
+                  {/* Delivery or Pickup */}
                   <div>
                     <label className="font-semibold text-primary block mb-2">
                       Delivery or Pickup?
                     </label>
+
                     <div className="flex gap-6 text-primary">
                       <label className="flex items-center gap-2">
-                        <input type="radio" name="delivery" /> Delivery
+                        <input
+                          type="radio"
+                          name="deliveryType"
+                          value="Delivery"
+                          checked={formData.deliveryType === "Delivery"}
+                          onChange={(e) =>
+                            updateField("deliveryType", e.target.value)
+                          }
+                          required
+                        />
+                        Delivery
                       </label>
+
                       <label className="flex items-center gap-2">
-                        <input type="radio" name="delivery" /> Pickup
+                        <input
+                          type="radio"
+                          name="deliveryType"
+                          value="Pickup"
+                          checked={formData.deliveryType === "Pickup"}
+                          onChange={(e) =>
+                            updateField("deliveryType", e.target.value)
+                          }
+                          required
+                        />
+                        Pickup
                       </label>
                     </div>
                   </div>
 
+                  {/* Address */}
                   <textarea
-                    placeholder="If delivery, enter the address it's being delivered to"
+                    placeholder="If delivery, enter the address"
+                    value={formData.deliveryAddress}
+                    onChange={(e) =>
+                      updateField("deliveryAddress", e.target.value)
+                    }
                     className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
                   ></textarea>
 
+                  {/* Order details */}
                   <textarea
                     placeholder="What would you like to order?"
+                    value={formData.orderDetails}
+                    onChange={(e) =>
+                      updateField("orderDetails", e.target.value)
+                    }
                     className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+                    required
                   ></textarea>
 
                   <textarea
                     placeholder="Dietary restrictions or allergies"
+                    value={formData.dietary}
+                    onChange={(e) => updateField("dietary", e.target.value)}
                     className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
                   ></textarea>
 
                   <textarea
                     placeholder="Additional details or special instructions"
+                    value={formData.notes}
+                    onChange={(e) => updateField("notes", e.target.value)}
                     className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
                   ></textarea>
                 </div>
 
                 <Button
                   size="lg"
+                  type="submit"
+                  disabled={loading}
                   className="w-full bg-gold text-primary font-semibold py-3 rounded-full hover:bg-[#e4b445] transition-all"
                 >
-                  Send Catering Request
+                  {loading ? "Sending..." : "Send Catering Request"}
                 </Button>
               </motion.form>
             </div>

@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import biryaniImg from "@/assets/dish-biryani.jpg";
 import butterChickenImg from "@/assets/dish-butter-chicken.jpg";
 import naanImg from "@/assets/dish-naan.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
+  const navigate = useNavigate();
+
   const dishes = [
     {
       name: "Royal Biryani",
@@ -65,7 +68,11 @@ const Menu = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-semibold text-gold">{dish.price}</span>
-                  <Button variant="outline" size="sm" className="border-gold hover:bg-gold hover:text-primary">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-gold hover:bg-gold hover:text-primary"
+                  >
                     Order Now
                   </Button>
                 </div>
@@ -74,8 +81,13 @@ const Menu = () => {
           ))}
         </div>
 
+        {/* ⭐ View Full Menu Button → goes to /menu */}
         <div className="text-center">
-          <Button variant="gold" size="lg">
+          <Button
+            variant="gold"
+            size="lg"
+            onClick={() => navigate("/menu")}
+          >
             View Full Menu
           </Button>
         </div>
