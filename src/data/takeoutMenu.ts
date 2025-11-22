@@ -808,69 +808,68 @@ export const takeoutMenu = [
   // --- Biryani ---
   {
     name: "Hyderabad Veg Biryani",
-    description: "Regular size. Vegetables cooked in rich Hyderabadi biryani spices, layered with basmati rice. Family Pack: $23.99",
+    description: "Vegetables cooked in rich Hyderabadi biryani spices, layered with basmati rice.",
     image: "/menu/item99.jpg",
-    price: "$14.99",
+    price: "Reg- $14.99 Family Pack- $23.99",
     category: "Biryani",
     badges: ["GF"]
   },
   {
     name: "Paneer Biryani",
-    description: "Regular size. Soft, marinated paneer cubes cooked in aromatic biryani spices and layered with fragrant basmati rice. Family Pack: $30.99",
+    description: "Soft, marinated paneer cubes cooked in aromatic biryani spices and layered with fragrant basmati rice.",
     image: "/menu/item100.jpg",
-    price: "$16.99",
+    price: "Reg- $16.99 Family Pack- $30.99",
     category: "Biryani",
-    badges: ["GF"]
+    badges: []
   },
   {
     name: "Egg Biryani",
-    description: "Regular size. Boiled eggs simmered in a spiced masala and layered with fragrant basmati rice. Family Pack: $26.99",
+    description: "Boiled eggs simmered in a spiced masala and layered with fragrant basmati rice.",
     image: "/menu/item101.jpg",
-    price: "$14.99",
+    price: "Reg- $14.99 Family Pack- $26.99",
     category: "Biryani",
-    badges: ["GF"]
+    badges: []
   },
   {
     name: "Hyderabad Chicken Biryani",
-    description: "Regular size. Classic Hyderabadi dum biryani made with tender chicken marinated in yogurt, spices, and herbs, layered with fragrant basmati rice. Family Pack: $30.99",
+    description: "Classic Hyderabadi dum biryani made with tender chicken marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
     image: "/menu/item102.jpg",
-    price: "$16.99",
+    price: "Reg- $16.99 Family Pack- $30.99",
     category: "Biryani",
-    badges: ["GF"]
+    badges: []
   },
   {
     name: "Jalsa special chicken biryani (Boneless)",
-    description: "Regular size. Juicy boneless chicken simmered in aromatic spices, layered with fragrant basmati rice. Family Pack: $31.99",
+    description: "Juicy boneless chicken simmered in aromatic spices, layered with fragrant basmati rice.",
     image: "/menu/item103.jpg",
-    price: "$17.99",
+    price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
-    badges: ["GF"]
+    badges: []
   },
   {
     name: "Bejawada Chicken Biryani (Bone in)",
-    description: "Regular size. Juicy bone in chicken simmered in aromatic spices, layered with fragrant basmati rice. Family Pack: $31.99",
+    description: "Juicy bone in chicken simmered in aromatic spices, layered with fragrant basmati rice.",
     image: "/menu/item104.jpg",
-    price: "$17.99",
+    price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
-    badges: ["GF"]
+    badges: []
   },
   {
     name: "Chowrasta Chicken 65 Biryani",
-    description: "Regular size. Chicken 65 tossed in signature spices and layered over fragrant biryani rice. Family Pack: $31.99",
+    description: "Chicken 65 tossed in signature spices and layered over fragrant biryani rice.",
     image: "/menu/item105.jpg",
-    price: "$17.99",
+    price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
-    badges: ["GF"]
+    badges: []
   },
   {
-    name: "Hyderabad Goat Biryani",
-    description: "Regular size. Classic Hyderabadi dum biryani made with tender goat marinated in yogurt, spices, and herbs, layered with fragrant basmati rice. (Fri, Sat, Sun). Family Pack: $34.99",
+    name: "Hyderabad Goat Biryani (Fri, Sat, Sun)",
+    description: "Classic Hyderabadi dum biryani made with tender goat marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
     image: "/menu/item106.jpg",
-    price: "$19.99",
+    price: "Reg- $19.99 Family Pack- $34.99",
     category: "Biryani",
-    badges: ["GF"]
+    badges: []
   },
-
   // --- South Indian Specials (Excluding Sukka) ---
   {
     name: "Monagadu Chicken",

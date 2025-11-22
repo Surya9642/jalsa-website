@@ -15,7 +15,7 @@ const Header = () => {
     { label: "Menu", to: "/menu" },
     { label: "Gallery", to: "/gallery" },
     { label: "Catering", to: "/catering" },
-    { label: "News", to: "/news" },
+    // { label: "News", to: "/news" },
     { label: "Contact", to: "/contact" },
   ];
 

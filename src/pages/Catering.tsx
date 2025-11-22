@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import CurtainReveal from "@/components/CurtainReveal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -17,15 +16,6 @@ const fadeUp = {
 };
 
 const Catering = () => {
-  const [showCurtain, setShowCurtain] = useState(() => {
-    return !sessionStorage.getItem("jalsaIntroSeen");
-  });
-
-  const handleEnter = () => {
-    sessionStorage.setItem("jalsaIntroSeen", "true");
-    setShowCurtain(false);
-  };
-
   // ⭐ FORM STATES
   const [formData, setFormData] = useState({
     name: "",
@@ -51,294 +41,274 @@ const Catering = () => {
 
   // ⭐ HANDLE SUBMIT (UPDATED TO USE PHP API)
   const handleSubmit = async (e: any) => {
-  e.preventDefault();
-  setLoading(true);
-  setSubmitted(false);
+    e.preventDefault();
+    setLoading(true);
+    setSubmitted(false);
 
-  try {
-    const res = await fetch("https://jalsaindianrestaurant.com/send-catering.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
-
-    // Check if server crashed or returned HTML instead of JSON
-    const text = await res.text();
-
-    let result;
     try {
-      result = JSON.parse(text); // try JSON parse
-    } catch (err) {
-      console.error("Server returned non-JSON response:", text);
-      throw new Error("Unexpected server response");
+      const res = await fetch("https://jalsaindianrestaurant.com/send-catering.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const text = await res.text();
+      let result;
+
+      try {
+        result = JSON.parse(text);
+      } catch (err) {
+        console.error("Server returned non-JSON response:", text);
+        throw new Error("Unexpected server response");
+      }
+
+      if (!res.ok || result.status !== "success") {
+        console.error("Server Error:", result);
+        throw new Error(result.message || "Submission failed");
+      }
+
+      setSubmitted(true);
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        date: "",
+        time: "",
+        people: "",
+        deliveryType: "",
+        deliveryAddress: "",
+        orderDetails: "",
+        dietary: "",
+        notes: "",
+      });
+    } catch (err: any) {
+      alert(err.message || "Something went wrong. Please try again.");
     }
 
-    if (!res.ok || result.status !== "success") {
-      console.error("Server Error:", result);
-      throw new Error(result.message || "Submission failed");
-    }
-
-    setSubmitted(true);
-
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      date: "",
-      time: "",
-      people: "",
-      deliveryType: "",
-      deliveryAddress: "",
-      orderDetails: "",
-      dietary: "",
-      notes: "",
-    });
-  } catch (err: any) {
-    alert(err.message || "Something went wrong. Please try again.");
-  }
-
-  setLoading(false);
-};
+    setLoading(false);
+  };
 
   return (
-    <>
-      {showCurtain && <CurtainReveal onEnter={handleEnter} />}
+    <div className="min-h-screen bg-background flex flex-col overflow-hidden">
+      <Header />
 
-      {!showCurtain && (
-        <div className="min-h-screen bg-background flex flex-col overflow-hidden">
-          <Header />
+      {/* HERO */}
+      <section className="relative flex items-center justify-center min-h-[50vh] sm:min-h-[60vh] overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url(https://images.unsplash.com/photo-1519167758481-83f29da8c2b0?w=1920&h=1080&fit=crop)",
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-overlay" />
+        </div>
 
-          {/* HERO */}
-          <section className="relative flex items-center justify-center min-h-[50vh] sm:min-h-[60vh] overflow-hidden">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url(https://images.unsplash.com/photo-1519167758481-83f29da8c2b0?w=1920&h=1080&fit=crop)",
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-overlay" />
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 container mx-auto px-4 text-center"
+        >
+          <div className="flex justify-center mb-4">
+            <Sparkles className="w-12 h-12 text-gold animate-pulse" />
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-bold text-primary-foreground mb-4">
+            Catering & Private Events
+          </h1>
+
+          <div className="w-24 h-1 bg-gradient-gold mx-auto mb-6" />
+
+          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
+            Make your celebration truly unforgettable with JALSA’s royal
+            catering services.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* FORM SECTION */}
+      <section className="py-16 sm:py-20">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <motion.h2
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-3xl sm:text-4xl font-heading font-bold text-primary text-center mb-8"
+          >
+            Catering Request Form
+          </motion.h2>
+
+          {submitted && (
+            <div className="bg-green-600/20 border border-green-600 text-green-700 p-4 rounded-xl mb-6 text-center font-semibold">
+              Your catering request has been submitted successfully!
             </div>
+          )}
 
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="relative z-10 container mx-auto px-4 text-center"
-            >
-              <div className="flex justify-center mb-4">
-                <Sparkles className="w-12 h-12 text-gold animate-pulse" />
+          <motion.form
+            onSubmit={handleSubmit}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="bg-card shadow-elegant p-8 sm:p-10 rounded-2xl space-y-6 border border-gold/20"
+          >
+            {/* INPUTS */}
+            <div className="grid grid-cols-1 gap-6">
+              <input
+                type="text"
+                placeholder="Full Name"
+                value={formData.name}
+                onChange={(e) => updateField("name", e.target.value)}
+                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                required
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={(e) => updateField("email", e.target.value)}
+                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                required
+              />
+
+              <input
+                type="text"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={(e) => updateField("phone", e.target.value)}
+                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                required
+              />
+
+              {/* DATE + TIME */}
+              <div className="grid sm:grid-cols-2 gap-6">
+                <input
+                  type="date"
+                  value={formData.date}
+                  onChange={(e) => updateField("date", e.target.value)}
+                  className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                  required
+                />
+
+                <input
+                  type="time"
+                  value={formData.time}
+                  onChange={(e) => updateField("time", e.target.value)}
+                  className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                  required
+                />
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-bold text-primary-foreground mb-4">
-                Catering & Private Events
-              </h1>
+              {/* PEOPLE RANGE */}
+              <div>
+                <label className="font-semibold text-primary block mb-2">
+                  Number of People You Are Catering For
+                </label>
 
-              <div className="w-24 h-1 bg-gradient-gold mx-auto mb-6" />
-
-              <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-                Make your celebration truly unforgettable with JALSA’s royal
-                catering services.
-              </p>
-            </motion.div>
-          </section>
-
-          {/* FORM SECTION */}
-          <section className="py-16 sm:py-20">
-            <div className="container mx-auto px-4 max-w-4xl">
-              <motion.h2
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-heading font-bold text-primary text-center mb-8"
-              >
-                Catering Request Form
-              </motion.h2>
-
-              {submitted && (
-                <div className="bg-green-600/20 border border-green-600 text-green-700 p-4 rounded-xl mb-6 text-center font-semibold">
-                  Your catering request has been submitted successfully!
-                </div>
-              )}
-
-              <motion.form
-                onSubmit={handleSubmit}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="bg-card shadow-elegant p-8 sm:p-10 rounded-2xl space-y-6 border border-gold/20"
-              >
-                {/* INPUTS */}
-                <div className="grid grid-cols-1 gap-6">
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    value={formData.name}
-                    onChange={(e) => updateField("name", e.target.value)}
-                    className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
-                    required
-                  />
-
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={(e) => updateField("email", e.target.value)}
-                    className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
-                    required
-                  />
-
-                  <input
-                    type="text"
-                    placeholder="Phone Number"
-                    value={formData.phone}
-                    onChange={(e) => updateField("phone", e.target.value)}
-                    className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
-                    required
-                  />
-
-                  {/* Date + Time */}
-                  <div className="grid sm:grid-cols-2 gap-6">
-                    <input
-                      type="date"
-                      value={formData.date}
-                      onChange={(e) => updateField("date", e.target.value)}
-                      className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
-                      required
-                    />
-
-                    <input
-                      type="time"
-                      value={formData.time}
-                      onChange={(e) => updateField("time", e.target.value)}
-                      className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
-                      required
-                    />
-                  </div>
-
-                  {/* Radio Buttons: Number of People */}
-                  <div>
-                    <label className="font-semibold text-primary block mb-2">
-                      Number of People You Are Catering For
-                    </label>
-
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-primary">
-                      {["1–9", "10–19", "20–29", "30–39", "40–49", "50+"].map(
-                        (range) => (
-                          <label key={range} className="flex items-center gap-2">
-                            <input
-                              type="radio"
-                              name="people"
-                              value={range}
-                              checked={formData.people === range}
-                              onChange={(e) =>
-                                updateField("people", e.target.value)
-                              }
-                              required
-                            />
-                            {range}
-                          </label>
-                        )
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Delivery or Pickup */}
-                  <div>
-                    <label className="font-semibold text-primary block mb-2">
-                      Delivery or Pickup?
-                    </label>
-
-                    <div className="flex gap-6 text-primary">
-                      <label className="flex items-center gap-2">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-primary">
+                  {["1–9", "10–19", "20–29", "30–39", "40–49", "50+"].map(
+                    (range) => (
+                      <label key={range} className="flex items-center gap-2">
                         <input
                           type="radio"
-                          name="deliveryType"
-                          value="Delivery"
-                          checked={formData.deliveryType === "Delivery"}
-                          onChange={(e) =>
-                            updateField("deliveryType", e.target.value)
-                          }
+                          name="people"
+                          value={range}
+                          checked={formData.people === range}
+                          onChange={(e) => updateField("people", e.target.value)}
                           required
                         />
-                        Delivery
+                        {range}
                       </label>
-
-                      <label className="flex items-center gap-2">
-                        <input
-                          type="radio"
-                          name="deliveryType"
-                          value="Pickup"
-                          checked={formData.deliveryType === "Pickup"}
-                          onChange={(e) =>
-                            updateField("deliveryType", e.target.value)
-                          }
-                          required
-                        />
-                        Pickup
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* Address */}
-                  <textarea
-                    placeholder="If delivery, enter the address"
-                    value={formData.deliveryAddress}
-                    onChange={(e) =>
-                      updateField("deliveryAddress", e.target.value)
-                    }
-                    className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
-                  ></textarea>
-
-                  {/* Order details */}
-                  <textarea
-                    placeholder="What would you like to order?"
-                    value={formData.orderDetails}
-                    onChange={(e) =>
-                      updateField("orderDetails", e.target.value)
-                    }
-                    className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
-                    required
-                  ></textarea>
-
-                  <textarea
-                    placeholder="Dietary restrictions or allergies"
-                    value={formData.dietary}
-                    onChange={(e) => updateField("dietary", e.target.value)}
-                    className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
-                  ></textarea>
-
-                  <textarea
-                    placeholder="Additional details or special instructions"
-                    value={formData.notes}
-                    onChange={(e) => updateField("notes", e.target.value)}
-                    className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
-                  ></textarea>
+                    )
+                  )}
                 </div>
+              </div>
 
-                <Button
-                  size="lg"
-                  type="submit"
-                  disabled={loading}
-                  className="w-full bg-gold text-primary font-semibold py-3 rounded-full hover:bg-[#e4b445] transition-all"
-                >
-                  {loading ? "Sending..." : "Send Catering Request"}
-                </Button>
-              </motion.form>
+              {/* DELIVERY */}
+              <div>
+                <label className="font-semibold text-primary block mb-2">
+                  Delivery or Pickup?
+                </label>
+
+                <div className="flex gap-6 text-primary">
+                  <label className="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="deliveryType"
+                      value="Delivery"
+                      checked={formData.deliveryType === "Delivery"}
+                      onChange={(e) => updateField("deliveryType", e.target.value)}
+                      required
+                    />
+                    Delivery
+                  </label>
+
+                  <label className="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      name="deliveryType"
+                      value="Pickup"
+                      checked={formData.deliveryType === "Pickup"}
+                      onChange={(e) => updateField("deliveryType", e.target.value)}
+                      required
+                    />
+                    Pickup
+                  </label>
+                </div>
+              </div>
+
+              <textarea
+                placeholder="If delivery, enter the address"
+                value={formData.deliveryAddress}
+                onChange={(e) => updateField("deliveryAddress", e.target.value)}
+                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+              ></textarea>
+
+              <textarea
+                placeholder="What would you like to order?"
+                value={formData.orderDetails}
+                onChange={(e) => updateField("orderDetails", e.target.value)}
+                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+                required
+              ></textarea>
+
+              <textarea
+                placeholder="Dietary restrictions or allergies"
+                value={formData.dietary}
+                onChange={(e) => updateField("dietary", e.target.value)}
+                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+              ></textarea>
+
+              <textarea
+                placeholder="Additional details or special instructions"
+                value={formData.notes}
+                onChange={(e) => updateField("notes", e.target.value)}
+                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+              ></textarea>
             </div>
-          </section>
 
-          <Footer />
-          <WhatsAppButton />
+            <Button
+              size="lg"
+              type="submit"
+              disabled={loading}
+              className="w-full bg-gold text-primary font-semibold py-3 rounded-full hover:bg-[#e4b445] transition-all"
+            >
+              {loading ? "Sending..." : "Send Catering Request"}
+            </Button>
+          </motion.form>
         </div>
-      )}
-    </>
+      </section>
+
+      <Footer />
+      <WhatsAppButton />
+    </div>
   );
 };
 

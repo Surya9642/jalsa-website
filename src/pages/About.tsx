@@ -310,7 +310,7 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 sm:py-20 bg-muted/20">
+      {/* <section className="py-16 sm:py-20 bg-muted/20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -351,7 +351,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="py-16 sm:py-20 bg-gradient-royal relative text-center text-primary-foreground">
@@ -377,7 +377,7 @@ const AboutPage = () => {
           </Button>
         </motion.div>
       </section>
-
+        <br />
       {/* Footer */}
       <Footer />
 

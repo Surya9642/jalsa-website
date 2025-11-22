@@ -11,8 +11,8 @@ const About = lazy(() => import("./pages/About"));
 const MenuPage = lazy(() => import("./pages/MenuPage"));
 const GalleryPage = lazy(() => import("./pages/GalleryPage"));
 const Catering = lazy(() => import("./pages/Catering"));
-const News = lazy(() => import("./pages/News"));
-const NewsPost = lazy(() => import("./pages/NewsPost"));
+// const News = lazy(() => import("./pages/News"));
+// const NewsPost = lazy(() => import("./pages/NewsPost"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
@@ -35,8 +35,8 @@ const App = () => (
             <Route path="/menu" element={<MenuPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/catering" element={<Catering />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/news/:slug" element={<NewsPost />} />
+            {/* <Route path="/news" element={<News />} />
+            <Route path="/news/:slug" element={<NewsPost />} /> */}
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
