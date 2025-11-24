@@ -141,7 +141,7 @@ const Contact = () => {
                   title: "Phone",
                   content: (
                     <a href="tel:+15551234567" className="hover:text-gold transition-colors">
-                      +1 (555) 123-4567
+                      +1 (503) 673-6070
                     </a>
                   ),
                 },

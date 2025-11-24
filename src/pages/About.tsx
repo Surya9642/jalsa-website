@@ -241,14 +241,15 @@ const AboutPage = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible">
             <h2 className="text-3xl sm:text-4xl font-heading font-bold text-primary mb-6">
-              Where Every Meal Is A Celebration
+              Craving bold flavors and a vibrant vibe?
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              JALSA was born from a simple belief: that dining should be an
-              experience of joy and connection.
+              Step into Jalsa Indian Cuisine – where every meal is a celebration!
+              From the rich spices of North Indian curries to the comforting classics of South Indian cuisine, plus the exciting flair of Indo-Chinese and Americano-Indo Fusion creations, our menu is a flavorful journey across cultures. hot_pepper, curry, Chopsticks, hamburger:
+              Pair your feast with our selection of fine spirits and handcrafted cocktails, and enjoy the perfect blend of taste and atmosphere.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Every dish tells a story of tradition passed through generations.
+              Whether you're celebrating a special occasion, catching up with friends, or just indulging in divine food, Jalsa offers the perfect ambiance and exceptional hospitality. 
             </p>
           </motion.div>
 
