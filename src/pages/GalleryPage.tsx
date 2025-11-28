@@ -2,20 +2,21 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import heroBg from "@/assets/3.jpg";
 
 const galleryImages = [
-  "/menu/item102.jpg",
-  "/menu/item125.jpg",
-  "/menu/item128.jpg",
-  "/menu/item91.jpg",
-  "/menu/item15.jpg",
-  "/menu/item3.jpg",
-  "/menu/item40.jpg",
-  "/menu/item44.jpg",
-  "/menu/item124.jpg",
-  "/menu/item114.jpg",
-  "/menu/item79.jpg",
-  "/menu/item66.jpg",
+  "/menu/item7.jpg",
+  "/menu/item29.jpg",
+  "/menu/item89.jpg",
+  "/menu/item101.jpg",
+  "/menu/item99.jpg",
+  "/menu/item20.jpg",
+  "/menu/item106.jpg",
+  "/menu/item65.jpg",
+  "/menu/item52.jpg",
+  "/menu/item53.jpg",
+  "/menu/item78.jpg",
+  "/menu/item67.jpg",
 ];
 
 const fadeUp = {
@@ -42,9 +43,8 @@ const GalleryPage = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1601050690597-8f6e8c63b6fc?w=1920&h=1080&fit=crop)",
-          }}
+                  backgroundImage: `url(${heroBg})`,
+                }}
         >
           <div className="absolute inset-0 bg-gradient-overlay" />
         </div>

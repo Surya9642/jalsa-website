@@ -5,7 +5,11 @@ const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = "1234567890"; // Replace with actual phone number
     const message = encodeURIComponent("Hello JALSA, I'd like to reserve a table.");
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+    window.open(
+  `https://wa.me/15036736070?text=${encodeURIComponent(message)}`,
+  "_blank"
+);
+
   };
 
   return (

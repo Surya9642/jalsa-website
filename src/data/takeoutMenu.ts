@@ -5,48 +5,54 @@ export const takeoutMenu = [
     description: "Delicious fusion snack bringing together the familiar comfort of French fries with the bold aromatic flavors of Indian cuisine. Choice of: Chicken, Paneer, Tofu, or Lamb (+$3).",
     image: "/menu/item1.jpg",
     price: "$9.99",
-    category: "Veg Bar Snacks / Small Plates",
-    badges: ["GF", "NF"]
+    category: "Bar Snacks / Small Plates",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Chicken Tikka Sliders",
     description: "Vibrant flavors of Indian Chicken Tikka Masala with the popular slider format. Served with house salad.",
     image: "/menu/item2.jpg",
     price: "$10.99",
-    category: "Non Veg Bar Snacks / Small Plates",
-    badges: ["NF"]
+    category: "Bar Snacks / Small Plates",
+    badges: ["NF"],
+    type: "nonveg"
   },
   {
     name: "Tandoori Chicken Wings",
     description: "Juicy chicken wings marinated in a blend of spices and yogurt, char-grilled to perfection in a tandoor.",
     image: "/menu/item3.jpg",
     price: "$11.99",
-    category: "Non Veg Bar Snacks / Small Plates",
-    badges: ["GF", "NF"]
+    category: "Bar Snacks / Small Plates",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Cheesy Tikka Masala Nachos",
     description: "Crispy tortilla chips smothered in tikka sauce, topped with melted cheese, onions, tomatoes, jalapeños, cilantro, and cool raita. Choice of: Chicken, Paneer, Tofu, or Lamb (+$3).",
     image: "/menu/item4.jpg",
     price: "$10.99",
-    category: "Non Veg Bar Snacks / Small Plates",
-    badges: ["GF", "NF"]
+    category: "Bar Snacks / Small Plates",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Masala Mac Melt",
     description: "Classic mac and cheese cooked with rich tikka masala sauce for a creamy and flavorful twist. Choice of: Chicken, Paneer, Tofu, or Lamb (+$3).",
     image: "/menu/item5.jpg",
     price: "$10.99",
-    category: "Veg Bar Snacks / Small Plates",
-    badges: ["GF", "NF"]
+    category: "Bar Snacks / Small Plates",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Basil Crunch Pakoras",
     description: "Golden deep-fried veggie fritters packed with fragrant basil, battered and fried to perfection.",
     image: "/menu/item6.jpg",
     price: "$9.99",
-    category: "Veg Bar Snacks / Small Plates",
-    badges: ["GF", "NF", "V"]
+    category: "Bar Snacks / Small Plates",
+    badges: ["GF", "NF", "V"],
+    type: "veg"
   },
 
   // --- Appetizers ---
@@ -55,128 +61,144 @@ export const takeoutMenu = [
     description: "Crispy pastry filled with a savory blend of spiced potatoes, peas, and herbs.",
     image: "/menu/item7.jpg",
     price: "$6.99",
-    category: "Appetizers-Veg",
-    badges: ["NF", "V"]
+    category: "Appetizers",
+    badges: ["NF", "V"],
+    type: "veg"
   },
   {
     name: "Cut Mirchi Chaat",
     description: "Battered and deep-fried green chili fritters, sliced and topped with onions, crushed peanuts, mint, and sweet tamarind chutneys. Contains peanuts.",
     image: "/menu/item8.jpg",
     price: "$9.99",
-    category: "Appetizers-Veg",
-    badges: ["GF", "V", "Spicy"]
+    category: "Appetizers",
+    badges: ["GF", "V", "Spicy"],
+    type: "veg"
   },
   {
     name: "Tandoori Papadums",
     description: "Crispy lentil-cumin papadums roasted in a traditional clay oven. Served with a selection of three different house-made chutneys.",
     image: "/menu/item9.jpg",
     price: "$4.99",
-    category: "Appetizers-Veg",
-    badges: ["GF", "NF"]
+    category: "Appetizers",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Corn Chaat",
     description: "Golden fried corn tossed with spices, fresh herbs, chopped onions, and a squeeze of lime.",
     image: "/menu/item10.jpg",
     price: "$9.99",
-    category: "Appetizers-Veg",
-    badges: ["GF", "V"]
+    category: "Appetizers",
+    badges: ["GF", "V"],
+    type: "veg"
   },
   {
     name: "Onion Spinach Pakora",
     description: "Savory fritters made with onion, baby spinach, and chickpea flour. Served with mint-cilantro and tamarind chutneys.",
     image: "/menu/item11.jpg",
     price: "$8.99",
-    category: "Appetizers-Veg",
-    badges: ["GF", "NF", "V"]
+    category: "Appetizers",
+    badges: ["GF", "NF", "V"],
+    type: "veg"
   },
   {
     name: "Paneer Pakora",
     description: "Paneer dipped in chickpea flour and fried to perfection. Served with mint-cilantro and tamarind chutneys.",
     image: "/menu/item12.jpg",
     price: "$9.99",
-    category: "Appetizers-Veg",
-    badges: ["GF", "NF"]
+    category: "Appetizers",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Gobi Manchurian",
     description: "Fried cauliflower and bell peppers tossed in house-made manchurian sauce.",
     image: "/menu/item13.jpg",
     price: "$9.99",
-    category: "Appetizers-Veg",
-    badges: ["NF", "V"]
+    category: "Appetizers",
+    badges: ["NF", "V"],
+    type: "veg"
   },
   {
     name: "Tofu Manchurian",
     description: "Fried Tofu and bell peppers tossed in house-made manchurian sauce.",
     image: "/menu/item14.jpg",
     price: "$11.99",
-    category: "Appetizers-Veg",
-    badges: ["NF", "V"]
+    category: "Appetizers",
+    badges: ["NF", "V"],
+    type: "veg"
   },
   {
     name: "Chili Tofu",
     description: "Fried tofu stir-fried with onions, bell peppers, and spicy Indo-Chinese chili sauce.",
     image: "/menu/item15.jpg",
     price: "$11.99",
-    category: "Appetizers-Veg",
-    badges: ["NF", "V", "Spicy"]
+    category: "Appetizers",
+    badges: ["NF", "V", "Spicy"],
+    type: "veg"
   },
   {
     name: "Paneer Manchurian",
     description: "Fried paneer and bell peppers tossed in house-made manchurian sauce.",
     image: "/menu/item16.jpg",
     price: "$11.99",
-    category: "Appetizers-Veg",
-    badges: ["NF"]
+    category: "Appetizers",
+    badges: ["NF"],
+    type: "veg"
   },
   {
     name: "Chili Paneer",
     description: "Fried paneer stir-fried with onions, bell peppers, and spicy Indo-Chinese chili sauce.",
     image: "/menu/item17.jpg",
     price: "$11.99",
-    category: "Appetizers-Veg",
-    badges: ["NF", "Spicy"]
+    category: "Appetizers",
+    badges: ["NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Samosa Channa Chaat",
     description: "Samosa crushed and topped with masala chickpeas, mint and tamarind chutneys, yogurt, onions, tomatoes, chaat masala, sev, and cilantro.",
     image: "/menu/item18.jpg",
     price: "$11.99",
-    category: "Appetizers-Veg",
-    badges: ["NF", "V"]
+    category: "Appetizers",
+    badges: ["NF", "V"],
+    type: "veg"
   },
   {
     name: "Chole Bhatura",
     description: "Chickpea curry served with soft bhaturas.",
     image: "/menu/item19.jpg",
     price: "$14.99",
-    category: "Appetizers-Veg",
-    badges: ["NF"]
+    category: "Appetizers",
+    badges: ["NF"],
+    type: "veg"
   },
   {
     name: "Classic Chicken 65",
     description: "Marinated chicken fried with spices and curry leaves.",
     image: "/menu/item20.jpg",
     price: "$10.99",
-    category: "Appetizers-Veg",
-    badges: ["DF", "NF"]
+    category: "Appetizers",
+    badges: ["DF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Chicken Manchurian",
     description: "Spiced Fried chicken and peppers tossed in house-made manchurian sauce.",
     image: "/menu/item21.jpg",
     price: "$11.99",
-    category: "Appetizers - Non Veg",
-    badges: ["DF", "NF"]
+    category: "Appetizers",
+    badges: ["DF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Chili Chicken",
     description: "Fried chicken stir-fried with onions, bell peppers, and spicy Indo-Chinese chili sauce.",
     image: "/menu/item22.jpg",
     price: "$11.99",
-    category: "Appetizers - Non Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Appetizers",
+    badges: ["DF", "NF", "Spicy"],
+    type: "nonveg"
   },
 
   // --- Sukka ---
@@ -185,24 +207,27 @@ export const takeoutMenu = [
     description: "Tender chicken slow-cooked in freshly ground spices, herbs and topped with cashew.",
     image: "/menu/item23.jpg",
     price: "$12.99",
-    category: "Appetizers - Non Veg",
-    badges: ["GF", "DF"]
+    category: "Appetizers",
+    badges: ["GF", "DF"],
+    type: "nonveg"
   },
   {
     name: "Lamb Sukka",
     description: "Tender lamb slow-cooked in freshly ground spices and herbs.",
     image: "/menu/item24.jpg",
     price: "$14.99",
-    category: "Appetizers - Non Veg",
-    badges: ["GF", "DF"]
+    category: "Appetizers",
+    badges: ["GF", "DF"],
+    type: "nonveg"
   },
   {
     name: "Goat Sukka",
     description: "Tender goat meat slow-cooked in freshly ground spices and herbs.",
     image: "/menu/item25.jpg",
     price: "$15.99",
-    category: "Appetizers - Non Veg",
-    badges: ["GF", "DF"]
+    category: "Appetizers",
+    badges: ["GF", "DF"],
+    type: "nonveg"
   },
 
   // --- Tandoori Kebabs ---
@@ -211,24 +236,27 @@ export const takeoutMenu = [
     description: "Choice of protein marinated in spices, skewered, and roasted in the clay oven. Served with house salad, mint cilantro chutney and butter masala sauce.",
     image: "/menu/item26.jpg",
     price: "$14.99",
-    category: "Tandoori Kebabs-Non Veg",
-    badges: ["GF", "NF"]
+    category: "Tandoori Kebabs",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Paneer Cheese Tikka Kebab",
     description: "Choice of protein marinated in spices, skewered, and roasted in the clay oven. Served with house salad, mint cilantro chutney and butter masala sauce.",
     image: "/menu/item27.jpg",
     price: "$14.99",
-    category: "Tandoori Kebabs-Non Veg",
-    badges: ["GF", "NF"]
+    category: "Tandoori Kebabs",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Tandoori Salmon",
     description: "Choice of protein marinated in spices, skewered, and roasted in the clay oven. Served with house salad, mint cilantro chutney and butter masala sauce.",
     image: "/menu/item28.jpg",
     price: "$17.99",
-    category: "Tandoori Kebabs-Non Veg",
-    badges: ["GF", "NF"]
+    category: "Tandoori Kebabs",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
 
   // --- Curry Entrées ---
@@ -237,128 +265,144 @@ export const takeoutMenu = [
     description: "Yellow lentils, slow-cooked and tempered with mustard seeds, cumin, garlic, and herbs. Served à la carte with rice.",
     image: "/menu/item29.jpg",
     price: "$12.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "V"]
+    category: "Curry Entrées",
+    badges: ["GF", "V"],
+    type: "veg"
   },
   {
     name: "Aloo Gobi Masala",
     description: "Cauliflower and potatoes simmered in turmeric, cumin, and coriander. Served à la carte with rice.",
     image: "/menu/item30.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "V"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "V"],
+    type: "veg"
   },
   {
     name: "Channa Masala",
     description: "Chickpeas simmered in a rich tomato-onion gravy with aromatic spices. Served à la carte with rice.",
     image: "/menu/item31.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "V"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "V"],
+    type: "veg"
   },
   {
     name: "Malai Kofta",
     description: "Soft fried dumplings of paneer and potatoes simmered in a creamy onion and cashew gravy. Contains nuts.",
     image: "/menu/item32.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF"]
+    category: "Curry Entrées",
+    badges: ["GF"],
+    type: "veg"
   },
   {
     name: "Paneer Tikka Masala",
     description: "Marinated paneer grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce. Served à la carte with rice.",
     image: "/menu/item33.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Tofu Tikka Masala",
     description: "Marinated tofu grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce. Served à la carte with rice.",
     image: "/menu/item34.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Butter Paneer",
     description: "Paneer cubes simmered in a buttery tomato-based sauce with Indian spices. Served à la carte with rice.",
     image: "/menu/item35.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Butter Tofu",
     description: "Tofu cubes simmered in a buttery tomato-based sauce with Indian spices. Served à la carte with rice.",
     image: "/menu/item36.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Tawa Bhindi Masala",
     description: "Fried okra tossed in tomato-onion sauce with roasted cumin and coriander. Served à la carte with rice.",
     image: "/menu/item37.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "V"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "V"],
+    type: "veg"
   },
   {
     name: "Andhra Guttivankaya",
     description: "Mini eggplants stuffed with coconut-peanut masala, braised in tamarind-sesame gravy. Contains nuts & sesame.",
     image: "/menu/item38.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "V"]
+    category: "Curry Entrées",
+    badges: ["GF", "V"],
+    type: "veg"
   },
   {
     name: "Chicken Tikka Masala",
     description: "Marinated chicken grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce. Served à la carte with rice.",
     image: "/menu/item39.jpg",
     price: "$15.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Butter Chicken",
     description: "Tandoori chicken cubes simmered in a buttery tomato-based sauce with Indian spices. Served à la carte with rice.",
     image: "/menu/item40.jpg",
     price: "$15.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Butter Lamb",
     description: "Slow cooked lamb gently simmered in buttery tomato-based sauce with Indian spices. Served à la carte with rice.",
     image: "/menu/item41.jpg",
     price: "$18.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Goat Curry",
     description: "Slow cooked bone-in goat cooked in tomato-onion-tamarind sauce with spices. Served à la carte with rice.",
     image: "/menu/item42.jpg",
     price: "$19.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Malabar Fish Curry",
     description: "Marinated fish cubes cooked in tamarind-coconut gravy with curry leaves and roasted spices. Served à la carte with rice.",
     image: "/menu/item43.jpg",
     price: "$16.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   {
     name: "Coastal Shrimp Masala",
     description: "Shrimp simmered in onion-tomato sauce with spices and a hint of coconut. Served à la carte with rice.",
     image: "/menu/item44.jpg",
     price: "$16.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   // Madras Curry Group
   {
@@ -366,40 +410,45 @@ export const takeoutMenu = [
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice.",
     image: "/menu/item45.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Madras Curry - Paneer",
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice. (Contains dairy)",
     image: "/menu/item46.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Madras Curry - Tofu",
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice.",
     image: "/menu/item47.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Madras Curry - Chicken",
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice.",
     image: "/menu/item48.jpg",
     price: "$15.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   {
     name: "Madras Curry - Lamb",
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice.",
     image: "/menu/item49.jpg",
     price: "$18.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   // Saag Group
   {
@@ -407,48 +456,54 @@ export const takeoutMenu = [
     description: "Rich, slow-cooked spinach blended with warm spices and vegetables. Served à la carte with rice.",
     image: "/menu/item50.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Saag - Aloo",
     description: "Rich, slow-cooked spinach blended with warm spices and potatoes. Served à la carte with rice.",
     image: "/menu/item51.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Saag - Paneer",
     description: "Rich, slow-cooked spinach blended with warm spices and paneer. Served à la carte with rice. (Contains dairy)",
     image: "/menu/item52.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Saag - Tofu",
     description: "Rich, slow-cooked spinach blended with warm spices and tofu. Served à la carte with rice.",
     image: "/menu/item53.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Saag - Chicken",
     description: "Rich, slow-cooked spinach blended with warm spices and chicken. Served à la carte with rice.",
     image: "/menu/item54.jpg",
     price: "$15.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   {
     name: "Saag - Lamb",
     description: "Rich, slow-cooked spinach blended with warm spices and lamb. Served à la carte with rice.",
     image: "/menu/item55.jpg",
     price: "$18.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   // Kurma Group
   {
@@ -456,40 +511,45 @@ export const takeoutMenu = [
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices. Served à la carte with rice.",
     image: "/menu/item56.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Kurma - Paneer",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices. Served à la carte with rice. (Contains dairy)",
     image: "/menu/item57.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Kurma - Tofu",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices. Served à la carte with rice.",
     image: "/menu/item58.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Kurma - Chicken",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices. Served à la carte with rice.",
     image: "/menu/item59.jpg",
     price: "$15.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   {
     name: "Kurma - Lamb",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices. Served à la carte with rice.",
     image: "/menu/item60.jpg",
     price: "$18.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   // Goan Vindaloo Group
   {
@@ -497,32 +557,36 @@ export const takeoutMenu = [
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor. Served à la carte with rice.",
     image: "/menu/item61.jpg",
     price: "$13.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF", "Spicy"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Goan Vindaloo - Tofu",
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor. Served à la carte with rice.",
     image: "/menu/item62.jpg",
     price: "$15.99",
-    category: "Curry Entrées-Veg",
-    badges: ["GF", "NF", "DF", "Spicy"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Goan Vindaloo - Chicken",
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor. Served à la carte with rice.",
     image: "/menu/item63.jpg",
     price: "$15.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF", "Spicy"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF", "Spicy"],
+    type: "nonveg"
   },
   {
     name: "Goan Vindaloo - Lamb",
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor. Served à la carte with rice.",
     image: "/menu/item64.jpg",
     price: "$18.99",
-    category: "Curry Entrées - Non Veg",
-    badges: ["GF", "NF", "DF", "Spicy"]
+    category: "Curry Entrées",
+    badges: ["GF", "NF", "DF", "Spicy"],
+    type: "nonveg"
   },
 
   // --- Dosa ---
@@ -532,7 +596,8 @@ export const takeoutMenu = [
     image: "/menu/item65.jpg",
     price: "$11.99",
     category: "Dosa",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Cheese Dosa",
@@ -540,7 +605,8 @@ export const takeoutMenu = [
     image: "/menu/item66.jpg",
     price: "$12.99",
     category: "Dosa",
-    badges: ["GF", "NF"]
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Chili Cheese Dosa",
@@ -548,7 +614,8 @@ export const takeoutMenu = [
     image: "/menu/item67.jpg",
     price: "$13.99",
     category: "Dosa",
-    badges: ["GF", "NF", "Spicy"]
+    badges: ["GF", "NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Masala Dosa",
@@ -556,7 +623,8 @@ export const takeoutMenu = [
     image: "/menu/item68.jpg",
     price: "$13.99",
     category: "Dosa",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Mysore Masala Dosa",
@@ -564,7 +632,8 @@ export const takeoutMenu = [
     image: "/menu/item69.jpg",
     price: "$13.99",
     category: "Dosa",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Andhra Karam Dosa",
@@ -572,7 +641,8 @@ export const takeoutMenu = [
     image: "/menu/item70.jpg",
     price: "$13.99",
     category: "Dosa",
-    badges: ["GF", "NF", "DF", "Spicy"]
+    badges: ["GF", "NF", "DF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Paneer Dosa",
@@ -580,23 +650,26 @@ export const takeoutMenu = [
     image: "/menu/item71.jpg",
     price: "$15.99",
     category: "Dosa",
-    badges: ["GF", "NF"]
+    badges: ["GF", "NF"],
+    type: "veg"
   },
   {
     name: "Egg Dosa",
     description: "Thin, crispy Indian crepe with egg spread/filling. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
     image: "/menu/item72.jpg",
     price: "$15.99",
-    category: "Dosa - Non Veg",
-    badges: ["GF", "NF", "DF"]
+    category: "Dosa",
+    badges: ["GF", "NF", "DF"],
+    type: "nonveg"
   },
   {
     name: "Chicken Tikka Dosa",
     description: "Thin, crispy Indian crepe with chicken tikka filling. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
     image: "/menu/item73.jpg",
     price: "$16.99",
-    category: "Dosa - Non Veg",
-    badges: ["GF", "NF"]
+    category: "Dosa",
+    badges: ["GF", "NF"],
+    type: "nonveg"
   },
 
   // --- Uttapam ---
@@ -606,7 +679,8 @@ export const takeoutMenu = [
     image: "/menu/item74.jpg",
     price: "$11.99",
     category: "Uttapam",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Onion Uttapam",
@@ -614,7 +688,8 @@ export const takeoutMenu = [
     image: "/menu/item75.jpg",
     price: "$12.99",
     category: "Uttapam",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Mix Veg Uttapam",
@@ -622,7 +697,8 @@ export const takeoutMenu = [
     image: "/menu/item76.jpg",
     price: "$12.99",
     category: "Uttapam",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Podi Uttapam",
@@ -630,7 +706,8 @@ export const takeoutMenu = [
     image: "/menu/item77.jpg",
     price: "$12.99",
     category: "Uttapam",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
   {
     name: "Masala Onion Uttapam",
@@ -638,7 +715,8 @@ export const takeoutMenu = [
     image: "/menu/item78.jpg",
     price: "$14.99",
     category: "Uttapam",
-    badges: ["GF", "NF", "DF"]
+    badges: ["GF", "NF", "DF"],
+    type: "veg"
   },
 
   // --- Fried Rice ---
@@ -647,80 +725,90 @@ export const takeoutMenu = [
     description: "Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, garlic, and spices.",
     image: "/menu/item79.jpg",
     price: "$13.99",
-    category: "Fried Rice-Veg",
-    badges: ["DF", "NF"]
+    category: "Fried Rice",
+    badges: ["DF", "NF"],
+    type: "veg"
   },
   {
     name: "Indo-Chinese Fried Rice - Egg",
     description: "Indo-Chinese stir-fry with basmati rice, egg, soy sauce, garlic, and spices.",
     image: "/menu/item80.jpg",
     price: "$14.99",
-    category: "Fried Rice - Non Veg",
-    badges: ["DF", "NF"]
+    category: "Fried Rice",
+    badges: ["DF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Indo-Chinese Fried Rice - Paneer",
     description: "Indo-Chinese stir-fry with basmati rice, paneer, soy sauce, garlic, and spices. (Contains dairy)",
     image: "/menu/item81.jpg",
     price: "$15.99",
-    category: "Fried Rice-Veg",
-    badges: ["DF", "NF"]
+    category: "Fried Rice",
+    badges: ["DF", "NF"],
+    type: "veg"
   },
   {
     name: "Indo-Chinese Fried Rice - Tofu",
     description: "Indo-Chinese stir-fry with basmati rice, tofu, soy sauce, garlic, and spices.",
     image: "/menu/item82.jpg",
     price: "$15.99",
-    category: "Fried Rice-Veg",
-    badges: ["DF", "NF"]
+    category: "Fried Rice",
+    badges: ["DF", "NF"],
+    type: "veg"
   },
   {
     name: "Indo-Chinese Fried Rice - Chicken & Egg",
     description: "Indo-Chinese stir-fry with basmati rice, chicken, egg, soy sauce, garlic, and spices.",
     image: "/menu/item83.jpg",
     price: "$16.99",
-    category: "Fried Rice - Non Veg",
-    badges: ["DF", "NF"]
+    category: "Fried Rice",
+    badges: ["DF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Schezwan Fried Rice - Veggies",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
     image: "/menu/item84.jpg",
     price: "$13.99",
-    category: "Fried Rice-Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Fried Rice",
+    badges: ["DF", "NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Schezwan Fried Rice - Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, egg, soy sauce, spices and chili-garlic schezwan sauce.",
     image: "/menu/item85.png",
     price: "$14.99",
-    category: "Fried Rice - Non Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Fried Rice",
+    badges: ["DF", "NF", "Spicy"],
+    type: "nonveg"
   },
   {
     name: "Schezwan Fried Rice - Paneer",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, paneer, soy sauce, spices and chili-garlic schezwan sauce. (Contains dairy)",
     image: "/menu/item86.jpg",
     price: "$15.99",
-    category: "Fried Rice-Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Fried Rice",
+    badges: ["DF", "NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Schezwan Fried Rice - Tofu",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, tofu, soy sauce, spices and chili-garlic schezwan sauce.",
     image: "/menu/item87.jpg",
     price: "$15.99",
-    category: "Fried Rice-Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Fried Rice",
+    badges: ["DF", "NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Schezwan Fried Rice - Chicken & Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, chicken, egg, soy sauce, spices and chili-garlic schezwan sauce.",
     image: "/menu/item88.jpg",
     price: "$16.99",
-    category: "Fried Rice - Non Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Fried Rice",
+    badges: ["DF", "NF", "Spicy"],
+    type: "nonveg"
   },
 
   // --- Noodles ---
@@ -729,80 +817,90 @@ export const takeoutMenu = [
     description: "Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices.",
     image: "/menu/item89.jpg",
     price: "$14.99",
-    category: "Noodles-Veg",
-    badges: ["DF", "NF"]
+    category: "Noodles",
+    badges: ["DF", "NF"],
+    type: "veg"
   },
   {
     name: "Indo-Chinese Hakka Noodles - Egg",
     description: "Indo-Chinese wok-tossed noodles with egg, soy sauce, garlic, and spices.",
     image: "/menu/item90.jpg",
     price: "$15.99",
-    category: "Noodles - Non Veg",
-    badges: ["DF", "NF"]
+    category: "Noodles",
+    badges: ["DF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Indo-Chinese Hakka Noodles - Paneer",
     description: "Indo-Chinese wok-tossed noodles with paneer, soy sauce, garlic, and spices. (Contains dairy)",
     image: "/menu/item91.jpg",
     price: "$16.99",
-    category: "Noodles-Veg",
-    badges: ["DF", "NF"]
+    category: "Noodles",
+    badges: ["DF", "NF"],
+    type: "veg"
   },
   {
     name: "Indo-Chinese Hakka Noodles - Tofu",
     description: "Indo-Chinese wok-tossed noodles with tofu, soy sauce, garlic, and spices.",
     image: "/menu/item92.jpg",
     price: "$16.99",
-    category: "Noodles-Veg",
-    badges: ["DF", "NF"]
+    category: "Noodles",
+    badges: ["DF", "NF"],
+    type: "veg"
   },
   {
     name: "Indo-Chinese Hakka Noodles - Chicken & Egg",
     description: "Indo-Chinese wok-tossed noodles with chicken, egg, soy sauce, garlic, and spices.",
     image: "/menu/item93.jpg",
     price: "$17.99",
-    category: "Noodles - Non Veg",
-    badges: ["DF", "NF"]
+    category: "Noodles",
+    badges: ["DF", "NF"],
+    type: "nonveg"
   },
   {
     name: "Schezwan Noodles - Veggies",
     description: "Spicy Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, spices and chili-garlic schezwan sauce.",
     image: "/menu/item94.jpg",
     price: "$14.99",
-    category: "Noodles-Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Noodles",
+    badges: ["DF", "NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Schezwan Noodles - Egg",
     description: "Spicy Indo-Chinese wok-tossed noodles with egg, soy sauce, garlic, spices and chili-garlic schezwan sauce.",
     image: "/menu/item95.jpg",
     price: "$15.99",
-    category: "Noodles - Non Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Noodles",
+    badges: ["DF", "NF", "Spicy"],
+    type: "nonveg"
   },
   {
     name: "Schezwan Noodles - Paneer",
     description: "Spicy Indo-Chinese wok-tossed noodles with paneer, soy sauce, garlic, spices and chili-garlic schezwan sauce. (Contains dairy)",
     image: "/menu/item96.jpg",
     price: "$16.99",
-    category: "Noodles-Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Noodles",
+    badges: ["DF", "NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Schezwan Noodles - Tofu",
     description: "Spicy Indo-Chinese wok-tossed noodles with tofu, soy sauce, garlic, spices and chili-garlic schezwan sauce.",
     image: "/menu/item97.jpg",
     price: "$16.99",
-    category: "Noodles-Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Noodles",
+    badges: ["DF", "NF", "Spicy"],
+    type: "veg"
   },
   {
     name: "Schezwan Noodles - Chicken & Egg",
     description: "Spicy Indo-Chinese wok-tossed noodles with chicken, egg, soy sauce, garlic, spices and chili-garlic schezwan sauce.",
     image: "/menu/item98.jpg",
     price: "$17.99",
-    category: "Noodles - Non Veg",
-    badges: ["DF", "NF", "Spicy"]
+    category: "Noodles",
+    badges: ["DF", "NF", "Spicy"],
+    type: "nonveg"
   },
 
   // --- Biryani ---
@@ -811,64 +909,72 @@ export const takeoutMenu = [
     description: "Vegetables cooked in rich Hyderabadi biryani spices, layered with basmati rice.",
     image: "/menu/item99.jpg",
     price: "Reg- $14.99 Family Pack- $23.99",
-    category: "Biryani-Veg",
-    badges: ["GF"]
+    category: "Biryani",
+    badges: ["GF"],
+    type: "veg"
   },
   {
     name: "Paneer Biryani",
     description: "Soft, marinated paneer cubes cooked in aromatic biryani spices and layered with fragrant basmati rice.",
     image: "/menu/item100.jpg",
     price: "Reg- $16.99 Family Pack- $30.99",
-    category: "Biryani-Veg",
-    badges: []
+    category: "Biryani",
+    badges: [],
+    type: "veg"
   },
   {
     name: "Egg Biryani",
     description: "Boiled eggs simmered in a spiced masala and layered with fragrant basmati rice.",
     image: "/menu/item101.jpg",
     price: "Reg- $14.99 Family Pack- $26.99",
-    category: "Biryani - Non Veg",
-    badges: []
+    category: "Biryani",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Hyderabad Chicken Biryani",
     description: "Classic Hyderabadi dum biryani made with tender chicken marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
     image: "/menu/item102.jpg",
     price: "Reg- $16.99 Family Pack- $30.99",
-    category: "Biryani - Non Veg",
-    badges: []
+    category: "Biryani",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Jalsa special chicken biryani (Boneless)",
     description: "Juicy boneless chicken simmered in aromatic spices, layered with fragrant basmati rice.",
     image: "/menu/item103.jpg",
     price: "Reg- $17.99 Family Pack- $31.99",
-    category: "Biryani - Non Veg",
-    badges: []
+    category: "Biryani",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Bejawada Chicken Biryani (Bone in)",
     description: "Juicy bone in chicken simmered in aromatic spices, layered with fragrant basmati rice.",
     image: "/menu/item104.jpg",
     price: "Reg- $17.99 Family Pack- $31.99",
-    category: "Biryani - Non Veg",
-    badges: []
+    category: "Biryani",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Chowrasta Chicken 65 Biryani",
     description: "Chicken 65 tossed in signature spices and layered over fragrant biryani rice.",
     image: "/menu/item105.jpg",
     price: "Reg- $17.99 Family Pack- $31.99",
-    category: "Biryani - Non Veg",
-    badges: []
+    category: "Biryani",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Hyderabad Goat Biryani (Fri, Sat, Sun)",
     description: "Classic Hyderabadi dum biryani made with tender goat marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
     image: "/menu/item106.jpg",
     price: "Reg- $19.99 Family Pack- $34.99",
-    category: "Biryani - Non Veg",
-    badges: []
+    category: "Biryani",
+    badges: [],
+    type: "nonveg"
   },
   // --- South Indian Specials (Excluding Sukka) ---
   {
@@ -876,48 +982,54 @@ export const takeoutMenu = [
     description: "An Andhra specialty featuring tender chicken cooked with bold village-style spices, crushed chilies, and fragrant herbs.",
     image: "/menu/item107.jpg",
     price: "$14.99",
-    category: "South Indian Specials - Non Veg",
-    badges: []
+    category: "South Indian Specials",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Pachi Mirapakai Kodi",
     description: "Andhra-style chicken cooked with green chilies, onions, and spices for a spicy flavor.",
     image: "/menu/item108.jpg",
     price: "$14.99",
-    category: "South Indian Specials - Non Veg",
-    badges: ["Spicy"]
+    category: "South Indian Specials",
+    badges: ["Spicy"],
+    type: "nonveg"
   },
   {
     name: "Curry Leaf Chicken",
     description: "Tender chicken sautéed in a fragrant blend of roasted spices, garlic, and fresh curry leaves.",
     image: "/menu/item109.jpg",
     price: "$14.99",
-    category: "South Indian Specials - Non Veg",
-    badges: []
+    category: "South Indian Specials",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Apollo Fish",
     description: "Marinated fried fish tossed in a tangy, garlicky sauce.",
     image: "/menu/item110.jpg",
     price: "$15.99",
-    category: "South Indian Specials - Non Veg",
-    badges: []
+    category: "South Indian Specials",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Loose Prawns",
     description: "Fried prawns tossed in a zesty South Indian masala with green chilies, garlic, and fresh curry leaves.",
-    image: "/menu/item111.jpg - Non Veg",
+    image: "/menu/item111.jpg",
     price: "$16.99",
-    category: "South Indian Specials - Non Veg",
-    badges: []
+    category: "South Indian Specials",
+    badges: [],
+    type: "nonveg"
   },
   {
     name: "Shrimps Vepudu",
     description: "Succulent shrimp sautéed in crushed spices, garlic, curry leaves.",
     image: "/menu/item112.jpg",
     price: "$16.99",
-    category: "South Indian Specials - Non Veg",
-    badges: []
+    category: "South Indian Specials",
+    badges: [],
+    type: "nonveg"
   },
 
   // --- Breads ---

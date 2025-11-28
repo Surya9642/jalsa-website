@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+import heroBg from "@/assets/2.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -101,9 +102,8 @@ const Catering = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1519167758481-83f29da8c2b0?w=1920&h=1080&fit=crop)",
-          }}
+                  backgroundImage: `url(${heroBg})`,
+                }}
         >
           <div className="absolute inset-0 bg-gradient-overlay" />
         </div>

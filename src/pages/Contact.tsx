@@ -140,7 +140,7 @@ const Contact = () => {
                   icon: Phone,
                   title: "Phone",
                   content: (
-                    <a href="tel:+15551234567" className="hover:text-gold transition-colors">
+                    <a href="tel:+15036736070" className="hover:text-gold transition-colors">
                       +1 (503) 673-6070
                     </a>
                   ),
