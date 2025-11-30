@@ -109,7 +109,7 @@ const Hero = () => {
             </Button>
 
             {/* Go to Menu */}
-            <Button variant="hero" size="xl" onClick={() => navigate("/menu-dine-in")}>
+            <Button variant="hero" size="xl" onClick={() => navigate("/menu")}>
               View Menu
             </Button>
           </div>

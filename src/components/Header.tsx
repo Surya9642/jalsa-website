@@ -111,7 +111,7 @@ const Header = () => {
               <Link to="/about" onClick={closeMobileMenu}>About</Link>
 
               {/* mobile menu has direct pages */}
-              <Link to="/menu-dinein" onClick={closeMobileMenu}>Dine-In Menu</Link>
+              <Link to="/menu-dine-in" onClick={closeMobileMenu}>Dine-In Menu</Link>
               <Link to="/menu-takeaway" onClick={closeMobileMenu}>Takeaway Menu</Link>
 
               <Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link>

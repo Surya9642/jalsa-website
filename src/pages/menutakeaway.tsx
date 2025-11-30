@@ -62,26 +62,34 @@ const MenuTakeaway = () => {
         <LegendRow />
 
         {/* SPICE LEVEL */}
-        <div className="text-center italic text-lg text-primary mb-12 px-3">
+        <div className="text-center text-primary mb-8 px-3">
           Please choose your spice level:{" "}
-          <span className="font-semibold">
+          <span className="">
             1 = Mild, 2 = Medium, 3 = Medium Hot, 4 = Hot, 5 = Extra Hot
           </span>
         </div>
 
+           <div className="text-center text-primary mb-12 px-3">
+          Note: {" "}
+          <span className="">
+            Fried foods may contain traces of gluten as they are prepared in shared fryers. Please inform your server of any allergies.
+          </span> <br />
+          An 18% gratuity will be added to parties of 6 or more
+        </div>
+        
         {/* CURRY INFO ONLY WHEN CURRY TAB IS SELECTED */}
         {selectedCategory === "Curry Entrées" && (
           <div className="mb-10 text-primary">
-            <p className="text-lg italic mb-2 text-center">
+            <p className="text-md mb-2 text-center">
               Choose how you'd like to enjoy your curry:
             </p>
-            <ul className="text-lg list-disc list-inside space-y-1 leading-relaxed max-w-3xl mx-auto">
+            <ul className="text-md list-disc list-inside space-y-1 leading-relaxed max-w-3xl mx-auto">
               <li>
-                <span className="italic font-semibold">À la Carte</span> – Curry
+                <span className="font-semibold">À la Carte</span> – Curry
                 served with rice. Add naan for an additional charge.
               </li>
               <li>
-                <span className="italic font-semibold">Thali</span> – A complete
+                <span className="font-semibold">Thali</span> – A complete
                 platter served with curry of your choice, rice, naan, dal,
                 sambhar, raita, pickle, papad, and dessert. Add for +$5.
               </li>

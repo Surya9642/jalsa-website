@@ -149,8 +149,8 @@ const Contact = () => {
                   icon: Mail,
                   title: "Email",
                   content: (
-                    <a href="mailto:Pradikshajalsa@gmail.com" className="hover:text-gold transition-colors">
-                      Pradikshajalsa@gmail.com
+                    <a href="mailto:jalsacuisine@gmail.com" className="hover:text-gold transition-colors">
+                      jalsacuisine@gmail.com
                     </a>
                   ),
                 },
