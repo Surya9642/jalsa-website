@@ -63,7 +63,7 @@ const MenuDin = () => {
         <LegendRow />
 
         {/* SPICE LEVEL */}
-        <div className="text-center text-primary mb-8 px-3">
+        <div className="text-center text-primary text-[15px] mb-8 px-3">
           Please choose your spice level:{" "}
           <span className="">
             1 = Mild, 2 = Medium, 3 = Medium Hot, 4 = Hot, 5 = Extra Hot
@@ -72,7 +72,7 @@ const MenuDin = () => {
 
         {/* CURRY SECTION EXPLANATION */}
         {selectedCategory === "Curry Entrées" && (
-          <div className="mb-10 text-primary">
+          <div className="mb-10 text-primary text-[15px]">
             <p className="text-md mb-2 text-center">
               Choose how you'd like to enjoy your curry:
             </p>

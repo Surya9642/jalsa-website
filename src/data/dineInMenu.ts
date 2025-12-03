@@ -516,7 +516,7 @@ export const dineInMenu = [
   {
     name: "Kurma - Tofu",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
-    image: "/menu/item50.jpg",
+    image: "/menu/item59.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -525,7 +525,7 @@ export const dineInMenu = [
   {
     name: "Kurma - Chicken",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
-    image: "/menu/item59.jpg",
+    image: "/menu/item60.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -534,7 +534,7 @@ export const dineInMenu = [
   {
     name: "Kurma - Lamb",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
-    image: "/menu/item60.jpg",
+    image: "/menu/item50.jpg",
     price: "$18.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -561,7 +561,7 @@ export const dineInMenu = [
   {
     name: "Goan Vindaloo - Chicken",
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor.",
-    image: "/menu/item63.jpg",
+    image: "/menu/item64.jpg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF", "spicy"],
@@ -570,7 +570,7 @@ export const dineInMenu = [
   {
     name: "Goan Vindaloo - Lamb",
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor.",
-    image: "/menu/item64.jpg",
+    image: "/menu/item65.jpg",
     price: "$18.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF", "spicy"],
@@ -579,7 +579,7 @@ export const dineInMenu = [
   {
     name: "Plain Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item65.jpg",
+    image: "/menu/item66.jpg",
     price: "$11.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -588,7 +588,7 @@ export const dineInMenu = [
   {
     name: "Cheese Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item66.jpg",
+    image: "/menu/item67.jpg",
     price: "$12.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -597,7 +597,7 @@ export const dineInMenu = [
   {
     name: "Chili Cheese Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item67.jpg",
+    image: "/menu/item68.jpg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -606,7 +606,7 @@ export const dineInMenu = [
   {
     name: "Masala Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Potato Masala, Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item68.jpg",
+    image: "/menu/item69.jpg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -615,7 +615,7 @@ export const dineInMenu = [
   {
     name: "Mysore Masala Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Potato Masala, Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item69.jpg",
+    image: "/menu/item70.jpg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -624,7 +624,7 @@ export const dineInMenu = [
   {
     name: "Andhra Karam Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Potato Masala, Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item70.jpg",
+    image: "/menu/item71.jpg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF", "Spicy"],
@@ -633,7 +633,7 @@ export const dineInMenu = [
   {
     name: "Paneer Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item71.jpg",
+    image: "/menu/item72.jpg",
     price: "$15.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -642,7 +642,7 @@ export const dineInMenu = [
   {
     name: "Egg Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item72.jpg",
+    image: "/menu/item73.jpg",
     price: "$15.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -651,7 +651,7 @@ export const dineInMenu = [
   {
     name: "Chicken Tikka Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item73.jpg",
+    image: "/menu/item74.jpg",
     price: "$16.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],
@@ -660,7 +660,7 @@ export const dineInMenu = [
   {
     name: "Plain Uttapam",
     description: "Thick, soft Indian pancake made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item74.jpg",
+    image: "/menu/item75.jpg",
     price: "$11.99",
     category: "Uttapam",
     badges: ["GF", "NF", "Can be made DF"],
@@ -669,7 +669,7 @@ export const dineInMenu = [
   {
     name: "Onion Uttapam",
     description: "Thick, soft Indian pancake made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item75.jpg",
+    image: "/menu/item76.jpg",
     price: "$12.99",
     category: "Uttapam",
     badges: ["GF", "NF", "Can be made DF"],
@@ -678,7 +678,7 @@ export const dineInMenu = [
   {
     name: "Mix Veg Uttapam",
     description: "Thick, soft Indian pancake made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item76.jpg",
+    image: "/menu/item77.jpg",
     price: "$12.99",
     category: "Uttapam",
     badges: ["GF", "NF", "Can be made DF"],
@@ -687,7 +687,7 @@ export const dineInMenu = [
   {
     name: "Podi Uttapam",
     description: "Thick, soft Indian pancake made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item77.jpg",
+    image: "/menu/item78.jpg",
     price: "$12.99",
     category: "Uttapam",
     badges: ["GF", "NF", "Can be made DF"],
@@ -696,7 +696,7 @@ export const dineInMenu = [
   {
     name: "Masala Onion Uttapam",
     description: "Thick, soft Indian pancake made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item78.jpg",
+    image: "/menu/item79.jpg",
     price: "$14.99",
     category: "Uttapam",
     badges: ["GF", "NF", "Can be made DF"],
@@ -705,7 +705,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Fried Rice - Veggies",
     description: "Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item79.jpg",
+    image: "/menu/item80.jpg",
     price: "$13.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -714,7 +714,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Fried Rice - Egg",
     description: "Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item80.jpg",
+    image: "/menu/item81.jpg",
     price: "$14.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -723,7 +723,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Fried Rice - Paneer",
     description: "Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item81.jpg",
+    image: "/menu/item82.jpg",
     price: "$15.99",
     category: "Fried Rice",
     badges: ["DF", "NF", "Contains Dairy"],
@@ -732,7 +732,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Fried Rice - Tofu",
     description: "Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item82.jpg",
+    image: "/menu/item83.jpg",
     price: "$15.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -741,7 +741,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Fried Rice - Chicken & Egg",
     description: "Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item83.jpg",
+    image: "/menu/item84.jpg",
     price: "$16.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -750,7 +750,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Fried Rice - Veggies",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item84.jpg",
+    image: "/menu/item85.jpg",
     price: "$13.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -759,7 +759,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Fried Rice - Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item85.png",
+    image: "/menu/item86.png",
     price: "$14.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -768,7 +768,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Fried Rice - Paneer",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item86.jpg",
+    image: "/menu/item87.jpg",
     price: "$15.99",
     category: "Fried Rice",
     badges: ["DF", "NF", "Contains Dairy"],
@@ -777,7 +777,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Fried Rice - Tofu",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item87.jpg",
+    image: "/menu/item88.jpg",
     price: "$15.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -786,7 +786,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Fried Rice - Chicken & Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, vegetables, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item88.png",
+    image: "/menu/item89.png",
     price: "$16.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -795,7 +795,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Hakka Noodles - Veggies",
     description: "Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item89.jpg",
+    image: "/menu/item90.jpg",
     price: "$14.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -804,7 +804,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Hakka Noodles - Egg",
     description: "Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item90.jpg",
+    image: "/menu/item91.jpg",
     price: "$15.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -813,7 +813,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Hakka Noodles - Paneer",
     description: "Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item91.jpg",
+    image: "/menu/item92.jpg",
     price: "$16.99",
     category: "Noodles",
     badges: ["DF", "NF", "Contains Dairy"],
@@ -822,7 +822,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Hakka Noodles - Tofu",
     description: "Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item92.jpg",
+    image: "/menu/item93.jpg",
     price: "$16.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -831,7 +831,7 @@ export const dineInMenu = [
   {
     name: "Indo-Chinese Hakka Noodles - Chicken & Egg",
     description: "Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices.",
-    image: "/menu/item93.jpg",
+    image: "/menu/item94.jpg",
     price: "$17.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -840,7 +840,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Noodles - Veggies",
     description: "Spicy Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices and chili-garlic schezwan sauce.",
-    image: "/menu/item94.jpg",
+    image: "/menu/item95.jpg",
     price: "$14.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -849,7 +849,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Noodles - Egg",
     description: "Spicy Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices and chili-garlic schezwan sauce.",
-    image: "/menu/item95.jpg",
+    image: "/menu/item96.jpg",
     price: "$15.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -858,7 +858,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Noodles - Paneer",
     description: "Spicy Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices and chili-garlic schezwan sauce.",
-    image: "/menu/item96.jpg",
+    image: "/menu/item97.jpg",
     price: "$16.99",
     category: "Noodles",
     badges: ["DF", "NF", "Contains Dairy"],
@@ -867,7 +867,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Noodles - Tofu",
     description: "Spicy Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices and chili-garlic schezwan sauce.",
-    image: "/menu/item97.jpg",
+    image: "/menu/item98.jpg",
     price: "$16.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -876,7 +876,7 @@ export const dineInMenu = [
   {
     name: "Schezwan Noodles - Chicken & Egg",
     description: "Spicy Indo-Chinese wok-tossed noodles with vegetables, soy sauce, garlic, and spices and chili-garlic schezwan sauce.",
-    image: "/menu/item98.jpg",
+    image: "/menu/item99.jpg",
     price: "$17.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -885,7 +885,7 @@ export const dineInMenu = [
   {
     name: "Hyderabad Veg Biryani",
     description: "Vegetables cooked in rich Hyderabadi biryani spices, layered with basmati rice.",
-    image: "/menu/item99.jpg",
+    image: "/menu/item100.jpg",
     price: "Reg- $14.99 Family Pack- $23.99",
     category: "Biryani",
     badges: ["GF"],
@@ -894,7 +894,7 @@ export const dineInMenu = [
   {
     name: "Paneer Biryani",
     description: "Soft, marinated paneer cubes cooked in aromatic biryani spices and layered with fragrant basmati rice.",
-    image: "/menu/item100.jpg",
+    image: "/menu/item101.jpg",
     price: "Reg- $16.99 Family Pack- $30.99",
     category: "Biryani",
     badges: [],
@@ -903,7 +903,7 @@ export const dineInMenu = [
   {
     name: "Egg Biryani",
     description: "Boiled eggs simmered in a spiced masala and layered with fragrant basmati rice.",
-    image: "/menu/item101.jpg",
+    image: "/menu/item102.jpg",
     price: "Reg- $14.99 Family Pack- $26.99",
     category: "Biryani",
     badges: [],
@@ -912,7 +912,7 @@ export const dineInMenu = [
   {
     name: "Hyderabad Chicken Biryani",
     description: "Classic Hyderabadi dum biryani made with tender chicken marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
-    image: "/menu/item102.jpg",
+    image: "/menu/item103.jpg",
     price: "Reg- $16.99 Family Pack- $30.99",
     category: "Biryani",
     badges: [],
@@ -921,7 +921,7 @@ export const dineInMenu = [
   {
     name: "Jalsa special chicken biryani (Boneless)",
     description: "Juicy boneless chicken simmered in aromatic spices, layered with fragrant basmati rice.",
-    image: "/menu/item103.jpg",
+    image: "/menu/item104.jpg",
     price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
     badges: [],
@@ -930,7 +930,7 @@ export const dineInMenu = [
   {
     name: "Bejawada Chicken Biryani (Bone in)",
     description: "Juicy bone in chicken simmered in aromatic spices, layered with fragrant basmati rice.",
-    image: "/menu/item104.jpg",
+    image: "/menu/item105.jpg",
     price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
     badges: [],
@@ -939,7 +939,7 @@ export const dineInMenu = [
   {
     name: "Chowrasta Chicken 65 Biryani",
     description: "Chicken 65 tossed in signature spices and layered over fragrant biryani rice.",
-    image: "/menu/item105.jpg",
+    image: "/menu/item106.jpg",
     price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
     badges: [],
@@ -948,7 +948,7 @@ export const dineInMenu = [
   {
     name: "Hyderabad Goat Biryani (Fri, Sat, Sun)",
     description: "Classic Hyderabadi dum biryani made with tender goat marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
-    image: "/menu/item106.jpg",
+    image: "/menu/item107.jpg",
     price: "Reg- $19.99 Family Pack- $34.99",
     category: "Biryani",
     badges: [],
@@ -957,7 +957,7 @@ export const dineInMenu = [
   {
     name: "Monagadu Chicken",
     description: "An Andhra specialty featuring tender chicken cooked with bold village-style spices, crushed chilies, and fragrant herbs.",
-    image: "/menu/item107.jpg",
+    image: "/menu/item108.jpg",
     price: "$14.99",
     category: "South Indian Specials",
     badges: [],
@@ -966,7 +966,7 @@ export const dineInMenu = [
   {
     name: "Pachi Mirapakai Kodi",
     description: "Andhra-style chicken cooked with green chilies, onions, and spices for a spicy flavor.",
-    image: "/menu/item108.jpg",
+    image: "/menu/item109.jpg",
     price: "$14.99",
     category: "South Indian Specials",
     badges: [],
@@ -975,7 +975,7 @@ export const dineInMenu = [
   {
     name: "Curry Leaf Chicken",
     description: "Tender chicken sautéed in a fragrant blend of roasted spices, garlic, and fresh curry leaves.",
-    image: "/menu/item109.jpg",
+    image: "/menu/item110.jpg",
     price: "$14.99",
     category: "South Indian Specials",
     badges: [],
@@ -984,7 +984,7 @@ export const dineInMenu = [
   {
     name: "Apollo Fish",
     description: "Marinated fried fish tossed in a tangy, garlicky sauce.",
-    image: "/menu/item110.jpg",
+    image: "/menu/item111.jpg",
     price: "$15.99",
     category: "South Indian Specials",
     badges: [],
@@ -993,7 +993,7 @@ export const dineInMenu = [
   {
     name: "Loose Prawns",
     description: "Fried prawns tossed in a zesty South Indian masala with green chilies, garlic, and fresh curry leaves.",
-    image: "/menu/item111.jpg",
+    image: "/menu/item112.jpg",
     price: "$16.99",
     category: "South Indian Specials",
     badges: [],
@@ -1002,7 +1002,7 @@ export const dineInMenu = [
   {
     name: "Shrimps Vepudu",
     description: "Succulent shrimp sautéed in crushed spices, garlic, curry leaves.",
-    image: "/menu/item112.jpg",
+    image: "/menu/item113.jpg",
     price: "$16.99",
     category: "South Indian Specials",
     badges: [],
@@ -1011,7 +1011,7 @@ export const dineInMenu = [
   {
     name: "Plain Naan",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item113.jpg",
+    image: "/menu/item115.jpg",
     price: "$3.49",
     category: "Breads",
     badges: [],
@@ -1019,7 +1019,7 @@ export const dineInMenu = [
   {
     name: "Butter Naan",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item114.jpg",
+    image: "/menu/item116.jpg",
     price: "$3.99",
     category: "Breads",
     badges: []
@@ -1027,7 +1027,7 @@ export const dineInMenu = [
   {
     name: "Garlic Naan",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item115.jpg",
+    image: "/menu/item117.jpg",
     price: "$4.49",
     category: "Breads",
     badges: []
@@ -1035,7 +1035,7 @@ export const dineInMenu = [
   {
     name: "Cheese Naan",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item116.jpg",
+    image: "/menu/item118.jpg",
     price: "$5.99",
     category: "Breads",
     badges: []
@@ -1043,7 +1043,7 @@ export const dineInMenu = [
   {
     name: "Plain Roti",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item117.jpg",
+    image: "/menu/item119.jpg",
     price: "$3.49",
     category: "Breads",
     badges: []
@@ -1051,7 +1051,7 @@ export const dineInMenu = [
   {
     name: "Butter Roti",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item118.jpg",
+    image: "/menu/item120.jpg",
     price: "$3.99",
     category: "Breads",
     badges: []
@@ -1059,7 +1059,7 @@ export const dineInMenu = [
   {
     name: "Bhatura",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item119.jpg",
+    image: "/menu/item121.jpg",
     price: "$4.99",
     category: "Breads",
     badges: []
@@ -1067,7 +1067,7 @@ export const dineInMenu = [
   {
     name: "Rasmalai",
     description: "Soft paneer patties soaked in sweet, aromatic milk with pistachios.",
-    image: "/menu/item120.jpg",
+    image: "/menu/item122.jpg",
     price: "$4.99",
     category: "Dessert",
     badges: []
@@ -1075,7 +1075,7 @@ export const dineInMenu = [
   {
     name: "Gulab Jamun",
     description: "Soft fried dumplings soaked in sugar syrup.",
-    image: "/menu/item121.jpg",
+    image: "/menu/item123.jpg",
     price: "$4.99",
     category: "Dessert",
     badges: []
@@ -1083,7 +1083,7 @@ export const dineInMenu = [
   {
     name: "Kheer Brulee",
     description: "Creamy rice pudding with milk, sugar, and nuts, finished with a caramelized brûlée crust and a scoop of vanilla ice cream.",
-    image: "/menu/item122.jpg",
+    image: "/menu/item124.jpg",
     price: "$9.99",
     category: "Dessert",
     badges: []
@@ -1091,7 +1091,7 @@ export const dineInMenu = [
   {
     name: "Chai Tiramisu",
     description: "Eggless cake rusk soaked in chai, layered with rich cream.",
-    image: "/menu/item123.jpg",
+    image: "/menu/item125.jpg",
     price: "$9.99",
     category: "Dessert",
     badges: []
@@ -1099,7 +1099,7 @@ export const dineInMenu = [
   {
     name: "Rasmalai Tres Leches",
     description: "Eggless sponge cake soaked in rasmalai milk and topped with rasmalai flavored whipped cream.",
-    image: "/menu/item124.jpg",
+    image: "/menu/item126.jpg",
     price: "$9.99",
     category: "Dessert",
     badges: []
@@ -1107,7 +1107,7 @@ export const dineInMenu = [
   {
     name: "Mango Lassi",
     description: "Refreshing mango yogurt drink.",
-    image: "/menu/item125.jpg",
+    image: "/menu/item127.jpg",
     price: "$5.49",
     category: "Drinks",
     badges: []
@@ -1115,7 +1115,7 @@ export const dineInMenu = [
   {
     name: "Mango Coconut Lassi",
     description: "Refreshing mango coconut yogurt drink.",
-    image: "/menu/item126.jpg",
+    image: "/menu/item128.jpg",
     price: "$5.49",
     category: "Drinks",
     badges: ["V"]
@@ -1123,7 +1123,7 @@ export const dineInMenu = [
   {
     name: "Minty Lemonade",
     description: "Fresh lemonade blended with mint.",
-    image: "/menu/item127.jpg",
+    image: "/menu/item129.jpg",
     price: "$5.49",
     category: "Drinks",
     badges: ["V"]
@@ -1131,7 +1131,7 @@ export const dineInMenu = [
   {
     name: "Masala Chai",
     description: "Spiced Indian tea with milk.",
-    image: "/menu/item128.jpg",
+    image: "/menu/item130.jpg",
     price: "$4.49",
     category: "Drinks",
     badges: []
@@ -1139,7 +1139,7 @@ export const dineInMenu = [
   {
     name: "Indian Coffee",
     description: "Hot South-Indian filter coffee.",
-    image: "/menu/item129.jpg",
+    image: "/menu/item131.jpg",
     price: "$4.49",
     category: "Drinks",
     badges: []
@@ -1147,7 +1147,7 @@ export const dineInMenu = [
   {
     name: "Soft Drinks",
     description: "",
-    image: "/menu/item130.jpg",
+    image: "/menu/item132.jpg",
     price: "$2.99",
     category: "Drinks",
     badges: []
@@ -1155,7 +1155,7 @@ export const dineInMenu = [
   {
     name: "San Pellegrino",
     description: "",
-    image: "/menu/item131.jpg",
+    image: "/menu/item133.jpg",
     price: "$4.99",
     category: "Drinks",
     badges: []
@@ -1163,7 +1163,7 @@ export const dineInMenu = [
   {
     name: "Raitha",
     description: "",
-    image: "/menu/item132.jpg",
+    image: "/menu/item134.jpg",
     price: "$3.99",
     category: "Sides",
     badges: []
@@ -1171,7 +1171,7 @@ export const dineInMenu = [
   {
     name: "House Salad",
     description: "",
-    image: "/menu/item133.jpg",
+    image: "/menu/item135.jpg",
     price: "$3.99",
     category: "Sides",
     badges: []
@@ -1179,7 +1179,7 @@ export const dineInMenu = [
   {
     name: "Chutney Sampler",
     description: "",
-    image: "/menu/item134.jpg",
+    image: "/menu/item136.jpg",
     price: "$3.99",
     category: "Sides",
     badges: []
@@ -1187,7 +1187,7 @@ export const dineInMenu = [
   {
     name: "Basmati Rice",
     description: "",
-    image: "/menu/item135.jpg",
+    image: "/menu/item137.jpg",
     price: "$3.99",
     category: "Sides",
     badges: []
@@ -1195,7 +1195,7 @@ export const dineInMenu = [
   {
     name: "Sambhar 12 oz",
     description: "",
-    image: "/menu/item136.jpg",
+    image: "/menu/item138.jpg",
     price: "$5.99",
     category: "Sides",
     badges: []

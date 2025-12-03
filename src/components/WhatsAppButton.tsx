@@ -3,12 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "5036736070"; // Replace with actual phone number
-    const message = encodeURIComponent("Hello JALSA, I'd like to reserve a table.");
+    const phoneNumber = "5036736070";
     window.open(
-  `https://wa.me/15036736070?text=${encodeURIComponent(message)}`,
-  "_blank"
-);
+      `https://wa.me/1${phoneNumber}`,
+      "_blank"
+    );
 
   };
 
