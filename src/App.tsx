@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect } from "react";
+import { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -19,22 +19,14 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const queryClient = new QueryClient();
 
 const App = () => {
-
-  // ⭐ Global click scroll fix
-  useEffect(() => {
-    const clickHandler = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-    document.addEventListener("click", clickHandler);
-    return () => document.removeEventListener("click", clickHandler);
-  }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
+
         <BrowserRouter>
+          {/* ⭐ Scroll to Top only when route changes */}
           <ScrollToTop />
 
           <Suspense fallback={null}>

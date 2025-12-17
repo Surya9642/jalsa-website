@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/menu-header.jpg";
 import { takeoutMenu } from "@/data/takeoutMenu";
 
-const specialCats = ["Breads", "Dessert", "Drinks", "Sides"];
+const specialCats = ["Breads", "Dessert", "Drinks", "Sides", "Kids Menu"];
 
 const MenuTakeaway = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -88,11 +88,6 @@ const MenuTakeaway = () => {
                 <span className="font-semibold">À la Carte</span> – Curry
                 served with rice. Add naan for an additional charge.
               </li>
-              <li>
-                <span className="font-semibold">Thali</span> – A complete
-                platter served with curry of your choice, rice, naan, dal,
-                sambhar, raita, pickle, papad, and dessert. Add for +$5.
-              </li>
             </ul>
           </div>
         )}
@@ -129,8 +124,8 @@ const LegendRow = () => (
   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 text-center text-[14px] text-primary">
     <Legend icon="/icons/gf.svg" label="GF – Gluten Free" />
     <Legend icon="/icons/nf.svg" label="NF – Nut Free" />
-    <Legend icon="/icons/vegan.svg" label="Can be V – Vegan" />
-    <Legend icon="/icons/df.svg" label="DF – Dairy Free" />
+    <Legend icon="/icons/vegan.svg" label="DF – Dairy Free" />
+    <Legend icon="/icons/df.svg" label="V – Vegan" />
   </div>
 );
 

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/menu-header.jpg";
 import { dineInMenu } from "@/data/dineInMenu";
 
-const specialCats = ["Breads", "Dessert", "Drinks", "Sides"];
+const specialCats = ["Breads", "Dessert", "Drinks", "Sides", "Kids Menu"];
 
 const MenuDin = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -123,7 +123,7 @@ const LegendRow = () => (
   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6 text-center">
     <Legend icon="/icons/gf.svg" label="GF – Gluten Free" />
     <Legend icon="/icons/nf.svg" label="NF – Nut Free" />
-    <Legend icon="/icons/vegan.svg" label="Can be V – Vegan" />
+    <Legend icon="/icons/vegan.svg" label="V – Vegan" />
     <Legend icon="/icons/df.svg" label="DF – Dairy Free" />
   </div>
 );

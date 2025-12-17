@@ -42,7 +42,7 @@ export const takeoutMenu = [
     image: "/menu/item5.jpg",
     price: "$10.99",
     category: "Bar Snacks / Small Plates",
-    badges: ["GF", "NF"],
+    badges: ["NF"],
     type: "veg"
   },
   {
@@ -51,7 +51,7 @@ export const takeoutMenu = [
     image: "/menu/item6.jpg",
     price: "$9.99",
     category: "Bar Snacks / Small Plates",
-    badges: ["GF", "NF", "can be V"],
+    badges: ["GF", "NF", "Can be V"],
     type: "veg"
   },
 
@@ -62,7 +62,7 @@ export const takeoutMenu = [
     image: "/menu/item7.jpg",
     price: "$6.99",
     category: "Appetizers",
-    badges: ["NF", "can be V"],
+    badges: ["NF", "Can be V"],
     type: "veg"
   },
   {
@@ -71,7 +71,7 @@ export const takeoutMenu = [
     image: "/menu/item8.jpg",
     price: "$9.99",
     category: "Appetizers",
-    badges: ["GF", "can be V", "Spicy"],
+    badges: ["GF","contains peanuts", " Can be V", "Spicy"],
     type: "veg"
   },
   {
@@ -89,7 +89,7 @@ export const takeoutMenu = [
     image: "/menu/item10.jpg",
     price: "$9.99",
     category: "Appetizers",
-    badges: ["GF", "can be V"],
+    badges: ["GF", " Can be V"],
     type: "veg"
   },
   {
@@ -98,7 +98,7 @@ export const takeoutMenu = [
     image: "/menu/item11.jpg",
     price: "$8.99",
     category: "Appetizers",
-    badges: ["GF", "NF", "can be V"],
+    badges: ["GF", "NF", "Can be V"],
     type: "veg"
   },
   {
@@ -161,7 +161,7 @@ export const takeoutMenu = [
     image: "/menu/item18.jpg",
     price: "$11.99",
     category: "Appetizers",
-    badges: ["NF", "can be V"],
+    badges: ["NF", "Can be V"],
     type: "veg"
   },
   {
@@ -208,7 +208,7 @@ export const takeoutMenu = [
     image: "/menu/item23.jpg",
     price: "$12.99",
     category: "Appetizers",
-    badges: ["GF", "DF"],
+    badges: ["GF", "can be DF"],
     type: "nonveg"
   },
   {
@@ -217,7 +217,7 @@ export const takeoutMenu = [
     image: "/menu/item24.jpg",
     price: "$14.99",
     category: "Appetizers",
-    badges: ["GF", "DF"],
+    badges: ["GF", "can be DF"],
     type: "nonveg"
   },
   {
@@ -226,7 +226,7 @@ export const takeoutMenu = [
     image: "/menu/item25.jpg",
     price: "$15.99",
     category: "Appetizers",
-    badges: ["GF", "DF"],
+    badges: ["GF", "can be DF"],
     type: "nonveg"
   },
 
@@ -266,7 +266,7 @@ export const takeoutMenu = [
     image: "/menu/item29.jpg",
     price: "$12.99",
     category: "Curry Entrées",
-    badges: ["GF", "can be V"],
+    badges: ["GF", "Can be V"],
     type: "veg"
   },
   {
@@ -275,7 +275,7 @@ export const takeoutMenu = [
     image: "/menu/item30.jpg",
     price: "$13.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "can be V"],
+    badges: ["GF", "NF", "Can be V"],
     type: "veg"
   },
   {
@@ -284,7 +284,7 @@ export const takeoutMenu = [
     image: "/menu/item31.jpg",
     price: "$13.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "can be V"],
+    badges: ["GF", "NF", "Can be V"],
     type: "veg"
   },
   {
@@ -293,7 +293,7 @@ export const takeoutMenu = [
     image: "/menu/item32.jpg",
     price: "$15.99",
     category: "Curry Entrées",
-    badges: ["GF"],
+    badges: ["GF","contains nuts"],
     type: "veg"
   },
   {
@@ -338,7 +338,7 @@ export const takeoutMenu = [
     image: "/menu/item37.jpg",
     price: "$13.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "can be V"],
+    badges: ["GF", "NF", "Can be V"],
     type: "veg"
   },
   {
@@ -347,7 +347,7 @@ export const takeoutMenu = [
     image: "/menu/item38.jpg",
     price: "$15.99",
     category: "Curry Entrées",
-    badges: ["GF", "V"],
+    badges: ["GF", "V", "contains nuts & sesame"],
     type: "veg"
   },
   {
@@ -457,7 +457,7 @@ export const takeoutMenu = [
     image: "/menu/item51.jpg",
     price: "$13.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "DF"],
+    badges: ["GF", "NF", "can be DF"],
     type: "veg"
   },
   {
@@ -466,7 +466,7 @@ export const takeoutMenu = [
     image: "/menu/item52.jpg",
     price: "$13.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "DF"],
+    badges: ["GF", "NF", "can be DF"],
     type: "veg"
   },
   {
@@ -475,7 +475,7 @@ export const takeoutMenu = [
     image: "/menu/item53.jpg",
     price: "$15.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF"],
+    badges: ["GF", "NF", "can be DF"],
     type: "veg"
   },
   {
@@ -484,7 +484,7 @@ export const takeoutMenu = [
     image: "/menu/item54.jpg",
     price: "$15.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "DF"],
+    badges: ["GF", "NF", "can be DF"],
     type: "veg"
   },
   {
@@ -493,7 +493,7 @@ export const takeoutMenu = [
     image: "/menu/item55.jpg",
     price: "$15.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "DF"],
+    badges: ["GF", "NF", "can be DF"],
     type: "nonveg"
   },
   {
@@ -502,7 +502,7 @@ export const takeoutMenu = [
     image: "/menu/item56.jpg",
     price: "$18.99",
     category: "Curry Entrées",
-    badges: ["GF", "NF", "DF"],
+    badges: ["GF", "NF", "can be DF"],
     type: "nonveg"
   },
   // Kurma Group
@@ -771,16 +771,16 @@ export const takeoutMenu = [
     image: "/menu/item85.jpg",
     price: "$13.99",
     category: "Fried Rice",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "veg"
   },
   {
     name: "Schezwan Fried Rice - Egg",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, egg, soy sauce, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item86.png",
+    image: "/menu/item86.jpg",
     price: "$14.99",
     category: "Fried Rice",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "nonveg"
   },
   {
@@ -789,7 +789,7 @@ export const takeoutMenu = [
     image: "/menu/item87.jpg",
     price: "$15.99",
     category: "Fried Rice",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "veg"
   },
   {
@@ -798,7 +798,7 @@ export const takeoutMenu = [
     image: "/menu/item88.jpg",
     price: "$15.99",
     category: "Fried Rice",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "veg"
   },
   {
@@ -807,7 +807,7 @@ export const takeoutMenu = [
     image: "/menu/item89.jpg",
     price: "$16.99",
     category: "Fried Rice",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "nonveg"
   },
 
@@ -863,7 +863,7 @@ export const takeoutMenu = [
     image: "/menu/item95.jpg",
     price: "$14.99",
     category: "Noodles",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "veg"
   },
   {
@@ -872,7 +872,7 @@ export const takeoutMenu = [
     image: "/menu/item96.jpg",
     price: "$15.99",
     category: "Noodles",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "nonveg"
   },
   {
@@ -881,7 +881,7 @@ export const takeoutMenu = [
     image: "/menu/item97.jpg",
     price: "$16.99",
     category: "Noodles",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "veg"
   },
   {
@@ -890,7 +890,7 @@ export const takeoutMenu = [
     image: "/menu/item98.jpg",
     price: "$16.99",
     category: "Noodles",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "veg"
   },
   {
@@ -899,7 +899,7 @@ export const takeoutMenu = [
     image: "/menu/item99.jpg",
     price: "$17.99",
     category: "Noodles",
-    badges: ["DF", "NF", "Spicy"],
+    badges: ["DF", "NF"],
     type: "nonveg"
   },
 
@@ -1229,6 +1229,46 @@ export const takeoutMenu = [
     image: "/menu/item138.jpg",
     price: "$5.99",
     category: "Sides",
+    badges: []
+  },
+  {
+    name: "Cheese or Nutella dosa",
+    description: "A crispy dosa filled with gooey cheese or sweet Nutella, made just for little taste buds.",
+    image: "/menu/item139.jpg",
+    price: "$6",
+    category: "Kids Menu",
+    badges: []
+  },
+  {
+    name: "French fries",
+    description: "Golden, crispy fries that are crunchy on the outside and fluffy on the inside.",
+    image: "/menu/item140.jpg",
+    price: "$4",
+    category: "Kids Menu",
+    badges: []
+  },
+  {
+    name: "Chicken nuggets and Nachos",
+    description: "Crispy chicken nuggets served with crunchy nachos for a fun and tasty combo.",
+    image: "/menu/item141.jpg",
+    price: "$7",
+    category: "Kids Menu",
+    badges: []
+  },
+  {
+    name: "Chocolate Naan",
+    description: "Soft, warm naan stuffed with rich, melted chocolate for a sweet treat.",
+    image: "/menu/item142.jpg",
+    price: "$5",
+    category: "Kids Menu",
+    badges: []
+  },
+  {
+    name: "Frooti",
+    description: "A refreshing, fruity mango drink kids love.",
+    image: "/menu/item143.jpg",
+    price: "$5",
+    category: "Kids Menu",
     badges: []
   }
 ];

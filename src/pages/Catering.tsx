@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -7,17 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import heroBg from "@/assets/2.jpg";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i: number = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
-  }),
-};
-
 const Catering = () => {
-  // ⭐ FORM STATES
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,12 +24,10 @@ const Catering = () => {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  // Update form fields
   const updateField = (key: string, value: string) => {
     setFormData((prev) => ({ ...prev, [key]: value }));
   };
 
-  // ⭐ HANDLE SUBMIT (UPDATED TO USE PHP API)
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setLoading(true);
@@ -49,10 +36,7 @@ const Catering = () => {
     try {
       const res = await fetch("https://jalsaindianrestaurant.com/send-catering.php", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -61,13 +45,11 @@ const Catering = () => {
 
       try {
         result = JSON.parse(text);
-      } catch (err) {
-        console.error("Server returned non-JSON response:", text);
-        throw new Error("Unexpected server response");
+      } catch {
+        throw new Error("Server returned unexpected response");
       }
 
       if (!res.ok || result.status !== "success") {
-        console.error("Server Error:", result);
         throw new Error(result.message || "Submission failed");
       }
 
@@ -87,7 +69,7 @@ const Catering = () => {
         notes: "",
       });
     } catch (err: any) {
-      alert(err.message || "Something went wrong. Please try again.");
+      alert(err.message);
     }
 
     setLoading(false);
@@ -97,52 +79,38 @@ const Catering = () => {
     <div className="min-h-screen bg-background flex flex-col overflow-hidden">
       <Header />
 
-      {/* HERO */}
+      {/* HERO (NO MOTION USED) */}
       <section className="relative flex items-center justify-center min-h-[50vh] sm:min-h-[60vh] overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{
-                  backgroundImage: `url(${heroBg})`,
-                }}
+          style={{ backgroundImage: `url(${heroBg})` }}
         >
           <div className="absolute inset-0 bg-gradient-overlay" />
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative z-10 container mx-auto px-4 text-center"
-        >
+        <div className="relative z-10 text-center px-4">
           <div className="flex justify-center mb-4">
             <Sparkles className="w-12 h-12 text-gold animate-pulse" />
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-bold text-primary-foreground mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-heading font-bold text-white mb-4">
             Catering & Private Events
           </h1>
 
           <div className="w-24 h-1 bg-gradient-gold mx-auto mb-6" />
 
-          <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-            Make your celebration truly unforgettable with JALSA’s royal
-            catering services.
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            Make your celebration unforgettable with JALSA’s royal catering services.
           </p>
-        </motion.div>
+        </div>
       </section>
 
-      {/* FORM SECTION */}
+      {/* FORM SECTION (NO MOTION ANYWHERE) */}
       <section className="py-16 sm:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
-          <motion.h2
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-3xl sm:text-4xl font-heading font-bold text-primary text-center mb-8"
-          >
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold text-primary text-center mb-8">
             Catering Request Form
-          </motion.h2>
+          </h2>
 
           {submitted && (
             <div className="bg-green-600/20 border border-green-600 text-green-700 p-4 rounded-xl mb-6 text-center font-semibold">
@@ -150,22 +118,17 @@ const Catering = () => {
             </div>
           )}
 
-          <motion.form
+          <form
             onSubmit={handleSubmit}
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
             className="bg-card shadow-elegant p-8 sm:p-10 rounded-2xl space-y-6 border border-gold/20"
           >
-            {/* INPUTS */}
             <div className="grid grid-cols-1 gap-6">
               <input
                 type="text"
                 placeholder="Full Name"
                 value={formData.name}
                 onChange={(e) => updateField("name", e.target.value)}
-                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                className="w-full p-3 rounded-lg bg-muted text-primary"
                 required
               />
 
@@ -174,7 +137,7 @@ const Catering = () => {
                 placeholder="Email"
                 value={formData.email}
                 onChange={(e) => updateField("email", e.target.value)}
-                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                className="w-full p-3 rounded-lg bg-muted text-primary"
                 required
               />
 
@@ -183,17 +146,16 @@ const Catering = () => {
                 placeholder="Phone Number"
                 value={formData.phone}
                 onChange={(e) => updateField("phone", e.target.value)}
-                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                className="w-full p-3 rounded-lg bg-muted text-primary"
                 required
               />
 
-              {/* DATE + TIME */}
               <div className="grid sm:grid-cols-2 gap-6">
                 <input
                   type="date"
                   value={formData.date}
                   onChange={(e) => updateField("date", e.target.value)}
-                  className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                  className="w-full p-3 rounded-lg bg-muted text-primary"
                   required
                 />
 
@@ -201,37 +163,35 @@ const Catering = () => {
                   type="time"
                   value={formData.time}
                   onChange={(e) => updateField("time", e.target.value)}
-                  className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none"
+                  className="w-full p-3 rounded-lg bg-muted text-primary"
                   required
                 />
               </div>
 
-              {/* PEOPLE RANGE */}
+              {/* People */}
               <div>
                 <label className="font-semibold text-primary block mb-2">
                   Number of People You Are Catering For
                 </label>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-primary">
-                  {["1–9", "10–19", "20–29", "30–39", "40–49", "50+"].map(
-                    (range) => (
-                      <label key={range} className="flex items-center gap-2">
-                        <input
-                          type="radio"
-                          name="people"
-                          value={range}
-                          checked={formData.people === range}
-                          onChange={(e) => updateField("people", e.target.value)}
-                          required
-                        />
-                        {range}
-                      </label>
-                    )
-                  )}
+                  {["1–9", "10–19", "20–29", "30–39", "40–49", "50+"].map((range) => (
+                    <label key={range} className="flex items-center gap-2">
+                      <input
+                        type="radio"
+                        name="people"
+                        value={range}
+                        checked={formData.people === range}
+                        onChange={(e) => updateField("people", e.target.value)}
+                        required
+                      />
+                      {range}
+                    </label>
+                  ))}
                 </div>
               </div>
 
-              {/* DELIVERY */}
+              {/* Delivery or Pickup */}
               <div>
                 <label className="font-semibold text-primary block mb-2">
                   Delivery or Pickup?
@@ -264,18 +224,24 @@ const Catering = () => {
                 </div>
               </div>
 
+              {/* Delivery Address */}
               <textarea
                 placeholder="If delivery, enter the address"
                 value={formData.deliveryAddress}
                 onChange={(e) => updateField("deliveryAddress", e.target.value)}
-                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+                className={`w-full p-3 rounded-lg bg-muted text-primary h-20 ${
+                  formData.deliveryType === "Pickup" ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+                disabled={formData.deliveryType === "Pickup"}
+                required={formData.deliveryType === "Delivery"}
               ></textarea>
 
+              {/* Order Details */}
               <textarea
                 placeholder="What would you like to order?"
                 value={formData.orderDetails}
                 onChange={(e) => updateField("orderDetails", e.target.value)}
-                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+                className="w-full p-3 rounded-lg bg-muted text-primary h-20"
                 required
               ></textarea>
 
@@ -283,14 +249,14 @@ const Catering = () => {
                 placeholder="Dietary restrictions or allergies"
                 value={formData.dietary}
                 onChange={(e) => updateField("dietary", e.target.value)}
-                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+                className="w-full p-3 rounded-lg bg-muted text-primary h-20"
               ></textarea>
 
               <textarea
                 placeholder="Additional details or special instructions"
                 value={formData.notes}
                 onChange={(e) => updateField("notes", e.target.value)}
-                className="w-full p-3 rounded-lg bg-muted text-primary focus:ring-2 focus:ring-gold outline-none h-20"
+                className="w-full p-3 rounded-lg bg-muted text-primary h-20"
               ></textarea>
             </div>
 
@@ -298,11 +264,11 @@ const Catering = () => {
               size="lg"
               type="submit"
               disabled={loading}
-              className="w-full bg-gold text-primary font-semibold py-3 rounded-full hover:bg-[#e4b445] transition-all"
+              className="w-full bg-gold text-primary font-semibold py-3 rounded-full hover:bg-[#e4b445]"
             >
               {loading ? "Sending..." : "Send Catering Request"}
             </Button>
-          </motion.form>
+          </form>
         </div>
       </section>
 

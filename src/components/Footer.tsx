@@ -6,6 +6,9 @@ import ReservationModal from "./ReservationModal";
 const Footer = () => {
   const [showModal, setShowModal] = useState(false);
 
+  // Scroll to top handler (safe, does NOT affect inputs)
+  const scrollTop = () => window.scrollTo(0, 0);
+
   return (
     <>
       <footer className="bg-primary text-primary-foreground">
@@ -38,9 +41,6 @@ const Footer = () => {
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
-
-                {/* WhatsApp */}
-                
               </div>
             </div>
 
@@ -63,7 +63,8 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-gold flex-shrink-0" />
                   <a href="mailto:jalsacuisine@gmail.com">
-                  <span className="text-primary-foreground/80">jalsacuisine@gmail.com</span></a>
+                    <span className="text-primary-foreground/80">jalsacuisine@gmail.com</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -88,22 +89,47 @@ const Footer = () => {
             <div>
               <h4 className="text-xl font-heading font-semibold text-gold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-primary-foreground/80">
+
                 <li>
-                  <Link to="/about" className="hover:text-gold transition-colors">About Us</Link>
+                  <Link
+                    to="/about"
+                    onClick={scrollTop}
+                    className="hover:text-gold transition-colors"
+                  >
+                    About Us
+                  </Link>
                 </li>
+
                 <li>
-                  <Link to="/menu-dine-in" className="hover:text-gold transition-colors">
+                  <Link
+                    to="/menu-dine-in"
+                    onClick={scrollTop}
+                    className="hover:text-gold transition-colors"
+                  >
                     Dine-In Menu
                   </Link>
                 </li>
+
                 <li>
-                  <Link to="/menu-takeaway" className="hover:text-gold transition-colors">
+                  <Link
+                    to="/menu-takeaway"
+                    onClick={scrollTop}
+                    className="hover:text-gold transition-colors"
+                  >
                     Takeaway Menu
                   </Link>
                 </li>
+
                 <li>
-                  <Link to="/gallery" className="hover:text-gold transition-colors">Gallery</Link>
+                  <Link
+                    to="/gallery"
+                    onClick={scrollTop}
+                    className="hover:text-gold transition-colors"
+                  >
+                    Gallery
+                  </Link>
                 </li>
+
                 <li>
                   <button
                     className="hover:text-gold transition-colors"
@@ -125,7 +151,6 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* MODAL */}
       <ReservationModal open={showModal} onClose={() => setShowModal(false)} />
     </>
   );
