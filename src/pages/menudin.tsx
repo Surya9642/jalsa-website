@@ -71,7 +71,7 @@ const MenuDin = () => {
         </div>
 
         {/* CURRY SECTION EXPLANATION */}
-        {selectedCategory === "Curry Entrées" && (
+        {selectedCategory === "Entrées & Thali" && (
           <div className="mb-10 text-primary text-[15px]">
             <p className="text-md mb-2 text-center">
               Choose how you'd like to enjoy your curry:

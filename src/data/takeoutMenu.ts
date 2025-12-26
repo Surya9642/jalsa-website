@@ -229,6 +229,63 @@ export const takeoutMenu = [
     badges: ["GF", "can be DF"],
     type: "nonveg"
   },
+  {
+    name: "Monagadu Chicken",
+    description: "An Andhra specialty featuring tender chicken cooked with bold village-style spices, crushed chilies, and fragrant herbs.",
+    image: "/menu/item108.jpg",
+    price: "$14.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Pachi Mirapakai Kodi",
+    description: "Andhra-style chicken cooked with green chilies, onions, and spices for a spicy flavor.",
+    image: "/menu/item109.jpg",
+    price: "$14.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    badges: ["Spicy"],
+    type: "nonveg"
+  },
+  {
+    name: "Curry Leaf Chicken",
+    description: "Tender chicken sautéed in a fragrant blend of roasted spices, garlic, and fresh curry leaves.",
+    image: "/menu/item110.jpg",
+    price: "$14.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Apollo Fish",
+    description: "Marinated fried fish tossed in a tangy, garlicky sauce.",
+    image: "/menu/item111.jpg",
+    price: "$15.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Loose Prawns",
+    description: "Fried prawns tossed in a zesty South Indian masala with green chilies, garlic, and fresh curry leaves.",
+    image: "/menu/item112.jpg",
+    price: "$16.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Shrimps Vepudu",
+    description: "Succulent shrimp sautéed in crushed spices, garlic, curry leaves.",
+    image: "/menu/item113.jpg",
+    price: "$16.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
 
   // --- Tandoori Kebabs ---
   {
@@ -968,7 +1025,7 @@ export const takeoutMenu = [
     type: "nonveg"
   },
   {
-    name: "Hyderabad Goat Biryani (Fri, Sat, Sun)",
+    name: "Hyderabad Goat Biryani",
     description: "Classic Hyderabadi dum biryani made with tender goat marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
     image: "/menu/item107.jpg",
     price: "Reg- $19.99 Family Pack- $34.99",
@@ -977,60 +1034,7 @@ export const takeoutMenu = [
     type: "nonveg"
   },
   // --- South Indian Specials (Excluding Sukka) ---
-  {
-    name: "Monagadu Chicken",
-    description: "An Andhra specialty featuring tender chicken cooked with bold village-style spices, crushed chilies, and fragrant herbs.",
-    image: "/menu/item108.jpg",
-    price: "$14.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Pachi Mirapakai Kodi",
-    description: "Andhra-style chicken cooked with green chilies, onions, and spices for a spicy flavor.",
-    image: "/menu/item109.jpg",
-    price: "$14.99",
-    category: "South Indian Specials",
-    badges: ["Spicy"],
-    type: "nonveg"
-  },
-  {
-    name: "Curry Leaf Chicken",
-    description: "Tender chicken sautéed in a fragrant blend of roasted spices, garlic, and fresh curry leaves.",
-    image: "/menu/item110.jpg",
-    price: "$14.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Apollo Fish",
-    description: "Marinated fried fish tossed in a tangy, garlicky sauce.",
-    image: "/menu/item111.jpg",
-    price: "$15.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Loose Prawns",
-    description: "Fried prawns tossed in a zesty South Indian masala with green chilies, garlic, and fresh curry leaves.",
-    image: "/menu/item112.jpg",
-    price: "$16.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Shrimps Vepudu",
-    description: "Succulent shrimp sautéed in crushed spices, garlic, curry leaves.",
-    image: "/menu/item113.jpg",
-    price: "$16.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
+  
 
   // --- Breads ---
   {

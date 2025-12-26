@@ -5,11 +5,13 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import heroBg from "@/assets/3.jpg";
 
 const galleryImages = [
-  "/menu/item7.jpg",
-  "/menu/item29.jpg",
-  "/menu/item89.jpg",
-  "/menu/item101.jpg",
-  "/menu/item99.jpg",
+  "/resto/1.jpeg",
+  "/resto/2.jpeg",
+  "/resto/3.jpeg",
+  "/resto/4.jpeg",
+  "/resto/5.jpeg",
+  "/resto/6.jpeg",
+  "/resto/7.jpeg",
   "/menu/item20.jpg",
   "/menu/item106.jpg",
   "/menu/item65.jpg",

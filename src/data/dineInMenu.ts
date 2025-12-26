@@ -226,6 +226,60 @@ export const dineInMenu = [
     type: "nonveg"
   },
   {
+    name: "Monagadu Chicken",
+    description: "An Andhra specialty featuring tender chicken cooked with bold village-style spices, crushed chilies, and fragrant herbs.",
+    image: "/menu/item108.jpg",
+    price: "$14.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Pachi Mirapakai Kodi",
+    description: "Andhra-style chicken cooked with green chilies, onions, and spices for a spicy flavor.",
+    image: "/menu/item109.jpg",
+    price: "$14.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Curry Leaf Chicken",
+    description: "Tender chicken sautéed in a fragrant blend of roasted spices, garlic, and fresh curry leaves.",
+    image: "/menu/item110.jpg",
+    price: "$14.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Apollo Fish",
+    description: "Marinated fried fish tossed in a tangy, garlicky sauce.",
+    image: "/menu/item111.jpg",
+    price: "$15.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Loose Prawns",
+    description: "Fried prawns tossed in a zesty South Indian masala with green chilies, garlic, and fresh curry leaves.",
+    image: "/menu/item112.jpg",
+    price: "$16.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
+    name: "Shrimps Vepudu",
+    description: "Succulent shrimp sautéed in crushed spices, garlic, curry leaves.",
+    image: "/menu/item113.jpg",
+    price: "$16.99",
+    category: "South Indian Specials (appetizers)",
+    badges: [],
+    type: "nonveg"
+  },
+  {
     name: "Chicken Tikka Kebab",
     description: "Choice of protein marinated in spices, skewered, and roasted in the clay oven. Served with house salad, mint cilantro chutney and butter masala sauce.",
     image: "/menu/item26.jpg",
@@ -257,7 +311,7 @@ export const dineInMenu = [
     description: "Yellow lentils, slow-cooked and tempered with mustard seeds, cumin, garlic, and herbs.",
     image: "/menu/item29.jpg",
     price: "$12.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "V,Vegan"],
     type: "veg"
   },
@@ -266,7 +320,7 @@ export const dineInMenu = [
     description: "Cauliflower and potatoes simmered in turmeric, cumin, and coriander.",
     image: "/menu/item30.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "V,Vegan"],
     type: "veg"
   },
@@ -275,7 +329,7 @@ export const dineInMenu = [
     description: "Chickpeas simmered in a rich tomato-onion gravy with aromatic spices.",
     image: "/menu/item31.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "V,Vegan"],
     type: "veg"
   },
@@ -284,7 +338,7 @@ export const dineInMenu = [
     description: "Soft fried dumplings of paneer and potatoes simmered in a creamy onion and cashew gravy.",
     image: "/menu/item32.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "contains nuts"],
     type: "veg"
   },
@@ -293,7 +347,7 @@ export const dineInMenu = [
     description: "Marinated paneer grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce.",
     image: "/menu/item33.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "veg"
   },
@@ -302,7 +356,7 @@ export const dineInMenu = [
     description: "Marinated tofu grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce.",
     image: "/menu/item34.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "veg"
   },
@@ -311,7 +365,7 @@ export const dineInMenu = [
     description: "Paneer cubes simmered in a buttery tomato-based sauce with Indian spices.",
     image: "/menu/item35.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "veg"
   },
@@ -320,7 +374,7 @@ export const dineInMenu = [
     description: "Tofu cubes simmered in a buttery tomato-based sauce with Indian spices.",
     image: "/menu/item36.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "veg"
   },
@@ -329,7 +383,7 @@ export const dineInMenu = [
     description: "Fried okra tossed in tomato-onion sauce with roasted cumin and coriander.",
     image: "/menu/item37.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "V,Vegan"],
     type: "veg"
   },
@@ -338,7 +392,7 @@ export const dineInMenu = [
     description: "Mini eggplants stuffed with coconut-peanut masala, braised in tamarind-sesame gravy.",
     image: "/menu/item38.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "V", "contains nuts & sesame"],
     type: "veg"
   },
@@ -347,7 +401,7 @@ export const dineInMenu = [
     description: "Marinated chicken grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce.",
     image: "/menu/item39.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "nonveg"
   },
@@ -356,7 +410,7 @@ export const dineInMenu = [
     description: "Tandoori chicken cubes simmered in a buttery tomato-based sauce with Indian spices.",
     image: "/menu/item40.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "nonveg"
   },
@@ -365,7 +419,7 @@ export const dineInMenu = [
     description: "Slow cooked lamb gently simmered in buttery tomato-based sauce with Indian spices.",
     image: "/menu/item41.jpg",
     price: "$18.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "nonveg"
   },
@@ -374,7 +428,7 @@ export const dineInMenu = [
     description: "Slow cooked bone-in goat cooked in tomato-onion-tamarind sauce with spices.",
     image: "/menu/item42.jpg",
     price: "$19.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF"],
     type: "nonveg"
   },
@@ -383,7 +437,7 @@ export const dineInMenu = [
     description: "Marinated fish cubes cooked in tamarind-coconut gravy with curry leaves and roasted spices.",
     image: "/menu/item43.jpg",
     price: "$16.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "nonveg"
   },
@@ -392,7 +446,7 @@ export const dineInMenu = [
     description: "Shrimp simmered in onion-tomato sauce with spices and a hint of coconut.",
     image: "/menu/item44.jpg",
     price: "$16.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "nonveg"
   },
@@ -401,7 +455,7 @@ export const dineInMenu = [
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut.",
     image: "/menu/item45.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "veg"
   },
@@ -410,7 +464,7 @@ export const dineInMenu = [
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut.",
     image: "/menu/item46.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF", "contains dairy"],
     type: "veg"
   },
@@ -419,7 +473,7 @@ export const dineInMenu = [
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut.",
     image: "/menu/item47.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "veg"
   },
@@ -428,7 +482,7 @@ export const dineInMenu = [
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut.",
     image: "/menu/item48.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "nonveg"
   },
@@ -437,7 +491,7 @@ export const dineInMenu = [
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut.",
     image: "/menu/item49.jpg",
     price: "$18.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "nonveg"
   },
@@ -446,7 +500,7 @@ export const dineInMenu = [
     description: "Rich, slow-cooked spinach blended with warm spices.",
     image: "/menu/item51.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "can be DF"],
     type: "veg"
   },
@@ -455,7 +509,7 @@ export const dineInMenu = [
     description: "Rich, slow-cooked spinach blended with warm spices.",
     image: "/menu/item52.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "can be DF"],
     type: "veg"
   },
@@ -464,7 +518,7 @@ export const dineInMenu = [
     description: "Rich, slow-cooked spinach blended with warm spices.",
     image: "/menu/item53.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "can be DF", "contains dairy"],
     type: "veg"
   },
@@ -473,7 +527,7 @@ export const dineInMenu = [
     description: "Rich, slow-cooked spinach blended with warm spices.",
     image: "/menu/item54.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "can be DF"],
     type: "veg"
   },
@@ -482,7 +536,7 @@ export const dineInMenu = [
     description: "Rich, slow-cooked spinach blended with warm spices.",
     image: "/menu/item55.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "can be DF"],
     type: "nonveg"
   },
@@ -491,7 +545,7 @@ export const dineInMenu = [
     description: "Rich, slow-cooked spinach blended with warm spices.",
     image: "/menu/item56.jpg",
     price: "$18.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "can be DF"],
     type: "nonveg"
   },
@@ -500,7 +554,7 @@ export const dineInMenu = [
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
     image: "/menu/item57.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "veg"
   },
@@ -509,7 +563,7 @@ export const dineInMenu = [
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
     image: "/menu/item58.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF", "contains dairy"],
     type: "veg"
   },
@@ -518,7 +572,7 @@ export const dineInMenu = [
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
     image: "/menu/item59.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "veg"
   },
@@ -527,7 +581,7 @@ export const dineInMenu = [
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
     image: "/menu/item60.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "nonveg"
   },
@@ -536,7 +590,7 @@ export const dineInMenu = [
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
     image: "/menu/item50.jpg",
     price: "$18.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
     type: "nonveg"
   },
@@ -545,7 +599,7 @@ export const dineInMenu = [
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor.",
     image: "/menu/item61.jpg",
     price: "$13.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF", "spicy"],
     type: "veg"
   },
@@ -554,7 +608,7 @@ export const dineInMenu = [
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor.",
     image: "/menu/item62.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF", "spicy"],
     type: "veg"
   },
@@ -563,7 +617,7 @@ export const dineInMenu = [
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor.",
     image: "/menu/item64.jpg",
     price: "$15.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF", "spicy"],
     type: "nonveg"
   },
@@ -572,7 +626,7 @@ export const dineInMenu = [
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor.",
     image: "/menu/item65.jpg",
     price: "$18.99",
-    category: "Curry Entrées",
+    category: "Entrées & Thali",
     badges: ["GF", "NF", "DF", "spicy"],
     type: "nonveg"
   },
@@ -946,7 +1000,7 @@ export const dineInMenu = [
     type: "nonveg"
   },
   {
-    name: "Hyderabad Goat Biryani (Fri, Sat, Sun)",
+    name: "Hyderabad Goat Biryani",
     description: "Classic Hyderabadi dum biryani made with tender goat marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
     image: "/menu/item107.jpg",
     price: "Reg- $19.99 Family Pack- $34.99",
@@ -954,60 +1008,7 @@ export const dineInMenu = [
     badges: [],
     type: "nonveg"
   },
-  {
-    name: "Monagadu Chicken",
-    description: "An Andhra specialty featuring tender chicken cooked with bold village-style spices, crushed chilies, and fragrant herbs.",
-    image: "/menu/item108.jpg",
-    price: "$14.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Pachi Mirapakai Kodi",
-    description: "Andhra-style chicken cooked with green chilies, onions, and spices for a spicy flavor.",
-    image: "/menu/item109.jpg",
-    price: "$14.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Curry Leaf Chicken",
-    description: "Tender chicken sautéed in a fragrant blend of roasted spices, garlic, and fresh curry leaves.",
-    image: "/menu/item110.jpg",
-    price: "$14.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Apollo Fish",
-    description: "Marinated fried fish tossed in a tangy, garlicky sauce.",
-    image: "/menu/item111.jpg",
-    price: "$15.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Loose Prawns",
-    description: "Fried prawns tossed in a zesty South Indian masala with green chilies, garlic, and fresh curry leaves.",
-    image: "/menu/item112.jpg",
-    price: "$16.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
-  {
-    name: "Shrimps Vepudu",
-    description: "Succulent shrimp sautéed in crushed spices, garlic, curry leaves.",
-    image: "/menu/item113.jpg",
-    price: "$16.99",
-    category: "South Indian Specials",
-    badges: [],
-    type: "nonveg"
-  },
+  
   {
     name: "Plain Naan",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",

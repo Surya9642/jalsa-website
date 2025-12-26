@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -6,6 +7,7 @@ import Menu from "@/components/Menu";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import LaunchPopup from "@/components/LaunchPopup";
 
 // Animation presets
 const fadeUp = {
@@ -17,7 +19,14 @@ const fadeUp = {
   }),
 };
 
-const Index = () => {
+const Index: React.FC = () => {
+  const [showPopup, setShowPopup] = useState<boolean>(false);
+
+  // Open popup on page load / refresh
+  useEffect(() => {
+    setShowPopup(true);
+  }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -25,9 +34,15 @@ const Index = () => {
       transition={{ duration: 1 }}
       className="min-h-screen bg-background overflow-hidden"
     >
+      {/* Launch Popup */}
+      <LaunchPopup
+        isOpen={showPopup}
+        onClose={() => setShowPopup(false)}
+      />
+
       <Header />
 
-      {/* Hero Section */}
+      {/* Hero */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -36,7 +51,7 @@ const Index = () => {
         <Hero />
       </motion.section>
 
-      {/* About Section */}
+      {/* About */}
       <motion.section
         variants={fadeUp}
         initial="hidden"
@@ -46,7 +61,7 @@ const Index = () => {
         <About />
       </motion.section>
 
-      {/* Menu Section */}
+      {/* Menu */}
       <motion.section
         variants={fadeUp}
         initial="hidden"
@@ -57,7 +72,7 @@ const Index = () => {
         <Menu />
       </motion.section>
 
-      {/* Gallery Section */}
+      {/* Gallery */}
       <motion.section
         variants={fadeUp}
         initial="hidden"
@@ -68,7 +83,6 @@ const Index = () => {
         <Gallery />
       </motion.section>
 
-      <br />
       <Footer />
       <WhatsAppButton />
     </motion.div>
