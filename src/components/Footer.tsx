@@ -76,11 +76,11 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5 text-gold flex-shrink-0" />
                   <p className="font-semibold">
-                    Mon, Wed, Thu: 11:00 AM - 10:00 PM
+                    Mon - Thu: 11:00 AM - 10:00 PM
                   </p>
                 </div>
-                <p className="font-semibold ml-8">Tuesday: Closed</p>
-                <p className="font-semibold ml-8">Fri-Sat: 11:00 AM - 12:00 AM</p>
+                {/* <p className="font-semibold ml-8">Tuesday: Closed</p> */}
+                <p className="font-semibold ml-8">Fri-Sat: 11:00 AM - 11:00 PM</p>
                 <p className="font-semibold ml-8">Sunday: 11:00 AM – 9:00 PM</p>
               </div>
             </div>

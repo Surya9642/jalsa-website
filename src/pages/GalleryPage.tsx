@@ -5,20 +5,22 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import heroBg from "@/assets/3.jpg";
 
 const galleryImages = [
-  "/resto/1.jpeg",
-  "/resto/2.jpeg",
-  "/resto/3.jpeg",
-  "/resto/4.jpeg",
-  "/resto/5.jpeg",
-  "/resto/6.jpeg",
-  "/resto/7.jpeg",
-  "/menu/item20.jpg",
-  "/menu/item106.jpg",
-  "/menu/item65.jpg",
-  "/menu/item52.jpg",
-  "/menu/item53.jpg",
-  "/menu/item78.jpg",
-  "/menu/item67.jpg",
+  "/resto/1.jpg",
+  "/resto/2.jpg",
+  "/resto/3.jpg",
+  "/resto/4.jpg",
+  "/resto/5.jpg",
+  "/resto/6.jpg",
+  "/resto/7.jpg",
+  "/resto/9.jpg",
+  "/resto/item1.jpeg",
+  "/resto/item2.jpeg",
+  "/resto/item3.jpeg",
+  "/resto/item4.jpeg",
+  "/resto/item5.jpeg",
+  "/resto/item6.jpeg",
+  "/resto/item7.jpeg",
+  "/resto/item8.jpeg",
 ];
 
 const fadeUp = {
