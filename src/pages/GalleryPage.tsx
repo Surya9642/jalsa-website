@@ -7,7 +7,6 @@ import heroBg from "@/assets/3.jpg";
 const galleryImages = [
   "/resto/1.jpg",
   "/resto/2.jpg",
-  "/resto/3.jpg",
   "/resto/4.jpg",
   "/resto/5.jpg",
   "/resto/6.jpg",

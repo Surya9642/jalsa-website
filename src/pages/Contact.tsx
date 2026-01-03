@@ -159,10 +159,13 @@ const Contact = () => {
                   title: "Hours",
                   content: (
                     <>
-                      Monday - Thursday: 11am – 10pm <br />
-                      {/* Tues: Closed <br /> */}
-                      Friday – Saturday: 11am – 11pm <br />
-                      Sunday: 11am – 9pm
+                      Monday: 11am–2:30pm, 4pm–10pm <br />
+                      Tuesday: Closed <br />
+                      Wednesday: 11am–2:30pm, 4pm–10pm <br />
+                      Thursday: 11am–2:30pm, 4pm–10pm <br />
+                      Friday: 11am–3pm, 4pm–10:30pm <br />
+                      Saturday: 11am–3pm, 4pm–10:30pm <br />
+                      Sunday: 11am–3pm, 4pm–9pm
                     </>
                   ),
                 },

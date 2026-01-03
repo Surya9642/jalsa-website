@@ -7,7 +7,6 @@ import Menu from "@/components/Menu";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import LaunchPopup from "@/components/LaunchPopup";
 
 // Animation presets
 const fadeUp = {
@@ -22,10 +21,6 @@ const fadeUp = {
 const Index: React.FC = () => {
   const [showPopup, setShowPopup] = useState<boolean>(false);
 
-  // Open popup on page load / refresh
-  useEffect(() => {
-    setShowPopup(true);
-  }, []);
 
   return (
     <motion.div
@@ -34,11 +29,6 @@ const Index: React.FC = () => {
       transition={{ duration: 1 }}
       className="min-h-screen bg-background overflow-hidden"
     >
-      {/* Launch Popup */}
-      <LaunchPopup
-        isOpen={showPopup}
-        onClose={() => setShowPopup(false)}
-      />
 
       <Header />
 
