@@ -1000,7 +1000,7 @@ export const dineInMenu = [
     type: "nonveg"
   },
   {
-    name: "Hyderabad Goat Biryani",
+    name: "Hyderabad Goat Biryani (Fri, Sat, Sun)",
     description: "Classic Hyderabadi dum biryani made with tender goat marinated in yogurt, spices, and herbs, layered with fragrant basmati rice.",
     image: "/menu/item107.jpg",
     price: "Reg- $19.99 Family Pack- $34.99",
