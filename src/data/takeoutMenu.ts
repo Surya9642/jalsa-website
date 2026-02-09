@@ -1128,7 +1128,7 @@ export const takeoutMenu = [
     badges: []
   },
   {
-    name: "Rasmalai Tres Leches",
+     name: "Rasmalai Tres Leches",
     description: "Eggless sponge cake soaked in rasmalai milk and topped with rasmalai flavored whipped cream.",
     image: "/menu/item126.jpg",
     price: "$9.99",
