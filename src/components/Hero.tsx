@@ -7,7 +7,6 @@ const Hero = () => {
   const [openModal, setOpenModal] = useState(false);
   const navigate = useNavigate();
 
-  // ⭐ Reservation Form State
   const [reservationData, setReservationData] = useState({
     name: "",
     phone: "",
@@ -20,14 +19,30 @@ const Hero = () => {
 
   const [resLoading, setResLoading] = useState(false);
   const [resSuccess, setResSuccess] = useState(false);
+  const [resError, setResError] = useState("");
 
   const updateReservation = (key: string, value: string) => {
     setReservationData((prev) => ({ ...prev, [key]: value }));
+    setResError("");
   };
 
-  // ⭐ Submit Reservation
   const handleReservationSubmit = async (e: any) => {
     e.preventDefault();
+
+    const today = new Date();
+    const selectedDate = new Date(reservationData.date);
+
+    today.setHours(0, 0, 0, 0);
+    selectedDate.setHours(0, 0, 0, 0);
+
+    // ❌ Prevent same-day booking
+    if (selectedDate <= today) {
+      setResError(
+        "Reservations require at least 24 hours advance notice."
+      );
+      return;
+    }
+
     setResLoading(true);
     setResSuccess(false);
 
@@ -38,7 +53,7 @@ const Hero = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Accept": "application/json",
+            Accept: "application/json",
           },
           body: JSON.stringify(reservationData),
         }
@@ -59,7 +74,6 @@ const Hero = () => {
 
       setResSuccess(true);
 
-      // Reset Form
       setReservationData({
         name: "",
         phone: "",
@@ -70,7 +84,6 @@ const Hero = () => {
         requests: "",
       });
 
-      // Optional: close popup after success
       setTimeout(() => setOpenModal(false), 2000);
     } catch (err: any) {
       alert(err.message || "Something went wrong. Please try again.");
@@ -103,31 +116,22 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* Reservation Popup */}
             <Button variant="hero" size="xl" onClick={() => setOpenModal(true)}>
               Reserve Your Table
             </Button>
 
-            {/* Go to Menu */}
             <Button variant="hero" size="xl" onClick={() => navigate("/menu")}>
               View Menu
             </Button>
           </div>
         </div>
-
-        {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-gold rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-3 bg-gold rounded-full animate-pulse" />
-          </div>
-        </div> */}
       </section>
 
-      {/* RESERVATION POPUP MODAL */}
+      {/* RESERVATION POPUP */}
       {openModal && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
           <div className="bg-white rounded-xl p-8 w-[90%] max-w-lg shadow-2xl relative">
 
-            {/* Close Button */}
             <button
               className="absolute top-4 right-4 text-2xl text-black hover:text-red-600"
               onClick={() => setOpenModal(false)}
@@ -135,15 +139,25 @@ const Hero = () => {
               ✕
             </button>
 
-            <h2 className="text-3xl font-heading font-bold text-center mb-6">
+            <h2 className="text-3xl font-heading font-bold text-center mb-3">
               Reserve Your Table
             </h2>
 
-            {/* FORM */}
+            {/* Reservation Notice */}
+            <p className="bg-yellow-50 border border-yellow-300 text-yellow-800 text-sm rounded-lg p-3 mb-4 text-center">
+              Please note: Online reservations require at least <strong>24 hours’ advance notice</strong> and are not available for same-day bookings.
+            </p>
+
             <form className="space-y-4" onSubmit={handleReservationSubmit}>
               {resSuccess && (
                 <div className="p-3 bg-green-100 text-green-700 rounded-lg text-center font-semibold">
                   Reservation submitted successfully!
+                </div>
+              )}
+
+              {resError && (
+                <div className="p-3 bg-red-100 text-red-700 rounded-lg text-center font-semibold">
+                  {resError}
                 </div>
               )}
 
@@ -179,6 +193,7 @@ const Hero = () => {
                   type="date"
                   value={reservationData.date}
                   onChange={(e) => updateReservation("date", e.target.value)}
+                  min={new Date(Date.now() + 86400000).toISOString().split("T")[0]}
                   className="w-full border p-3 rounded-lg"
                   required
                 />

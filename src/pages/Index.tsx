@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -8,7 +7,6 @@ import Menu from "@/components/Menu";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import LaunchPopup from "@/components/LaunchPopup";
 
 // Animation presets
 const fadeUp = {
@@ -25,17 +23,6 @@ const fadeUp = {
 };
 
 const Index: React.FC = () => {
-  const [showPopup, setShowPopup] = useState(false);
-
-  // Show popup on page load (after small delay)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -44,12 +31,6 @@ const Index: React.FC = () => {
       className="min-h-screen bg-background"
     >
       <Header />
-
-      {/* ✅ Launch Popup */}
-      <LaunchPopup
-        isOpen={showPopup}
-        onClose={() => setShowPopup(false)}
-      />
 
       {/* Hero */}
       <motion.section

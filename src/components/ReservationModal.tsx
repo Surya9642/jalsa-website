@@ -7,8 +7,7 @@ type Props = {
 };
 
 const ReservationModal = ({ open, onClose }: Props) => {
-
-  if (!open) return null; // <-- IMPORTANT
+  if (!open) return null;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -20,14 +19,29 @@ const ReservationModal = ({ open, onClose }: Props) => {
     requests: "",
   });
 
+  const [error, setError] = useState("");
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    setError("");
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const today = new Date();
+    const selectedDate = new Date(formData.date);
+
+    today.setHours(0, 0, 0, 0);
+    selectedDate.setHours(0, 0, 0, 0);
+
+    // ❌ Prevent same-day bookings
+    if (selectedDate <= today) {
+      setError("Reservations must be made at least 24 hours in advance.");
+      return;
+    }
 
     try {
       const response = await fetch(
@@ -62,9 +76,14 @@ const ReservationModal = ({ open, onClose }: Props) => {
           <X className="w-6 h-6" />
         </button>
 
-        <h2 className="text-center text-3xl font-heading font-semibold mb-6">
+        <h2 className="text-center text-3xl font-heading font-semibold mb-3">
           Reserve Your Table
         </h2>
+
+        {/* Reservation Notice */}
+        <p className="bg-yellow-50 border border-yellow-300 text-yellow-800 text-sm rounded-lg p-3 mb-4 text-center">
+          Please note: Online reservations require at least <strong>24 hours’ advance notice</strong> and are not available for same-day bookings.
+        </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -94,11 +113,13 @@ const ReservationModal = ({ open, onClose }: Props) => {
           />
 
           <div className="grid grid-cols-2 gap-4">
+            {/* Date Input */}
             <input
               name="date"
               type="date"
               value={formData.date}
               onChange={handleChange}
+              min={new Date(Date.now() + 86400000).toISOString().split("T")[0]}
               className="border rounded-lg p-3 w-full"
               required
             />
@@ -129,6 +150,13 @@ const ReservationModal = ({ open, onClose }: Props) => {
             onChange={handleChange}
             className="w-full border rounded-lg p-3 h-24"
           />
+
+          {/* Error Message */}
+          {error && (
+            <p className="text-red-600 text-sm text-center font-medium">
+              {error}
+            </p>
+          )}
 
           <button
             type="submit"
