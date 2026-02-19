@@ -37,9 +37,9 @@ const ReservationModal = ({ open, onClose }: Props) => {
     today.setHours(0, 0, 0, 0);
     selectedDate.setHours(0, 0, 0, 0);
 
-    // ❌ Prevent same-day bookings
+    // ❌ Prevent booking for today
     if (selectedDate <= today) {
-      setError("Reservations must be made at least 24 hours in advance.");
+      setError("Bookings are available starting tomorrow.");
       return;
     }
 
@@ -80,9 +80,9 @@ const ReservationModal = ({ open, onClose }: Props) => {
           Reserve Your Table
         </h2>
 
-        {/* Reservation Notice */}
+        {/* Notice */}
         <p className="bg-yellow-50 border border-yellow-300 text-yellow-800 text-sm rounded-lg p-3 mb-4 text-center">
-          Please note: Online reservations require at least <strong>24 hours’ advance notice</strong> and are not available for same-day bookings.
+          Same-day reservations are not available. Bookings can be made starting from the next day.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -113,13 +113,15 @@ const ReservationModal = ({ open, onClose }: Props) => {
           />
 
           <div className="grid grid-cols-2 gap-4">
-            {/* Date Input */}
+            {/* ❗ Block today */}
             <input
               name="date"
               type="date"
               value={formData.date}
               onChange={handleChange}
-              min={new Date(Date.now() + 86400000).toISOString().split("T")[0]}
+              min={new Date(Date.now() + 86400000)
+                .toISOString()
+                .split("T")[0]}
               className="border rounded-lg p-3 w-full"
               required
             />
@@ -151,7 +153,6 @@ const ReservationModal = ({ open, onClose }: Props) => {
             className="w-full border rounded-lg p-3 h-24"
           />
 
-          {/* Error Message */}
           {error && (
             <p className="text-red-600 text-sm text-center font-medium">
               {error}
