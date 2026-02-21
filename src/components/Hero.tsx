@@ -19,9 +19,18 @@ const Hero = () => {
 
   const [resLoading, setResLoading] = useState(false);
   const [resSuccess, setResSuccess] = useState(false);
+  const [resError, setResError] = useState("");
 
   const updateReservation = (key: string, value: string) => {
     setReservationData((prev) => ({ ...prev, [key]: value }));
+    setResError("");
+  };
+
+  // ✅ Tomorrow date (LOCAL time — fixes USA bug)
+  const getTomorrowDate = () => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return tomorrow.toLocaleDateString("en-CA");
   };
 
   const handleReservationSubmit = async (e: any) => {
@@ -33,9 +42,8 @@ const Hero = () => {
     today.setHours(0, 0, 0, 0);
     selectedDate.setHours(0, 0, 0, 0);
 
-    // ❌ Prevent booking for today
     if (selectedDate <= today) {
-      alert("Bookings are available starting tomorrow.");
+      setResError("Bookings are available starting tomorrow.");
       return;
     }
 
@@ -84,7 +92,7 @@ const Hero = () => {
 
   return (
     <>
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -102,7 +110,7 @@ const Hero = () => {
             Where Every Meal Is A Celebration
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex gap-4 justify-center">
             <Button variant="hero" size="xl" onClick={() => setOpenModal(true)}>
               Reserve Your Table
             </Button>
@@ -114,7 +122,7 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* MODAL */}
+      {/* RESERVATION MODAL */}
       {openModal && (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
           <div className="bg-white rounded-xl p-8 w-[90%] max-w-lg shadow-2xl relative">
@@ -130,15 +138,21 @@ const Hero = () => {
               Reserve Your Table
             </h2>
 
-            {/* Updated Notice */}
+            {/* Notice */}
             <p className="bg-yellow-50 border border-yellow-300 text-yellow-800 text-sm rounded-lg p-3 mb-4 text-center">
-              Please note: Same-day reservations are not available. Bookings can be made starting from the next day.
+              Same-day reservations are not available. Bookings can be made starting from the next day.
             </p>
 
             <form onSubmit={handleReservationSubmit} className="space-y-4">
               {resSuccess && (
                 <div className="p-3 bg-green-100 text-green-700 rounded-lg text-center font-semibold">
                   Reservation submitted successfully!
+                </div>
+              )}
+
+              {resError && (
+                <div className="p-3 bg-red-100 text-red-700 rounded-lg text-center font-semibold">
+                  {resError}
                 </div>
               )}
 
@@ -170,12 +184,10 @@ const Hero = () => {
               />
 
               <div className="grid grid-cols-2 gap-4">
-                {/* ❗ Block today */}
+                {/* ✅ Fixed date input */}
                 <input
                   type="date"
-                  min={new Date(Date.now() + 86400000)
-                    .toISOString()
-                    .split("T")[0]}
+                  min={getTomorrowDate()}
                   value={reservationData.date}
                   onChange={(e) => updateReservation("date", e.target.value)}
                   className="w-full border p-3 rounded-lg"
@@ -194,10 +206,10 @@ const Hero = () => {
               <input
                 type="number"
                 placeholder="Number of Guests"
+                min="1"
                 value={reservationData.guests}
                 onChange={(e) => updateReservation("guests", e.target.value)}
                 className="w-full border p-3 rounded-lg"
-                min="1"
                 required
               />
 

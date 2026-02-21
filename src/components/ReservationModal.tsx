@@ -28,6 +28,13 @@ const ReservationModal = ({ open, onClose }: Props) => {
     setError("");
   };
 
+  // ✅ Get tomorrow's date (LOCAL time — fixes USA bug)
+  const getTomorrowDate = () => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return tomorrow.toLocaleDateString("en-CA"); // YYYY-MM-DD format
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -113,15 +120,13 @@ const ReservationModal = ({ open, onClose }: Props) => {
           />
 
           <div className="grid grid-cols-2 gap-4">
-            {/* ❗ Block today */}
+            {/* ✅ Date input with correct tomorrow logic */}
             <input
               name="date"
               type="date"
               value={formData.date}
               onChange={handleChange}
-              min={new Date(Date.now() + 86400000)
-                .toISOString()
-                .split("T")[0]}
+              min={getTomorrowDate()}
               className="border rounded-lg p-3 w-full"
               required
             />
