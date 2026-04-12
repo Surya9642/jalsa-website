@@ -47,7 +47,7 @@ export const dineInMenu = [
   {
     name: "Basil Crunch Pakoras",
     description: "Golden deep-fried veggie fritters packed with fragrant basil, battered and fried to perfection.",
-    image: "/menu/item6.jpg",
+    image: "/menu/item6.jpeg",
     price: "$9.99",
     category: "Bar Snacks / Small Plates",
     badges: ["GF", "NF", "V,Vegan"],
@@ -93,7 +93,7 @@ export const dineInMenu = [
   {
     name: "Onion Spinach Pakora",
     description: "Savory fritters made with onion, baby spinach, and chickpea flour. Served with mint-cilantro and tamarind chutneys.",
-    image: "/menu/item11.jpg",
+    image: "/menu/item11.jpeg",
     price: "$8.99",
     category: "Appetizers",
     badges: ["GF", "NF", "V,Vegan"],
@@ -102,7 +102,7 @@ export const dineInMenu = [
   {
     name: "Paneer Pakora",
     description: "Paneer dipped in chickpea flour and fried to perfection. Served with mint-cilantro and tamarind chutneys.",
-    image: "/menu/item12.jpg",
+    image: "/menu/item12.jpeg",
     price: "$9.99",
     category: "Appetizers",
     badges: ["GF", "NF"],
@@ -120,7 +120,7 @@ export const dineInMenu = [
   {
     name: "Tofu Manchurian",
     description: "Fried Tofu and bell peppers tossed in house-made manchurian sauce.",
-    image: "/menu/item14.jpg",
+    image: "/menu/item14.jpeg",
     price: "$11.99",
     category: "Appetizers",
     badges: ["NF", "V"],
@@ -147,7 +147,7 @@ export const dineInMenu = [
   {
     name: "Chili Paneer",
     description: "Fried paneer stir-fried with onions, bell peppers, and spicy Indo-Chinese chili sauce.",
-    image: "/menu/item17.jpg",
+    image: "/menu/item17.jpeg",
     price: "$11.99",
     category: "Appetizers",
     badges: ["NF", "spicy"],
@@ -192,7 +192,7 @@ export const dineInMenu = [
   {
     name: "Chili Chicken",
     description: "Fried chicken stir-fried with onions, bell peppers, and spicy Indo-Chinese chili sauce.",
-    image: "/menu/item22.jpg",
+    image: "/menu/item22.jpeg",
     price: "$11.99",
     category: "Appetizers",
     badges: ["DF", "NF", "spicy"],
@@ -273,7 +273,7 @@ export const dineInMenu = [
   {
     name: "Shrimps Vepudu",
     description: "Succulent shrimp sautéed in crushed spices, garlic, curry leaves.",
-    image: "/menu/item113.jpg",
+    image: "/menu/item113.jpeg",
     price: "$16.99",
     category: "South Indian Specials (appetizers)",
     badges: [],
@@ -282,7 +282,7 @@ export const dineInMenu = [
   {
     name: "Chicken Tikka Kebab",
     description: "Choice of protein marinated in spices, skewered, and roasted in the clay oven. Served with house salad, mint cilantro chutney and butter masala sauce.",
-    image: "/menu/item26.jpg",
+    image: "/menu/item26.jpeg",
     price: "$14.99",
     category: "Tandoori Kebabs",
     badges: ["GF", "NF"],
@@ -291,7 +291,7 @@ export const dineInMenu = [
   {
     name: "Paneer Cheese Tikka Kebab",
     description: "Choice of protein marinated in spices, skewered, and roasted in the clay oven. Served with house salad, mint cilantro chutney and butter masala sauce.",
-    image: "/menu/item27.jpg",
+    image: "/menu/item27.jpeg",
     price: "$14.99",
     category: "Tandoori Kebabs",
     badges: ["GF", "NF"],
@@ -300,7 +300,7 @@ export const dineInMenu = [
   {
     name: "Tandoori Salmon",
     description: "Choice of protein marinated in spices, skewered, and roasted in the clay oven. Served with house salad, mint cilantro chutney and butter masala sauce.",
-    image: "/menu/item28.jpg",
+    image: "/menu/item28.jpeg",
     price: "$17.99",
     category: "Tandoori Kebabs",
     badges: ["GF", "NF"],
@@ -309,7 +309,7 @@ export const dineInMenu = [
   {
     name: "Daal Tadka",
     description: "Yellow lentils, slow-cooked and tempered with mustard seeds, cumin, garlic, and herbs.",
-    image: "/menu/item29.jpg",
+    image: "/menu/item29.jpeg",
     price: "$12.99",
     category: "Entrées & Thali",
     badges: ["GF", "V,Vegan"],
@@ -318,7 +318,7 @@ export const dineInMenu = [
   {
     name: "Aloo Gobi Masala",
     description: "Cauliflower and potatoes simmered in turmeric, cumin, and coriander.",
-    image: "/menu/item30.jpg",
+    image: "/menu/item30.jpeg",
     price: "$13.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF", "V,Vegan"],
@@ -345,7 +345,7 @@ export const dineInMenu = [
   {
     name: "Paneer Tikka Masala",
     description: "Marinated paneer grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce.",
-    image: "/menu/item33.jpg",
+    image: "/menu/item33.jpeg",
     price: "$15.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF"],
@@ -363,7 +363,7 @@ export const dineInMenu = [
   {
     name: "Butter Paneer",
     description: "Paneer cubes simmered in a buttery tomato-based sauce with Indian spices.",
-    image: "/menu/item35.jpg",
+    image: "/menu/item35.jpeg",
     price: "$15.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF"],
@@ -381,7 +381,7 @@ export const dineInMenu = [
   {
     name: "Tawa Bhindi Masala",
     description: "Fried okra tossed in tomato-onion sauce with roasted cumin and coriander.",
-    image: "/menu/item37.jpg",
+    image: "/menu/item37.jpeg",
     price: "$13.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF", "V,Vegan"],
@@ -399,7 +399,7 @@ export const dineInMenu = [
   {
     name: "Chicken Tikka Masala",
     description: "Marinated chicken grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce.",
-    image: "/menu/item39.jpg",
+    image: "/menu/item39.jpeg",
     price: "$15.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF"],
@@ -435,7 +435,7 @@ export const dineInMenu = [
   {
     name: "Malabar Fish Curry",
     description: "Marinated fish cubes cooked in tamarind-coconut gravy with curry leaves and roasted spices.",
-    image: "/menu/item43.jpg",
+    image: "/menu/item43.jpeg",
     price: "$16.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
@@ -588,7 +588,7 @@ export const dineInMenu = [
   {
     name: "Kurma - Lamb",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices.",
-    image: "/menu/item50.jpg",
+    image: "/menu/item50.jpeg",
     price: "$18.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF", "DF"],
@@ -615,7 +615,7 @@ export const dineInMenu = [
   {
     name: "Goan Vindaloo - Chicken",
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor.",
-    image: "/menu/item64.jpg",
+    image: "/menu/item64.jpeg",
     price: "$15.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF", "DF", "spicy"],
@@ -732,7 +732,7 @@ export const dineInMenu = [
   {
     name: "Mix Veg Uttapam",
     description: "Thick, soft Indian pancake made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item77.jpg",
+    image: "/menu/item77.jpeg",
     price: "$12.99",
     category: "Uttapam",
     badges: ["GF", "NF", "Can be made DF"],
@@ -948,7 +948,7 @@ export const dineInMenu = [
   {
     name: "Paneer Biryani",
     description: "Soft, marinated paneer cubes cooked in aromatic biryani spices and layered with fragrant basmati rice.",
-    image: "/menu/item101.jpg",
+    image: "/menu/item101.jpeg",
     price: "Reg- $16.99 Family Pack- $30.99",
     category: "Biryani",
     badges: [],
@@ -975,7 +975,7 @@ export const dineInMenu = [
   {
     name: "Jalsa special chicken biryani (Boneless)",
     description: "Juicy boneless chicken simmered in aromatic spices, layered with fragrant basmati rice.",
-    image: "/menu/item104.jpg",
+    image: "/menu/item104.jpeg",
     price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
     badges: [],
@@ -993,7 +993,7 @@ export const dineInMenu = [
   {
     name: "Chowrasta Chicken 65 Biryani",
     description: "Chicken 65 tossed in signature spices and layered over fragrant biryani rice.",
-    image: "/menu/item106.jpg",
+    image: "/menu/item106.jpeg",
     price: "Reg- $17.99 Family Pack- $31.99",
     category: "Biryani",
     badges: [],
@@ -1028,7 +1028,7 @@ export const dineInMenu = [
   {
     name: "Garlic Naan",
     description: "Traditional Indian flatbread hand-stretched and freshly baked in a clay tandoor oven.",
-    image: "/menu/item117.jpg",
+    image: "/menu/item117.jpeg",
     price: "$4.49",
     category: "Breads",
     badges: []
@@ -1068,7 +1068,7 @@ export const dineInMenu = [
   {
     name: "Rasmalai",
     description: "Soft paneer patties soaked in sweet, aromatic milk with pistachios.",
-    image: "/menu/item122.jpg",
+    image: "/menu/item122.jpeg",
     price: "$4.99",
     category: "Dessert",
     badges: []
