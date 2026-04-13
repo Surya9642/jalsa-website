@@ -1076,7 +1076,7 @@ export const dineInMenu = [
   {
     name: "Gulab Jamun",
     description: "Soft fried dumplings soaked in sugar syrup.",
-    image: "/menu/item123.jpg",
+    image: "/menu/item123.jpeg",
     price: "$4.99",
     category: "Dessert",
     badges: []
@@ -1084,7 +1084,7 @@ export const dineInMenu = [
   {
     name: "Kheer Brulee",
     description: "Creamy rice pudding with milk, sugar, and nuts, finished with a caramelized brûlée crust and a scoop of vanilla ice cream.",
-    image: "/menu/item124.jpg",
+    image: "/menu/item124.jpeg",
     price: "$9.99",
     category: "Dessert",
     badges: []
@@ -1100,7 +1100,7 @@ export const dineInMenu = [
   {
     name: "Rasmalai Tres Leches",
     description: "Eggless sponge cake soaked in rasmalai milk and topped with rasmalai flavored whipped cream.",
-    image: "/menu/item126.jpg",
+    image: "/menu/item126.jpeg",
     price: "$9.99",
     category: "Dessert",
     badges: []
@@ -1108,7 +1108,7 @@ export const dineInMenu = [
   {
     name: "Mango Lassi",
     description: "Refreshing mango yogurt drink.",
-    image: "/menu/item127.jpg",
+    image: "/menu/item127.jpeg",
     price: "$5.49",
     category: "Drinks",
     badges: []
@@ -1124,7 +1124,7 @@ export const dineInMenu = [
   {
     name: "Minty Lemonade",
     description: "Fresh lemonade blended with mint.",
-    image: "/menu/item129.jpg",
+    image: "/menu/item129.jpeg",
     price: "$5.49",
     category: "Drinks",
     badges: ["V"]
@@ -1132,7 +1132,7 @@ export const dineInMenu = [
   {
     name: "Masala Chai",
     description: "Spiced Indian tea with milk.",
-    image: "/menu/item130.jpg",
+    image: "/menu/item130.jpeg",
     price: "$4.49",
     category: "Drinks",
     badges: []
@@ -1148,7 +1148,7 @@ export const dineInMenu = [
   {
     name: "Soft Drinks",
     description: "",
-    image: "/menu/item132.jpg",
+    image: "/menu/item132.jpeg",
     price: "$2.99",
     category: "Drinks",
     badges: []
@@ -1156,7 +1156,7 @@ export const dineInMenu = [
   {
     name: "San Pellegrino",
     description: "",
-    image: "/menu/item133.jpg",
+    image: "/menu/item133.jpeg",
     price: "$4.99",
     category: "Drinks",
     badges: []
@@ -1188,7 +1188,7 @@ export const dineInMenu = [
   {
     name: "Basmati Rice",
     description: "",
-    image: "/menu/item137.jpg",
+    image: "/menu/item137.jpeg",
     price: "$3.99",
     category: "Sides",
     badges: []
@@ -1196,7 +1196,7 @@ export const dineInMenu = [
   {
     name: "Sambhar 12 oz",
     description: "",
-    image: "/menu/item138.jpg",
+    image: "/menu/item138.jpeg",
     price: "$5.99",
     category: "Sides",
     badges: []
@@ -1228,7 +1228,7 @@ export const dineInMenu = [
   {
     name: "Chocolate Naan",
     description: "Soft, warm naan stuffed with rich, melted chocolate for a sweet treat.",
-    image: "/menu/item142.jpg",
+    image: "/menu/item142.jpeg",
     price: "$5",
     category: "Kids Menu",
     badges: []
@@ -1236,7 +1236,7 @@ export const dineInMenu = [
   {
     name: "Frooti",
     description: "A refreshing, fruity mango drink kids love.",
-    image: "/menu/item143.jpg",
+    image: "/menu/item143.jpeg",
     price: "$5",
     category: "Kids Menu",
     badges: []
