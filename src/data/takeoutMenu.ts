@@ -1148,7 +1148,7 @@ export const takeoutMenu = [
   {
     name: "Mango Coconut Lassi",
     description: "Mango coconut smoothie.",
-    image: "/menu/item128.jpg",
+    image: "/menu/item128.jpeg",
     price: "$5.49",
     category: "Drinks",
     badges: ["V"]

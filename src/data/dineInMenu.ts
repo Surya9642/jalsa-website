@@ -1116,7 +1116,7 @@ export const dineInMenu = [
   {
     name: "Mango Coconut Lassi",
     description: "Refreshing mango coconut yogurt drink.",
-    image: "/menu/item128.jpg",
+    image: "/menu/item128.jpeg",
     price: "$5.49",
     category: "Drinks",
     badges: ["V"]
