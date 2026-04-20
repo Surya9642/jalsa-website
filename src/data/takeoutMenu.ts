@@ -12,7 +12,7 @@ export const takeoutMenu = [
   {
     name: "Chicken Tikka Sliders",
     description: "Vibrant flavors of Indian Chicken Tikka Masala with the popular slider format. Served with house salad.",
-    image: "/menu/item2.jpg",
+    image: "/menu/item2.jpeg",
     price: "$10.99",
     category: "Bar Snacks / Small Plates",
     badges: ["NF"],
@@ -30,7 +30,7 @@ export const takeoutMenu = [
   {
     name: "Cheesy Tikka Masala Nachos",
     description: "Crispy tortilla chips smothered in tikka sauce, topped with melted cheese, onions, tomatoes, jalapeños, cilantro, and cool raita. Choice of: Chicken, Paneer, Tofu, or Lamb (+$3).",
-    image: "/menu/item4.jpg",
+    image: "/menu/item4.jpeg",
     price: "$10.99",
     category: "Bar Snacks / Small Plates",
     badges: ["GF", "NF"],
@@ -241,10 +241,9 @@ export const takeoutMenu = [
   {
     name: "Pachi Mirapakai Kodi",
     description: "Andhra-style chicken cooked with green chilies, onions, and spices for a spicy flavor.",
-    image: "/menu/item109.jpg",
+    image: "/menu/item109.jpeg",
     price: "$14.99",
     category: "South Indian Specials (appetizers)",
-    badges: [],
     badges: ["Spicy"],
     type: "nonveg"
   },
@@ -255,7 +254,6 @@ export const takeoutMenu = [
     price: "$14.99",
     category: "South Indian Specials (appetizers)",
     badges: [],
-    badges: [],
     type: "nonveg"
   },
   {
@@ -265,13 +263,12 @@ export const takeoutMenu = [
     price: "$15.99",
     category: "South Indian Specials (appetizers)",
     badges: [],
-    badges: [],
     type: "nonveg"
   },
   {
     name: "Loose Prawns",
     description: "Fried prawns tossed in a zesty South Indian masala with green chilies, garlic, and fresh curry leaves.",
-    image: "/menu/item112.jpg",
+    image: "/menu/item112.jpeg",
     price: "$16.99",
     category: "South Indian Specials (appetizers)",
     badges: [],
@@ -383,7 +380,7 @@ export const takeoutMenu = [
   {
     name: "Butter Tofu",
     description: "Tofu cubes simmered in a buttery tomato-based sauce with Indian spices. Served à la carte with rice.",
-    image: "/menu/item36.jpg",
+    image: "/menu/item36.jpeg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF"],
@@ -465,7 +462,7 @@ export const takeoutMenu = [
   {
     name: "Madras Curry - Veggies",
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice.",
-    image: "/menu/item45.jpg",
+    image: "/menu/item45.jpeg",
     price: "$13.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -677,7 +674,7 @@ export const takeoutMenu = [
   {
     name: "Masala Dosa",
     description: "Thin, crispy Indian crepe served with Potato Masala filling. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item69.jpg",
+    image: "/menu/item69.jpeg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "DF"],
@@ -843,7 +840,7 @@ export const takeoutMenu = [
   {
     name: "Schezwan Fried Rice - Paneer",
     description: "Spicy Indo-Chinese stir-fry with basmati rice, paneer, soy sauce, spices and chili-garlic schezwan sauce. (Contains dairy)",
-    image: "/menu/item87.jpg",
+    image: "/menu/item87.jpeg",
     price: "$15.99",
     category: "Fried Rice",
     badges: ["DF", "NF"],
@@ -953,7 +950,7 @@ export const takeoutMenu = [
   {
     name: "Schezwan Noodles - Chicken & Egg",
     description: "Spicy Indo-Chinese wok-tossed noodles with chicken, egg, soy sauce, garlic, spices and chili-garlic schezwan sauce.",
-    image: "/menu/item99.jpg",
+    image: "/menu/item99.jpeg",
     price: "$17.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -1172,7 +1169,7 @@ export const takeoutMenu = [
   {
     name: "Indian Coffee",
     description: "Traditional Indian style coffee.",
-    image: "/menu/item131.jpg",
+    image: "/menu/item131.jpeg",
     price: "$4.49",
     category: "Drinks",
     badges: []
@@ -1254,7 +1251,7 @@ export const takeoutMenu = [
   {
     name: "Chicken nuggets and Nachos",
     description: "Crispy chicken nuggets served with crunchy nachos for a fun and tasty combo.",
-    image: "/menu/item141.jpg",
+    image: "/menu/item141.jpeg",
     price: "$7",
     category: "Kids Menu",
     badges: []

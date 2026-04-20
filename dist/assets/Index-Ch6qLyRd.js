@@ -1,4 +1,4 @@
-import{c as A,r as l,u as y,j as e}from"./index-CXV8_hU1.js";import{B as d,H as R,F as I,W as C}from"./WhatsAppButton--8XZ1-Gq.js";import{S as D}from"./sparkles-BZ3g_ElL.js";import{A as L,H as q}from"./heart-DCe6YsAv.js";import{m as o}from"./proxy-D40MiGpl.js";/**
+import{c as A,r as l,u as y,j as e}from"./index-DrQ1KsZl.js";import{B as d,H as R,F as I,W as C}from"./WhatsAppButton-BHcROiDk.js";import{S as D}from"./sparkles-i3B8Ha4g.js";import{A as L,H as q}from"./heart-fpQWq1d0.js";import{m as o}from"./proxy-DIxOJy-a.js";/**
  * @license lucide-react v0.462.0 - ISC
  *
  * This source code is licensed under the ISC license.
