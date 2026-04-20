@@ -21,7 +21,7 @@ export const takeoutMenu = [
   {
     name: "Tandoori Chicken Wings",
     description: "Juicy chicken wings marinated in a blend of spices and yogurt, char-grilled to perfection in a tandoor.",
-    image: "/menu/item3.jpg",
+    image: "/menu/item3.jpeg",
     price: "$11.99",
     category: "Bar Snacks / Small Plates",
     badges: ["GF", "NF"],
@@ -205,7 +205,7 @@ export const takeoutMenu = [
   {
     name: "Chicken Sukka",
     description: "Tender chicken slow-cooked in freshly ground spices, herbs and topped with cashew.",
-    image: "/menu/item23.jpg",
+    image: "/menu/item23.jpeg",
     price: "$12.99",
     category: "Appetizers",
     badges: ["GF", "can be DF"],
@@ -223,7 +223,7 @@ export const takeoutMenu = [
   {
     name: "Goat Sukka",
     description: "Tender goat meat slow-cooked in freshly ground spices and herbs.",
-    image: "/menu/item25.jpg",
+    image: "/menu/item25.jpeg",
     price: "$15.99",
     category: "Appetizers",
     badges: ["GF", "can be DF"],
@@ -261,7 +261,7 @@ export const takeoutMenu = [
   {
     name: "Apollo Fish",
     description: "Marinated fried fish tossed in a tangy, garlicky sauce.",
-    image: "/menu/item111.jpg",
+    image: "/menu/item111.jpeg",
     price: "$15.99",
     category: "South Indian Specials (appetizers)",
     badges: [],
@@ -428,7 +428,7 @@ export const takeoutMenu = [
   {
     name: "Butter Lamb",
     description: "Slow cooked lamb gently simmered in buttery tomato-based sauce with Indian spices. Served à la carte with rice.",
-    image: "/menu/item41.jpg",
+    image: "/menu/item41.jpeg",
     price: "$18.99",
     category: "Curry Entrées",
     badges: ["GF", "NF"],
@@ -455,7 +455,7 @@ export const takeoutMenu = [
   {
     name: "Coastal Shrimp Masala",
     description: "Shrimp simmered in onion-tomato sauce with spices and a hint of coconut. Served à la carte with rice.",
-    image: "/menu/item44.jpg",
+    image: "/menu/item44.jpeg",
     price: "$16.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -492,7 +492,7 @@ export const takeoutMenu = [
   {
     name: "Madras Curry - Chicken",
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice.",
-    image: "/menu/item48.jpg",
+    image: "/menu/item48.jpeg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -501,7 +501,7 @@ export const takeoutMenu = [
   {
     name: "Madras Curry - Lamb",
     description: "South Indian curry in a spiced tomato-based sauce with a hint of coconut. Served à la carte with rice.",
-    image: "/menu/item49.jpg",
+    image: "/menu/item49.jpeg",
     price: "$18.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -538,7 +538,7 @@ export const takeoutMenu = [
   {
     name: "Saag - Tofu",
     description: "Rich, slow-cooked spinach blended with warm spices and tofu. Served à la carte with rice.",
-    image: "/menu/item54.jpg",
+    image: "/menu/item54.jpeg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "can be DF"],
@@ -584,7 +584,7 @@ export const takeoutMenu = [
   {
     name: "Kurma - Tofu",
     description: "Creamy nut-free version of the traditional kurma with coconut and aromatic spices. Served à la carte with rice.",
-    image: "/menu/item59.jpg",
+    image: "/menu/item59.jpeg",
     price: "$15.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF"],
@@ -639,7 +639,7 @@ export const takeoutMenu = [
   {
     name: "Goan Vindaloo - Lamb",
     description: "Curry with potatoes cooked in vinegar, chilies, and spices for a tangy and spicy flavor. Served à la carte with rice.",
-    image: "/menu/item65.jpg",
+    image: "/menu/item65.jpeg",
     price: "$18.99",
     category: "Curry Entrées",
     badges: ["GF", "NF", "DF", "Spicy"],
@@ -650,7 +650,7 @@ export const takeoutMenu = [
   {
     name: "Plain Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item66.jpg",
+    image: "/menu/item66.jpeg",
     price: "$11.99",
     category: "Dosa",
     badges: ["GF", "NF", "DF"],
@@ -695,7 +695,7 @@ export const takeoutMenu = [
   {
     name: "Andhra Karam Dosa",
     description: "Spicy thin, crispy Indian crepe served with Potato Masala filling. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item71.jpg",
+    image: "/menu/item71.jpeg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "DF", "Spicy"],
@@ -742,7 +742,7 @@ export const takeoutMenu = [
   {
     name: "Onion Uttapam",
     description: "Thick, soft Indian pancake topped with onions. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item76.jpg",
+    image: "/menu/item76.jpeg",
     price: "$12.99",
     category: "Uttapam",
     badges: ["GF", "NF", "DF"],
@@ -935,7 +935,7 @@ export const takeoutMenu = [
   {
     name: "Schezwan Noodles - Paneer",
     description: "Spicy Indo-Chinese wok-tossed noodles with paneer, soy sauce, garlic, spices and chili-garlic schezwan sauce. (Contains dairy)",
-    image: "/menu/item97.jpg",
+    image: "/menu/item97.jpeg",
     price: "$16.99",
     category: "Noodles",
     badges: ["DF", "NF"],
@@ -1080,7 +1080,7 @@ export const takeoutMenu = [
   {
     name: "Butter Roti",
     description: "Traditional Indian whole-wheat flatbread brushed with butter.",
-    image: "/menu/item120.jpg",
+    image: "/menu/item120.jpeg",
     price: "$3.99",
     category: "Breads",
     badges: []
