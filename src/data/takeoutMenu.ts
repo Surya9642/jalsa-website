@@ -185,7 +185,7 @@ export const takeoutMenu = [
   {
     name: "Chicken Manchurian",
     description: "Spiced Fried chicken and peppers tossed in house-made manchurian sauce.",
-    image: "/menu/item21.jpg",
+    image: "/menu/item21.jpeg",
     price: "$11.99",
     category: "Appetizers",
     badges: ["DF", "NF"],
@@ -1243,7 +1243,7 @@ export const takeoutMenu = [
   {
     name: "French fries",
     description: "Golden, crispy fries that are crunchy on the outside and fluffy on the inside.",
-    image: "/menu/item140.jpg",
+    image: "/menu/item140.jpeg",
     price: "$4",
     category: "Kids Menu",
     badges: []
