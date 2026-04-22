@@ -3,18 +3,18 @@ import { Quote } from "lucide-react";
 const Gallery = () => {
   const testimonials = [
     {
-      name: "Priya Sharma",
-      text: "The most authentic Indian dining experience I've had outside India. Every dish is a masterpiece!",
+      name: "Keith Rubinstein",
+      text: "Delicious food. Resonable prices. Generous portions. Attentive service. Just a knock out of the park on all counts. I was sad when the burmese place left, but now that I've tried Jalsa I think I can cope :)",
       rating: 5,
     },
     {
-      name: "Raj Patel",
-      text: "JALSA truly lives up to its name - every meal here is indeed a celebration. Highly recommended!",
+      name: "Benjamin Snyder",
+      text: "Great portion size. I’m a big dude and I need a lot of food. This left me with a big sized lunch the next day. And it was delicious!",
       rating: 5,
     },
     {
-      name: "Sarah Johnson",
-      text: "The ambiance, the service, the food - everything is absolutely perfect. A must-visit!",
+      name: "Jack Vogel",
+      text: "I've only eaten here twice now, but the food was great both times! It's difficult finding really good Indian, it's an expensive-to-make cuisine, so I wish Jalsa well, keep making delicious curry and I'll keep buying it :)",
       rating: 5,
     },
   ];

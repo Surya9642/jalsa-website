@@ -93,34 +93,46 @@ const Hero = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-overlay" />
-        </div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: `url(${heroBg})` }}
+  >
+    <div className="absolute inset-0 bg-black/60" />
+  </div>
 
-        <div className="relative z-10 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
-            JALSA
-          </h1>
+  {/* Content */}
+  <div className="relative z-10 text-center max-w-4xl mx-auto">
+    <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6">
+      JALSA
+    </h1>
 
-          <p className="text-xl md:text-3xl text-gold mb-12">
-            Where Every Meal Is A Celebration
-          </p>
+    <p className="text-base sm:text-lg md:text-2xl lg:text-3xl text-yellow-400 mb-8 sm:mb-10">
+      Where Every Meal Is A Celebration
+    </p>
 
-          <div className="flex gap-4 justify-center">
-            <Button variant="hero" size="xl" onClick={() => setOpenModal(true)}>
-              Reserve Your Table
-            </Button>
+    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+      <Button
+        variant="hero"
+        size="xl"
+        className="w-full sm:w-auto"
+        onClick={() => setOpenModal(true)}
+      >
+        Reserve Your Table
+      </Button>
 
-            <Button variant="hero" size="xl" onClick={() => navigate("/menu")}>
-              View Menu
-            </Button>
-          </div>
-        </div>
-      </section>
+      <Button
+        variant="hero"
+        size="xl"
+        className="w-full sm:w-auto"
+        onClick={() => navigate("/menu")}
+      >
+        View Menu
+      </Button>
+    </div>
+  </div>
+</section>
 
       {/* RESERVATION MODAL */}
       {openModal && (

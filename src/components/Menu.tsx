@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import biryaniImg from "@/assets/dish-biryani.jpg";
-import butterChickenImg from "@/assets/dish-butter-chicken.jpg";
+import butterChickenImg from "@/assets/dish-butter-chicken.jpeg";
 import naanImg from "@/assets/dish-naan.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const Menu = () => {
 
   const dishes = [
     {
-      name: "Royal Biryani",
+      name: "Jalsa special chicken biryani ",
       description: "Juicy boneless chicken simmered in aromatic spices, layered with fragrant basmati rice",
       image: biryaniImg,
       price: "$17.99",
@@ -66,7 +66,7 @@ const Menu = () => {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   {dish.description}
                 </p>
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <span className="text-xl font-semibold text-gold">{dish.price}</span>
                   <Button
                     variant="outline"
@@ -75,7 +75,7 @@ const Menu = () => {
                   >
                     Order Now
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
