@@ -981,15 +981,15 @@ export const dineInMenu = [
     badges: [],
     type: "nonveg"
   },
-  {
-    name: "Bejawada Chicken Biryani (Bone in)",
-    description: "Juicy bone in chicken simmered in aromatic spices, layered with fragrant basmati rice.",
-    image: "/menu/item105.jpg",
-    price: "Reg- $17.99 Family Pack- $31.99",
-    category: "Biryani",
-    badges: [],
-    type: "nonveg"
-  },
+  // {
+  //   name: "Bejawada Chicken Biryani (Bone in)",
+  //   description: "Juicy bone in chicken simmered in aromatic spices, layered with fragrant basmati rice.",
+  //   image: "/menu/item105.jpg",
+  //   price: "Reg- $17.99 Family Pack- $31.99",
+  //   category: "Biryani",
+  //   badges: [],
+  //   type: "nonveg"
+  // },
   {
     name: "Chowrasta Chicken 65 Biryani",
     description: "Chicken 65 tossed in signature spices and layered over fragrant biryani rice.",
@@ -1090,8 +1090,8 @@ export const dineInMenu = [
     badges: []
   },
   {
-    name: "Chai Tiramisu",
-    description: "Eggless cake rusk soaked in chai, layered with rich cream.",
+    name: "Tiramisu",
+    description: "Soft egg cake rusks soaked to perfection, layered with rich, velvety cream for a classic tiramisu-inspired indulgence.",
     image: "/menu/item125.jpg",
     price: "$9.99",
     category: "Dessert",
