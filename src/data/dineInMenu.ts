@@ -246,7 +246,7 @@ export const dineInMenu = [
   {
     name: "Curry Leaf Chicken",
     description: "Tender chicken sautéed in a fragrant blend of roasted spices, garlic, and fresh curry leaves.",
-    image: "/menu/item110.jpg",
+    image: "/menu/item110.jpeg",
     price: "$14.99",
     category: "South Indian Specials (appetizers)",
     badges: [],
@@ -354,7 +354,7 @@ export const dineInMenu = [
   {
     name: "Tofu Tikka Masala",
     description: "Marinated tofu grilled in the tandoor and cooked in onion, tomato, and fenugreek cream sauce.",
-    image: "/menu/item34.jpg",
+    image: "/menu/item34.jpeg",
     price: "$15.99",
     category: "Entrées & Thali",
     badges: ["GF", "NF"],
