@@ -651,7 +651,7 @@ export const dineInMenu = [
   {
     name: "Chili Cheese Dosa",
     description: "Thin, crispy Indian crepe made from fermented rice and lentil batter. Served with Peanut Chutney, Tomato Chutney and Sambhar.",
-    image: "/menu/item68.jpg",
+    image: "/menu/item68.jpeg",
     price: "$13.99",
     category: "Dosa",
     badges: ["GF", "NF", "Can be made DF"],

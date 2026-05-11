@@ -159,8 +159,8 @@ const Contact = () => {
                   title: "Hours",
                   content: (
                     <>
-                      Monday: 11am–2:30pm, 4:30pm–09:30pm <br />
-                      Tuesday: Closed <br />
+                      Monday: Closed<br />
+                      Tuesday: 11am–2:30pm, 4:30pm–09:30pm <br />
                       Wednesday: 11am–2:30pm, 4:30pm–09:30pm <br />
                       Thursday: 11am–2:30pm, 4:30pm–09:30pm <br />
                       Friday: 11am–3pm, 4:30pm–10pm <br />
