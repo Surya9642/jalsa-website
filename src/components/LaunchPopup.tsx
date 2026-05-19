@@ -1,13 +1,15 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
 
 interface LaunchPopupProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-const LaunchPopup: React.FC<LaunchPopupProps> = ({ isOpen, onClose }) => {
+const LaunchPopup: React.FC<LaunchPopupProps> = ({
+  isOpen,
+  onClose,
+}) => {
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
@@ -16,6 +18,7 @@ const LaunchPopup: React.FC<LaunchPopupProps> = ({ isOpen, onClose }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
+          onClick={onClose}
           className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 backdrop-blur-sm px-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -23,6 +26,7 @@ const LaunchPopup: React.FC<LaunchPopupProps> = ({ isOpen, onClose }) => {
         >
           {/* Popup Container */}
           <motion.div
+            onClick={(e) => e.stopPropagation()}
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
@@ -39,30 +43,6 @@ const LaunchPopup: React.FC<LaunchPopupProps> = ({ isOpen, onClose }) => {
               overflow-hidden
             "
           >
-            {/* Close Icon */}
-            <button
-              onClick={onClose}
-              aria-label="Close popup"
-              className="
-                absolute
-                top-3
-                right-3
-                z-20
-                w-9
-                h-9
-                rounded-full
-                bg-black/70
-                text-white
-                flex
-                items-center
-                justify-center
-                hover:bg-black
-                transition
-              "
-            >
-              <X size={18} />
-            </button>
-
             {/* Popup Image */}
             <img
               src="/resto/8.jpeg"
