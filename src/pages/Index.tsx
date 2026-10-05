@@ -24,16 +24,16 @@ const fadeUp = {
 };
 
 const Index: React.FC = () => {
-  // const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
-  // // Show popup on page load (after small delay)
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setShowPopup(true);
-  //   }, 1500);
+  // Show popup on page load (after small delay)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 1500);
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <motion.div
@@ -45,10 +45,10 @@ const Index: React.FC = () => {
       <Header />
 
       {/* ✅ Launch Popup */}
-      {/* <LaunchPopup
+      <LaunchPopup
         isOpen={showPopup}
         onClose={() => setShowPopup(false)}
-      /> */}
+      />
 
       {/* Hero */}
       <motion.section
