@@ -57,14 +57,14 @@ const LaunchPopup: React.FC<LaunchPopupProps> = ({ isOpen, onClose }) => {
               "
             >
               <img
-                src="/resto/sep23.jpeg"
+                src="/resto/oct23.jpeg"
                 alt="Opening Announcement 1"
                 className="w-full h-auto object-cover block"
               />
             </div>
 
             {/* Popup Card 2 */}
-            <div
+            {/* <div
               className="
                 w-full
                 max-w-sm
@@ -81,7 +81,7 @@ const LaunchPopup: React.FC<LaunchPopupProps> = ({ isOpen, onClose }) => {
                 alt="Opening Announcement 2"
                 className="w-full h-auto object-cover block"
               />
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
       )}
