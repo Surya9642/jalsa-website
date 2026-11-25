@@ -57,7 +57,7 @@ const LaunchPopup: React.FC<LaunchPopupProps> = ({ isOpen, onClose }) => {
               "
             >
               <img
-                src="/resto/oct23.jpeg"
+                src="/resto/nov20.jpeg"
                 alt="Opening Announcement 1"
                 className="w-full h-auto object-cover block"
               />
